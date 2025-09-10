@@ -76,12 +76,12 @@ export default function Career() {
               style={{ maxWidth: "900px", margin: "0 auto" }}
             >
               <p>
-                At Cloudheard, we believe talent is more than a resume. We don't
-                measure you by degrees or past job titles — we want to know your
-                story, your journey, and your drive.
+                At Cloudheard, we believe talent is more than a resume. We
+                don&apos;t measure you by degrees or past job titles — we want
+                to know your story, your journey, and your drive.
               </p>
               <p>
-                If you come from an unprivileged background, if you're just
+                If you come from an unprivileged background, if you&apos;re just
                 waiting for that one chance to step into the exciting world of
                 Oracle Fusion, we want to hear from you.
               </p>
@@ -96,21 +96,21 @@ export default function Career() {
                   We provide end-to-end training in technical and communication
                   skills.
                 </li>
-                <li>You'll work on real projects with global exposure.</li>
+                <li>You&apos;ll work on real projects with global exposure.</li>
                 <li>
-                  We're not just a team — we're a family, driven by purpose and
-                  impact.
+                  We&apos;re not just a team — we&apos;re a family, driven by
+                  purpose and impact.
                 </li>
               </ul>
 
               <p>
-                Your career at Cloudheard is not just about learning — it's
+                Your career at Cloudheard is not just about learning — it&apos;s
                 about transformation, growth, and giving back.
               </p>
               <p>
                 <strong>
-                  Bring your story, bring your spark. Let's build your future
-                  together.
+                  Bring your story, bring your spark. Let&apos;s build your
+                  future together.
                 </strong>
               </p>
             </div>
@@ -159,16 +159,14 @@ export default function Career() {
           {/* Left: Value Cards (5 columns) */}
           <div className="col-lg-7">
             <div className="card custom-hover-card h-50 p-4 border-0 shadow-sm">
-              <h4 className="fw-bold mb-3">
-                Why Join Cloudheard?
-              </h4>
+              <h4 className="fw-bold mb-3">Why Join Cloudheard?</h4>
               <ul className="list-style-disc ps-3">
-                <li>We don't want your CV. We want your story.</li>
+                <li>We don&apos;t want your CV. We want your story.</li>
                 <li>No degrees required. Just passion and persistence.</li>
                 <li>Your journey matters more than your resume.</li>
                 <li>
-                  This is not a job application. It's your chance to change your
-                  life.
+                  This is not a job application. It&apos;s your chance to change
+                  your life.
                 </li>
                 <li>
                   Cloudheard Careers: Stories over CVs, People over titles.
@@ -176,6 +174,7 @@ export default function Career() {
               </ul>
             </div>
           </div>
+
           {/* Right: Form (7 columns) */}
           <div className="col-lg-5 d-flex flex-column justify-content-start">
             <h4 className="mb-3">Share Your Story</h4>
@@ -184,7 +183,7 @@ export default function Career() {
               you want to join.
             </p>
             <ol className="mb-4 small">
-              <li>What's your personal story?</li>
+              <li>What&apos;s your personal story?</li>
               <li>Why are you passionate about Oracle Fusion?</li>
               <li>
                 Have you overcome barriers (social, financial, educational)?
