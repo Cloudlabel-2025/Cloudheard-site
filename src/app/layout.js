@@ -2,6 +2,12 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import "../styles/style.css";
+import "../styles/bootstrap.min.css";
+import "../styles/lib/animate/animate.min.css";
+import "../styles/lib/owlcarousel/assets/owl.carousel.min.css";
+
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,8 +45,7 @@ export default function RootLayout({ children }) {
           integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13fjL8uCF8a7x6Rkg=="
           referrerPolicy="no-referrer"
         />
-        <link rel="stylesheet" href="/css/style.css" />
-        <link href="/css/bootstrap.min.css" rel="stylesheet" />
+       
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
@@ -55,11 +60,8 @@ export default function RootLayout({ children }) {
           href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
           rel="stylesheet"
         />
-        <link href="/lib/animate/animate.min.css" rel="stylesheet" />
-        <link
-          href="/lib/owlcarousel/assets/owl.carousel.min.css"
-          rel="stylesheet"
-        />
+       
+     
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

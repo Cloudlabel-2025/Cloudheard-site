@@ -206,7 +206,7 @@ h6,
 .page-header {
     padding-top: 12rem !important;
     padding-bottom: 6rem !important;
-    background: url(../img/header.jpg) top left no-repeat !important;
+    background: url(../../public/img/header.jpg) top left no-repeat !important;
     background-size: cover !important;
 }
 
@@ -222,7 +222,7 @@ h6,
 
 /*** Facts ***/
 .facts {
-    background: linear-gradient(rgba(53, 94, 252, .95), rgba(53, 94, 252, .95)), url(../img/bg.png) !important;
+    background: linear-gradient(rgba(53, 94, 252, .95), rgba(53, 94, 252, .95)), url(../../public/img/bg.png) !important;
 }
 
 
@@ -238,7 +238,7 @@ h6,
     height: 50% !important;
     top: 0 !important;
     left: 0 !important;
-    background: linear-gradient(rgba(53, 94, 252, .95), rgba(53, 94, 252, .95)), url(../img/bg.png) !important;
+    background: linear-gradient(rgba(53, 94, 252, .95), rgba(53, 94, 252, .95)), url(../../public/img/bg.png) !important;
     z-index: -1 !important;
 }
 
