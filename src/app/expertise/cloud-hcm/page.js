@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function Cloudhcm() {
   const [isClient, setIsClient] = useState(false);
@@ -50,35 +51,55 @@ export default function Cloudhcm() {
           style={{ maxWidth: "600px" }}
         >
           <h3 className="display-5 mb-2">Oracle HCM Fusion</h3>
-          
-          <p className="mb-4">Transform HR into seamless, compliant experience.Cloudheard delivers HCM solutions that fit your business perfectly, cost effectively.</p>
-       
+
+          <p className="mb-4">
+            Transform HR into seamless, compliant experience.Cloudheard delivers
+            HCM solutions that fit your business perfectly, cost effectively.
+          </p>
         </div>
         <div className="m-3 p-3 row rounded shadow-lg ">
           <h3 className="text-center mt-2">Oracle HCM Fusion</h3>
           <div className="mt-3 mb-2 col-xl-5  animated slideInRight">
-            <img className="rounded mt-4"
+            <img
+              className="rounded mt-4"
               src="/img/Expertise-OraclecloudHCM.jpg"
               style={{ height: "350px", width: "600px" }}
               alt="cloud-hcm"
             />
-           </div>
-         <div className="col-xl-6 p-5 animated slideInLeft">
-          
-          <ul >
-            <li>Oracle HCM Fusion is a comprehensive cloud-based HR solution covering core HR, payroll, absence, talent, and workforce management. </li>
-            <li >It enables organisations to centralise HR processes, <br/>improve compliance, and deliver a unified employee experience.</li>
-            <li>Cloudheard has delivered HCM implementations across industries, ensuring accurate requirement gathering to avoid costly rework.  </li>
-            <li>Our team focuses on configuring HR processes that align with your organisation’s structure and local compliance needs.  </li>
-            <li>With our offshore model guided by senior Architects, you gain high-quality delivery at a fraction of typical costs. </li>
-            <li>We make Oracle HCM Fusion work as a perfect fit-gap solution tailored to your business. </li>
-            <li>Recommended Icon/Visuals: 👥 People / HR silhouette, employee profile card, or group of users. </li>
-
-          </ul>
-            
-           </div>
-            
-         
+          </div>
+          <div className="col-xl-6 p-5 animated slideInLeft">
+            <ul>
+              <li>
+                Oracle HCM Fusion is a comprehensive cloud-based HR solution
+                covering core HR, payroll, absence, talent, and workforce
+                management.{" "}
+              </li>
+              <li>
+                It enables organisations to centralise HR processes, <br />
+                improve compliance, and deliver a unified employee experience.
+              </li>
+              <li>
+                Cloudheard has delivered HCM implementations across industries,
+                ensuring accurate requirement gathering to avoid costly rework.{" "}
+              </li>
+              <li>
+                Our team focuses on configuring HR processes that align with
+                your organisation’s structure and local compliance needs.{" "}
+              </li>
+              <li>
+                With our offshore model guided by senior Architects, you gain
+                high-quality delivery at a fraction of typical costs.{" "}
+              </li>
+              <li>
+                We make Oracle HCM Fusion work as a perfect fit-gap solution
+                tailored to your business.{" "}
+              </li>
+              <li>
+                Recommended Icon/Visuals: 👥 People / HR silhouette, employee
+                profile card, or group of users.{" "}
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div className="container-xxl py-5">
@@ -102,10 +123,12 @@ export default function Cloudhcm() {
             {/* Original 4 items */}
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
-                <img
+                <Image
                   className="img-fluid rounded"
                   src="/img/service-1.jpg"
                   alt="Oracle HCM Fusion"
+                  width={600}
+                  height={350}
                 />
                 <a href="/expertise/cloud-hcm">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -117,10 +140,12 @@ export default function Cloudhcm() {
             </div>
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
-                <img
+                <Image
                   className="img-fluid rounded"
                   src="/img/service-2.jpg"
                   alt="Oracle ERP Fusion"
+                  width={600}
+                  height={350}
                 />
                 <a href="/expertise/cloud-erp">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -132,10 +157,12 @@ export default function Cloudhcm() {
             </div>
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
-                <img
+                <Image
                   className="img-fluid rounded"
                   src="/img/service-3.jpg"
                   alt="On Premises to Cloud"
+                  width={600}
+                  height={350}
                 />
                 <a href="/expertise/on-prem-to-cloud">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -147,10 +174,12 @@ export default function Cloudhcm() {
             </div>
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
-                <img
+                <Image
                   className="img-fluid rounded"
                   src="/img/service-4.jpg"
                   alt="Oracle Integration Cloud"
+                  width={600}
+                  height={350}
                 />
                 <a href="/expertise/oracle-integration-cloud">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -164,10 +193,12 @@ export default function Cloudhcm() {
             {/* Additional 4 items */}
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
-                <img
+                <Image
                   className="img-fluid rounded"
                   src="/img/service-1.jpg"
                   alt="Fusion Data Intelligence"
+                  width={600}
+                  height={350}
                 />
                 <a href="/expertise/fusion-data-intelligence">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -179,10 +210,12 @@ export default function Cloudhcm() {
             </div>
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
-                <img
+                <Image
                   className="img-fluid rounded"
                   src="/img/service-2.jpg"
                   alt="Automation Testing"
+                  width={600}
+                  height={350}
                 />
                 <a href="/expertise/automation-testing">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -194,10 +227,12 @@ export default function Cloudhcm() {
             </div>
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
-                <img
+                <Image
                   className="img-fluid rounded"
                   src="/img/service-3.jpg"
                   alt="Version Control System"
+                  width={600}
+                  height={350}
                 />
                 <a href="/expertise/version-control-system">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -209,10 +244,12 @@ export default function Cloudhcm() {
             </div>
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
-                <img
+                <Image
                   className="img-fluid rounded"
                   src="/img/service-4.jpg"
                   alt="Application Development"
+                  width={600}
+                  height={350}
                 />
                 <a href="/expertise/application-development">
                   <i className="fa fa-link fa-3x text-primary"></i>

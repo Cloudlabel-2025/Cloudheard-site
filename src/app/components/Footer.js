@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import Link from "next/link";
 
 function Footer() {
   useEffect(() => {
@@ -27,18 +28,18 @@ function Footer() {
               infrastructure.
             </p>
             <div className="d-flex pt-2">
-              <a className="btn btn-square btn-outline-light rounded-circle me-2" href="#">
+              <Link className="btn btn-square btn-outline-light rounded-circle me-2" href="#">
                 <i className="fab fa-twitter"></i>
-              </a>
-              <a className="btn btn-square btn-outline-light rounded-circle me-2" href="#">
+              </Link>
+              <Link className="btn btn-square btn-outline-light rounded-circle me-2" href="#">
                 <i className="fab fa-facebook-f"></i>
-              </a>
-              <a className="btn btn-square btn-outline-light rounded-circle me-2" href="#">
+              </Link>
+              <Link className="btn btn-square btn-outline-light rounded-circle me-2" href="#">
                 <i className="fab fa-youtube"></i>
-              </a>
-              <a className="btn btn-square btn-outline-light rounded-circle me-2" href="#">
+              </Link>
+              <Link className="btn btn-square btn-outline-light rounded-circle me-2" href="#">
                 <i className="fab fa-linkedin-in"></i>
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -62,18 +63,18 @@ function Footer() {
           {/* Quick Links */}
           <div className="col-lg-3 col-md-6">
             <h4 className="text-white mb-4">Quick Links</h4>
-            <a className="btn btn-link" href="#">Home</a>
-            <a className="btn btn-link" href="#">About Us</a>
-            <a className="btn btn-link" href="#">Services</a>
-            <a className="btn btn-link" href="#">Career</a>
-            <a className="btn btn-link" href="#">Contact Us</a>
+            <Link className="btn btn-link" href="/">Home</Link>
+            <Link className="btn btn-link" href="/about-us">About Us</Link>
+            <Link className="btn btn-link" href="/services">Services</Link>
+            <Link className="btn btn-link" href="/careers">Career</Link>
+            <Link className="btn btn-link" href="/contact-us">Contact Us</Link>
           </div>
 
           {/* Other Links */}
           <div className="col-lg-3 col-md-6">
             <h4 className="text-white mb-4">Other Links</h4>
-            <a className="btn btn-link" href="#">Privacy Policy</a>
-            <a className="btn btn-link" href="#">Terms & Conditions</a>
+            <Link className="btn btn-link" href="#">Privacy Policy</Link>
+            <Link className="btn btn-link" href="#">Terms & Conditions</Link>
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function Applicationdevelopment() {
   const [isClient, setIsClient] = useState(false);
@@ -15,7 +16,7 @@ export default function Applicationdevelopment() {
   if (!isClient) return null;
 
   return (
-     <>
+    <>
       <div
         suppressHydrationWarning
         className="container-fluid page-header mb-5 wow fadeIn shadow-sm"
@@ -37,7 +38,7 @@ export default function Applicationdevelopment() {
                 <a href="#">Home</a>
               </li>
               <li className="breadcrumb-item active" aria-current="page">
-                Application Development 
+                Application Development
               </li>
             </ol>
           </nav>
@@ -52,42 +53,53 @@ export default function Applicationdevelopment() {
           <h3 className="display-5 mb-2">Application Development </h3>
 
           <p className="mb-4">
-           Smart apps for real business problems. 
-From hot seat booking to payroll and admin automation, we deliver scalable, cost-effective solutions. 
+            Smart apps for real business problems. From hot seat booking to
+            payroll and admin automation, we deliver scalable, cost-effective
+            solutions.
           </p>
         </div>
         <div className="m-3 p-3 row rounded shadow-lg ">
-          <h3 className="text-center mt-2">Application Development  </h3>
+          <h3 className="text-center mt-2">Application Development </h3>
           <div className="mt-3 mb-2 col-xl-5  animated slideInRight">
-            <img
+            <Image
               className="rounded mt-4"
               src="/img/Expertise-OraclecloudHCM.jpg"
-              style={{ height: "350px", width: "600px" }}
+              width={600}
+              height={350}
               alt="cloud-hcm"
             />
           </div>
           <div className="col-xl-6 p-5 animated slideInLeft">
             <ul>
               <li>
-               At Cloudheard, we go beyond Oracle to build custom applications that solve everyday business challenges. {" "}
+                At Cloudheard, we go beyond Oracle to build custom applications
+                that solve everyday business challenges.{" "}
               </li>
               <li>
-                Our team has developed apps such as a Hot Seat Booking app for flexible workplaces, a Payroll solutions app for small businesses, and an Admin panel app to automate routine tasks in growing organisations.  {" "}
+                Our team has developed apps such as a Hot Seat Booking app for
+                flexible workplaces, a Payroll solutions app for small
+                businesses, and an Admin panel app to automate routine tasks in
+                growing organisations.{" "}
               </li>
               <li>
-                We specialise in designing lightweight, scalable, and cost-effective apps tailored to your unique needs.  {" "}
+                We specialise in designing lightweight, scalable, and
+                cost-effective apps tailored to your unique needs.{" "}
               </li>
               <li>
-                With our offshore model, development is rapid and affordable, without sacrificing quality. 
+                With our offshore model, development is rapid and affordable,
+                without sacrificing quality.
               </li>
               <li>
-               Every project is guided by senior architects to ensure robust design, security, and ease of use.  {" "}
+                Every project is guided by senior architects to ensure robust
+                design, security, and ease of use.{" "}
               </li>
               <li>
-               Whether it’s a productivity tool, process automation, or a business-specific app — Cloudheard delivers solutions that work. {" "}
+                Whether it’s a productivity tool, process automation, or a
+                business-specific app — Cloudheard delivers solutions that work.{" "}
               </li>
               <li>
-               Recommended Icon/Visuals: 📱 Mobile app screen, laptop with code brackets, or gear + app window combo. {" "}
+                Recommended Icon/Visuals: 📱 Mobile app screen, laptop with code
+                brackets, or gear + app window combo.{" "}
               </li>
             </ul>
           </div>
@@ -114,10 +126,12 @@ From hot seat booking to payroll and admin automation, we deliver scalable, cost
             {/* Original 4 items */}
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
-                <img
+                <Image
                   className="img-fluid rounded"
                   src="/img/service-1.jpg"
                   alt="Oracle HCM Fusion"
+                  width={600}
+                  height={350}
                 />
                 <a href="/expertise/cloud-hcm">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -129,10 +143,12 @@ From hot seat booking to payroll and admin automation, we deliver scalable, cost
             </div>
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
-                <img
+                <Image
                   className="img-fluid rounded"
                   src="/img/service-2.jpg"
                   alt="Oracle ERP Fusion"
+                  width={600}
+                  height={350}
                 />
                 <a href="/expertise/cloud-erp">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -144,10 +160,12 @@ From hot seat booking to payroll and admin automation, we deliver scalable, cost
             </div>
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
-                <img
+                <Image
                   className="img-fluid rounded"
                   src="/img/service-3.jpg"
                   alt="On Premises to Cloud"
+                  width={600}
+                  height={350}
                 />
                 <a href="/expertise/on-prem-to-cloud">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -159,10 +177,12 @@ From hot seat booking to payroll and admin automation, we deliver scalable, cost
             </div>
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
-                <img
+                <Image
                   className="img-fluid rounded"
                   src="/img/service-4.jpg"
                   alt="Oracle Integration Cloud"
+                  width={600}
+                  height={350}
                 />
                 <a href="/expertise/oracle-integration-cloud">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -176,10 +196,12 @@ From hot seat booking to payroll and admin automation, we deliver scalable, cost
             {/* Additional 4 items */}
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
-                <img
+                <Image
                   className="img-fluid rounded"
                   src="/img/service-1.jpg"
                   alt="Fusion Data Intelligence"
+                  width={600}
+                  height={350}
                 />
                 <a href="/expertise/fusion-data-intelligence">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -191,10 +213,12 @@ From hot seat booking to payroll and admin automation, we deliver scalable, cost
             </div>
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
-                <img
+                <Image
                   className="img-fluid rounded"
                   src="/img/service-2.jpg"
                   alt="Automation Testing"
+                  width={600}
+                  height={350}
                 />
                 <a href="/expertise/automation-testing">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -206,10 +230,12 @@ From hot seat booking to payroll and admin automation, we deliver scalable, cost
             </div>
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
-                <img
+                <Image
                   className="img-fluid rounded"
                   src="/img/service-3.jpg"
                   alt="Version Control System"
+                  width={600}
+                  height={350}
                 />
                 <a href="/expertise/version-control-system">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -221,10 +247,12 @@ From hot seat booking to payroll and admin automation, we deliver scalable, cost
             </div>
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
-                <img
+                <Image
                   className="img-fluid rounded"
                   src="/img/service-4.jpg"
                   alt="Application Development"
+                  width={600}
+                  height={350}
                 />
                 <a href="/expertise/application-development">
                   <i className="fa fa-link fa-3x text-primary"></i>

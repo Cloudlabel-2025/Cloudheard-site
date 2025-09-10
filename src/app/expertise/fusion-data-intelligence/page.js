@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function Fusiondata() {
   const [isClient, setIsClient] = useState(false);
@@ -15,7 +16,7 @@ export default function Fusiondata() {
   if (!isClient) return null;
 
   return (
-     <>
+    <>
       <div
         suppressHydrationWarning
         className="container-fluid page-header mb-5 wow fadeIn shadow-sm"
@@ -37,7 +38,7 @@ export default function Fusiondata() {
                 <a href="#">Home</a>
               </li>
               <li className="breadcrumb-item active" aria-current="page">
-               Fusion Data Intelligence
+                Fusion Data Intelligence
               </li>
             </ol>
           </nav>
@@ -52,8 +53,8 @@ export default function Fusiondata() {
           <h3 className="display-5 mb-2">Fusion Data Intelligence</h3>
 
           <p className="mb-4">
-            Turn data into decisions with clarity. 
-Cloudheard powers reporting, compliance, and analytics with FDI. 
+            Turn data into decisions with clarity. Cloudheard powers reporting,
+            compliance, and analytics with FDI.
           </p>
         </div>
         <div className="m-3 p-3 row rounded shadow-lg ">
@@ -69,25 +70,32 @@ Cloudheard powers reporting, compliance, and analytics with FDI.
           <div className="col-xl-6 p-5 animated slideInLeft">
             <ul>
               <li>
-                Oracle Fusion Data Intelligence provides a data warehouse layer and prebuilt analytics on HCM and ERP data. {" "}
+                Oracle Fusion Data Intelligence provides a data warehouse layer
+                and prebuilt analytics on HCM and ERP data.{" "}
               </li>
               <li>
-                It supports reporting, compliance, pay transparency, and advanced workforce and financial analytics. {" "}
+                It supports reporting, compliance, pay transparency, and
+                advanced workforce and financial analytics.{" "}
               </li>
               <li>
-               Cloudheard enables clients to leverage FDI for accurate insights by ensuring proper data mapping and governance. {" "}
+                Cloudheard enables clients to leverage FDI for accurate insights
+                by ensuring proper data mapping and governance.{" "}
               </li>
               <li>
-               We bring expertise in harmonising job structures, hierarchies, and data models for meaningful analytics. 
+                We bring expertise in harmonising job structures, hierarchies,
+                and data models for meaningful analytics.
               </li>
               <li>
-                Our approach reduces rework by clarifying scope upfront and validating data during implementation. {" "}
+                Our approach reduces rework by clarifying scope upfront and
+                validating data during implementation.{" "}
               </li>
               <li>
-                With Cloudheard, you turn Oracle data into actionable intelligence cost-effectively. {" "}
+                With Cloudheard, you turn Oracle data into actionable
+                intelligence cost-effectively.{" "}
               </li>
               <li>
-                Recommended Icon/Visuals: 📊 Analytics dashboard, pie/bar chart, or magnifying glass over data. {" "}
+                Recommended Icon/Visuals: 📊 Analytics dashboard, pie/bar chart,
+                or magnifying glass over data.{" "}
               </li>
             </ul>
           </div>
@@ -114,10 +122,12 @@ Cloudheard powers reporting, compliance, and analytics with FDI.
             {/* Original 4 items */}
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
-                <img
+                <Image
                   className="img-fluid rounded"
                   src="/img/service-1.jpg"
                   alt="Oracle HCM Fusion"
+                  width={600}
+                  height={350}
                 />
                 <a href="/expertise/cloud-hcm">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -129,10 +139,12 @@ Cloudheard powers reporting, compliance, and analytics with FDI.
             </div>
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
-                <img
+                <Image
                   className="img-fluid rounded"
                   src="/img/service-2.jpg"
                   alt="Oracle ERP Fusion"
+                  width={600}
+                  height={350}
                 />
                 <a href="/expertise/cloud-erp">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -144,10 +156,12 @@ Cloudheard powers reporting, compliance, and analytics with FDI.
             </div>
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
-                <img
+                <Image
                   className="img-fluid rounded"
                   src="/img/service-3.jpg"
                   alt="On Premises to Cloud"
+                  width={600}
+                  height={350}
                 />
                 <a href="/expertise/on-prem-to-cloud">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -159,10 +173,12 @@ Cloudheard powers reporting, compliance, and analytics with FDI.
             </div>
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
-                <img
+                <Image
                   className="img-fluid rounded"
                   src="/img/service-4.jpg"
                   alt="Oracle Integration Cloud"
+                  width={600}
+                  height={350}
                 />
                 <a href="/expertise/oracle-integration-cloud">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -176,10 +192,12 @@ Cloudheard powers reporting, compliance, and analytics with FDI.
             {/* Additional 4 items */}
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
-                <img
+                <Image
                   className="img-fluid rounded"
                   src="/img/service-1.jpg"
                   alt="Fusion Data Intelligence"
+                  width={600}
+                  height={350}
                 />
                 <a href="/expertise/fusion-data-intelligence">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -191,10 +209,12 @@ Cloudheard powers reporting, compliance, and analytics with FDI.
             </div>
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
-                <img
+                <Image
                   className="img-fluid rounded"
                   src="/img/service-2.jpg"
                   alt="Automation Testing"
+                  width={600}
+                  height={350}
                 />
                 <a href="/expertise/automation-testing">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -206,10 +226,12 @@ Cloudheard powers reporting, compliance, and analytics with FDI.
             </div>
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
-                <img
+                <Image
                   className="img-fluid rounded"
                   src="/img/service-3.jpg"
                   alt="Version Control System"
+                  width={600}
+                  height={350}
                 />
                 <a href="/expertise/version-control-system">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -221,10 +243,12 @@ Cloudheard powers reporting, compliance, and analytics with FDI.
             </div>
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
-                <img
+                <Image
                   className="img-fluid rounded"
                   src="/img/service-4.jpg"
                   alt="Application Development"
+                  width={600}
+                  height={350}
                 />
                 <a href="/expertise/application-development">
                   <i className="fa fa-link fa-3x text-primary"></i>

@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build --turbopack --no-lint",
+    "build": "next build --turbopack",
     "start": "next start",
-    "lint": "next lint --max-warnings=0"
+    "lint": "eslint"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
@@ -20,4 +20,4 @@
     "eslint": "^9",
     "eslint-config-next": "15.5.2"
   }
-}
+}   

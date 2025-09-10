@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function Versioncontrol() {
   const [isClient, setIsClient] = useState(false);
@@ -37,7 +38,7 @@ export default function Versioncontrol() {
                 <a href="#">Home</a>
               </li>
               <li className="breadcrumb-item active" aria-current="page">
-                Version Control for Oracle Fusion 
+                Version Control for Oracle Fusion
               </li>
             </ol>
           </nav>
@@ -52,12 +53,14 @@ export default function Versioncontrol() {
           <h3 className="display-5 mb-2">Version Control for Oracle Fusion </h3>
 
           <p className="mb-4">
-           Keep configurations clean, controlled, and auditable. 
-Cloudheard brings structure and governance to your Oracle environments. 
+            Keep configurations clean, controlled, and auditable. Cloudheard
+            brings structure and governance to your Oracle environments.
           </p>
         </div>
         <div className="m-3 p-3 row rounded shadow-lg ">
-          <h3 className="text-center mt-2">Version Control for Oracle Fusion </h3>
+          <h3 className="text-center mt-2">
+            Version Control for Oracle Fusion{" "}
+          </h3>
           <div className="mt-3 mb-2 col-xl-5  animated slideInRight">
             <img
               className="rounded mt-4"
@@ -69,25 +72,32 @@ Cloudheard brings structure and governance to your Oracle environments.
           <div className="col-xl-6 p-5 animated slideInLeft">
             <ul>
               <li>
-               Version control in Oracle Fusion tracks configuration changes across environments to maintain consistency and auditability. {" "}
+                Version control in Oracle Fusion tracks configuration changes
+                across environments to maintain consistency and auditability.{" "}
               </li>
               <li>
-                It prevents errors caused by uncontrolled changes and simplifies environment management. {" "}
+                It prevents errors caused by uncontrolled changes and simplifies
+                environment management.{" "}
               </li>
               <li>
-                Cloudheard implements structured version control practices tailored for Oracle Cloud clients. {" "}
+                Cloudheard implements structured version control practices
+                tailored for Oracle Cloud clients.{" "}
               </li>
               <li>
-                We use automated trackers, controlled migrations, and fit-gap analysis to reduce rework.
+                We use automated trackers, controlled migrations, and fit-gap
+                analysis to reduce rework.
               </li>
               <li>
-               Our offshore delivery model provides efficiency, while our Architects ensure governance and security. {" "}
+                Our offshore delivery model provides efficiency, while our
+                Architects ensure governance and security.{" "}
               </li>
               <li>
-               With Cloudheard, version control becomes a safeguard against costly errors and compliance risks. {" "}
+                With Cloudheard, version control becomes a safeguard against
+                costly errors and compliance risks.{" "}
               </li>
               <li>
-               Recommended Icon/Visuals: 🔄 Branching tree (like Git), document with refresh arrows, or stacked layers. {" "}
+                Recommended Icon/Visuals: 🔄 Branching tree (like Git), document
+                with refresh arrows, or stacked layers.{" "}
               </li>
             </ul>
           </div>
@@ -114,10 +124,12 @@ Cloudheard brings structure and governance to your Oracle environments.
             {/* Original 4 items */}
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
-                <img
+                <Image
                   className="img-fluid rounded"
                   src="/img/service-1.jpg"
                   alt="Oracle HCM Fusion"
+                  width={600}
+                  height={350}
                 />
                 <a href="/expertise/cloud-hcm">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -129,10 +141,12 @@ Cloudheard brings structure and governance to your Oracle environments.
             </div>
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
-                <img
+                <Image
                   className="img-fluid rounded"
                   src="/img/service-2.jpg"
                   alt="Oracle ERP Fusion"
+                  width={600}
+                  height={350}
                 />
                 <a href="/expertise/cloud-erp">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -144,10 +158,12 @@ Cloudheard brings structure and governance to your Oracle environments.
             </div>
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
-                <img
+                <Image
                   className="img-fluid rounded"
                   src="/img/service-3.jpg"
                   alt="On Premises to Cloud"
+                  width={600}
+                  height={350}
                 />
                 <a href="/expertise/on-prem-to-cloud">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -159,10 +175,12 @@ Cloudheard brings structure and governance to your Oracle environments.
             </div>
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
-                <img
+                <Image
                   className="img-fluid rounded"
                   src="/img/service-4.jpg"
                   alt="Oracle Integration Cloud"
+                  width={600}
+                  height={350}
                 />
                 <a href="/expertise/oracle-integration-cloud">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -176,10 +194,12 @@ Cloudheard brings structure and governance to your Oracle environments.
             {/* Additional 4 items */}
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
-                <img
+                <Image
                   className="img-fluid rounded"
                   src="/img/service-1.jpg"
                   alt="Fusion Data Intelligence"
+                  width={600}
+                  height={350}
                 />
                 <a href="/expertise/fusion-data-intelligence">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -191,10 +211,12 @@ Cloudheard brings structure and governance to your Oracle environments.
             </div>
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
-                <img
+                <Image
                   className="img-fluid rounded"
                   src="/img/service-2.jpg"
                   alt="Automation Testing"
+                  width={600}
+                  height={350}
                 />
                 <a href="/expertise/automation-testing">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -206,10 +228,12 @@ Cloudheard brings structure and governance to your Oracle environments.
             </div>
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
-                <img
+                <Image
                   className="img-fluid rounded"
                   src="/img/service-3.jpg"
                   alt="Version Control System"
+                  width={600}
+                  height={350}
                 />
                 <a href="/expertise/version-control-system">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -221,10 +245,12 @@ Cloudheard brings structure and governance to your Oracle environments.
             </div>
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
-                <img
+                <Image
                   className="img-fluid rounded"
                   src="/img/service-4.jpg"
                   alt="Application Development"
+                  width={600}
+                  height={350}
                 />
                 <a href="/expertise/application-development">
                   <i className="fa fa-link fa-3x text-primary"></i>

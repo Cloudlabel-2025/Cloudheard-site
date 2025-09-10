@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function Implementation() {
   const [isClient, setIsClient] = useState(false);
@@ -60,46 +61,52 @@ export default function Implementation() {
         <div className="m-3 p-3 row rounded shadow-lg ">
           <h3 className="text-center mt-2">Cloud Implementation Services</h3>
           <div className="mt-3 mb-2 col-xl-5  animated slideInRight">
-            <img
+            <Image
               className="rounded mt-4"
               src="/img/Expertise-OraclecloudHCM.jpg"
-              style={{ height: "350px", width: "600px" }}
+              height={350}
+              width={600}
               alt="cloud-hcm"
             />
           </div>
           <div className="col-xl-6 p-5 animated slideInLeft">
             <ul>
               <ol>
-               <strong>Our Implementation Framework: </strong> 
+                <strong>Our Implementation Framework: </strong>
               </ol>
               <li>
-                Pre-Planning Phase → Aligning stakeholders, timelines, and success metrics. {" "}
+                Pre-Planning Phase → Aligning stakeholders, timelines, and
+                success metrics.{" "}
               </li>
               <li>
-                 Requirements Gathering & Scope Alignment → Preventing rework through accurate fit-gap analysis.{" "}
+                Requirements Gathering & Scope Alignment → Preventing rework
+                through accurate fit-gap analysis.{" "}
               </li>
               <li>
-                Pilot Demo → Early validation of solution design with business teams. {" "}
+                Pilot Demo → Early validation of solution design with business
+                teams.{" "}
               </li>
               <li>
-                Configuration → Agile, offshore-led build with expert oversight. 
+                Configuration → Agile, offshore-led build with expert oversight.
               </li>
               <li>
-               Second Pilot → Refined demo showcasing aligned functionality. {" "}
+                Second Pilot → Refined demo showcasing aligned functionality.{" "}
               </li>
               <li>
-                User Acceptance Testing (UAT) → Ensuring business readiness and process integrity. {" "}
+                User Acceptance Testing (UAT) → Ensuring business readiness and
+                process integrity.{" "}
+              </li>
+              <li>Go-Live → Smooth, structured transition into production. </li>
+              <li>
+                Our Commitment: Every implementation is backed by 2 months of
+                free Hypercare support (or 200 hours of assistance) — ensuring
+                stability, issue resolution, and user confidence post-go-live.{" "}
               </li>
               <li>
-               Go-Live → Smooth, structured transition into production.{" "}
+                With Cloudheard, implementation isn’t just about go-live — it’s
+                about delivering a stable, cost-effective, and business-aligned
+                Oracle Cloud solution from start to finish.{" "}
               </li>
-               <li>
-               Our Commitment: Every implementation is backed by 2 months of free Hypercare support (or 200 hours of assistance) — ensuring stability, issue resolution, and user confidence post-go-live.{" "}
-              </li>
-               <li>
-               With Cloudheard, implementation isn’t just about go-live — it’s about delivering a stable, cost-effective, and business-aligned Oracle Cloud solution from start to finish. {" "}
-              </li>
-              
             </ul>
           </div>
         </div>
@@ -125,10 +132,12 @@ export default function Implementation() {
             {/* Original 4 items */}
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
-                <img
+                <Image
                   className="img-fluid rounded"
                   src="/img/service-1.jpg"
                   alt="Oracle HCM Fusion"
+                  width={600}
+                  height={350}
                 />
                 <a href="/expertise/cloud-hcm">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -140,10 +149,12 @@ export default function Implementation() {
             </div>
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
-                <img
+                <Image
                   className="img-fluid rounded"
                   src="/img/service-2.jpg"
                   alt="Oracle ERP Fusion"
+                  width={600}
+                  height={350}
                 />
                 <a href="/expertise/cloud-erp">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -155,10 +166,12 @@ export default function Implementation() {
             </div>
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
-                <img
+                <Image
                   className="img-fluid rounded"
                   src="/img/service-3.jpg"
                   alt="On Premises to Cloud"
+                  width={600}
+                  height={350}
                 />
                 <a href="/expertise/on-prem-to-cloud">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -170,10 +183,12 @@ export default function Implementation() {
             </div>
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
-                <img
+                <Image
                   className="img-fluid rounded"
                   src="/img/service-4.jpg"
                   alt="Oracle Integration Cloud"
+                  width={600}
+                  height={350}
                 />
                 <a href="/expertise/oracle-integration-cloud">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -187,10 +202,12 @@ export default function Implementation() {
             {/* Additional 4 items */}
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
-                <img
+                <Image
                   className="img-fluid rounded"
                   src="/img/service-1.jpg"
                   alt="Fusion Data Intelligence"
+                  width={600}
+                  height={350}
                 />
                 <a href="/expertise/fusion-data-intelligence">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -202,17 +219,22 @@ export default function Implementation() {
             </div>
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
-                <img
+                <Image
                   className="img-fluid rounded"
                   src="/img/service-2.jpg"
                   alt="Automation Testing"
+                  width={600}
+                  height={350}
                 />
                 <a href="/expertise/automation-testing">
                   <i className="fa fa-link fa-3x text-primary"></i>
                 </a>
               </div>
               <div className="project-title">
-                <h4 className="mb-0"> Department-Tree & Organisation Framework</h4>
+                <h4 className="mb-0">
+                  {" "}
+                  Department-Tree & Organisation Framework
+                </h4>
               </div>
             </div>
           </div>
