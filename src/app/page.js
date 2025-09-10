@@ -42,7 +42,7 @@ export default function Home() {
                       <p className="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown">
                         Your Oracle Cloud Implementation Experts
                       </p>
-                      <h1 className="display-3 mb-4 animated slideInDown">
+                      <h1 className="display-3 mb-4 animated slideInDown text-dark">
                        “Big-firm expertise. Boutique-firm attention. Offshore pricing.”
                       </h1>
                       <a href="#" className="btn btn-primary py-3 px-5 animated slideInDown">
@@ -67,7 +67,7 @@ export default function Home() {
                       <p className="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown">
                         Your Oracle Implementation Experts
                       </p>
-                      <h1 className="display-5 mb-4 animated slideInDown">
+                      <h1 className="display-5 mb-4 animated slideInDown text-dark">
                         Empowering <span className="text-primary">Businesses</span> with scalable, secure and innovative solutions
                       </h1>
                       <a href="#" className="btn btn-primary py-3 px-5 animated slideInDown">
