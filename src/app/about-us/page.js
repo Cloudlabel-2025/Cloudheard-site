@@ -52,7 +52,7 @@ function Aboutus() {
           {/* Who We Are */}
           <div className="col-md-6">
             <div className="card custom-hover-card h-100 p-4 border-0 shadow-sm">
-              <h4 className="fw-bold mb-3 text-primary">Who We Are</h4>
+              <h4 className="fw-bold mb-3">Who We Are</h4>
               <ul className="list-style-disc ps-3">
                 <li>
                   Cloudheard Consultancy is a boutique Oracle Cloud partner.
@@ -92,7 +92,7 @@ function Aboutus() {
           {/* What We Do */}
           <div className="col-md-6">
             <div className="card custom-hover-card h-100 p-4 border-0 shadow-sm">
-              <h4 className="fw-bold mb-3 text-primary">What We Do</h4>
+              <h4 className="fw-bold mb-3 ">What We Do</h4>
               <ul className="list-style-disc ps-3">
                 <li>
                   We specialize in Oracle Fusion Cloud solutions that empower

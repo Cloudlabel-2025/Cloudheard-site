@@ -17,23 +17,78 @@ export default function Managed() {
     <>
       <div
         suppressHydrationWarning
-        className="container-fluid page-header mb-5 wow fadeIn"
+        className="container-fluid page-header mb-5 wow fadeIn shadow-sm"
         data-wow-delay="0.1s"
       >
-        <div className="container">
-          <h1 className="display-5 mb-4 animated slideInDown">
-            Cloud Managed Services
-          </h1>
+        <div className="container ">
+          <h1 className="display-5 mb-4 animated slideInDown">Our Services</h1>
+
+          <p className="mb-2">
+            At Cloudheard Consultancy, we bring 30+ years of combined cloud
+            experience and <br /> 3 years of proven delivery to help
+            organisations simplify, optimise, and scale with <br />
+            Oracle Cloud and beyond.
+          </p>
+
           <nav aria-label="breadcrumb" className="animated slideInDown">
             <ol className="breadcrumb mb-0">
               <li className="breadcrumb-item">
-                <a href="/">Home</a>
+                <a href="#">Home</a>
               </li>
               <li className="breadcrumb-item active" aria-current="page">
-                Cloud Managed Services
+                Oracle Fusion Managed Services  
               </li>
             </ol>
           </nav>
+        </div>
+      </div>
+      <div className="cointainer-fluid">
+        <div
+          className="text-center mx-auto wow fadeInUp"
+          data-wow-delay="0.1s"
+          style={{ maxWidth: "600px" }}
+        >
+          <h3 className="display-5 mb-2">Oracle Fusion Managed Services </h3>
+
+          <p className="mb-4">
+           At Cloudheard, we provide comprehensive Oracle Fusion Managed Services designed to keep your Cloud applications stable, optimised, and continuously improving. 
+          </p>
+        </div>
+        <div className="m-3 p-3 row rounded shadow-lg ">
+          <h3 className="text-center mt-2">Oracle Fusion Managed Services  </h3>
+          <div className="mt-3 mb-2 col-xl-5  animated slideInRight">
+            <img
+              className="rounded mt-4"
+              src="/img/Expertise-OraclecloudHCM.jpg"
+              style={{ height: "350px", width: "600px" }}
+              alt="cloud-hcm"
+            />
+          </div>
+          <div className="col-xl-6 p-5 animated slideInLeft">
+            <ul>
+              <ol>
+               <strong> Key components of our Managed Services include: </strong> 
+              </ol>
+              <li>
+              Upgrades & Regression Testing → Ensuring business processes remain intact with every Oracle quarterly release.  {" "}
+              </li>
+              <li>
+                Patch Deployment & Monitoring → Seamless patch application with proactive validation and issue resolution. {" "}
+              </li>
+              <li>
+               Technical Expertise → Support for customisations, extensions, and integrations with ongoing optimisation.  {" "}
+              </li>
+              <li>
+                Continuous Improvements (ITIL-based) → Structured service delivery using ITIL best practices for stability and efficiency. 
+              </li>
+              <li>
+               What sets Cloudheard apart? We begin every engagement with a Free 5-week Health Check of your configuration and Fusion application. This helps us identify risks, gaps, and opportunities before Managed Services officially start — ensuring maximum value and minimal surprises for our clients.  {" "}
+              </li>
+              <li>
+              With Cloudheard, you get a partner who goes beyond support — we deliver stability, cost savings, and continuous innovation in your Oracle Cloud journey. {" "}
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div className="container-xxl py-5">
@@ -50,20 +105,19 @@ export default function Managed() {
               We Have Completed Latest Projects
             </h1>
           </div>
-
           <div
             className="owl-carousel project-carousel wow fadeInUp"
             data-wow-delay="0.3s"
           >
-            {/* 6 Project Items */}
+            {/* Original 4 items */}
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
                 <img
                   className="img-fluid rounded"
                   src="/img/service-1.jpg"
-                  alt="Cloud Managed Services"
+                  alt="Oracle HCM Fusion"
                 />
-                <a href="/services/managed-services">
+                <a href="/expertise/cloud-hcm">
                   <i className="fa fa-link fa-3x text-primary"></i>
                 </a>
               </div>
@@ -71,15 +125,14 @@ export default function Managed() {
                 <h4 className="mb-0">Cloud Managed Services</h4>
               </div>
             </div>
-
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
                 <img
                   className="img-fluid rounded"
                   src="/img/service-2.jpg"
-                  alt="Cloud Implementation Services"
+                  alt="Oracle ERP Fusion"
                 />
-                <a href="/services/implementation-services">
+                <a href="/expertise/cloud-erp">
                   <i className="fa fa-link fa-3x text-primary"></i>
                 </a>
               </div>
@@ -87,15 +140,14 @@ export default function Managed() {
                 <h4 className="mb-0">Cloud Implementation Services</h4>
               </div>
             </div>
-
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
                 <img
                   className="img-fluid rounded"
                   src="/img/service-3.jpg"
-                  alt="Cloud Integration Services"
+                  alt="On Premises to Cloud"
                 />
-                <a href="/services/integration-services">
+                <a href="/expertise/on-prem-to-cloud">
                   <i className="fa fa-link fa-3x text-primary"></i>
                 </a>
               </div>
@@ -103,31 +155,31 @@ export default function Managed() {
                 <h4 className="mb-0">Cloud Integration Services</h4>
               </div>
             </div>
-
-            <div className="project-item pe-5 pb-5">
-              <div className="project-img mb-3">
-                <img
-                  className="img-fluid rounded"
-                  src="/img/service-1.jpg"
-                  alt="Healthcheck-Oracle Fusion"
-                />
-                <a href="/services/healthcheck-oracle">
-                  <i className="fa fa-link fa-3x text-primary"></i>
-                </a>
-              </div>
-              <div className="project-title">
-                <h4 className="mb-0">Healthcheck - Oracle Fusion</h4>
-              </div>
-            </div>
-
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
                 <img
                   className="img-fluid rounded"
                   src="/img/service-4.jpg"
-                  alt="Healthcheck-FDI"
+                  alt="Oracle Integration Cloud"
                 />
-                <a href="/services/healthcheck-fdi">
+                <a href="/expertise/oracle-integration-cloud">
+                  <i className="fa fa-link fa-3x text-primary"></i>
+                </a>
+              </div>
+              <div className="project-title">
+                <h4 className="mb-0">Healthcheck - Oracle Fusion </h4>
+              </div>
+            </div>
+
+            {/* Additional 4 items */}
+            <div className="project-item pe-5 pb-5">
+              <div className="project-img mb-3">
+                <img
+                  className="img-fluid rounded"
+                  src="/img/service-1.jpg"
+                  alt="Fusion Data Intelligence"
+                />
+                <a href="/expertise/fusion-data-intelligence">
                   <i className="fa fa-link fa-3x text-primary"></i>
                 </a>
               </div>
@@ -135,22 +187,19 @@ export default function Managed() {
                 <h4 className="mb-0">FDI - Healthcheck</h4>
               </div>
             </div>
-
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
                 <img
                   className="img-fluid rounded"
-                  src="/img/service-4.jpg"
-                  alt="Department-tree"
+                  src="/img/service-2.jpg"
+                  alt="Automation Testing"
                 />
-                <a href="/services/department-tree">
+                <a href="/expertise/automation-testing">
                   <i className="fa fa-link fa-3x text-primary"></i>
                 </a>
               </div>
               <div className="project-title">
-                <h4 className="mb-0">
-                  Department-Tree & Organisation Framework
-                </h4>
+                <h4 className="mb-0">Department-Tree & Organisation Framework</h4>
               </div>
             </div>
           </div>

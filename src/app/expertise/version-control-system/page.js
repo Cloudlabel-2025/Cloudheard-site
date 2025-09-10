@@ -18,23 +18,79 @@ export default function Versioncontrol() {
     <>
       <div
         suppressHydrationWarning
-        className="container-fluid page-header mb-5 wow fadeIn"
+        className="container-fluid page-header mb-5 wow fadeIn shadow-sm"
         data-wow-delay="0.1s"
       >
-        <div className="container">
-          <h1 className="display-5 mb-4 animated slideInDown">
-            Version Control System
-          </h1>
+        <div className="container ">
+          <h1 className="display-5 mb-4 animated slideInDown">Our Expertise</h1>
+
+          <p className="mb-2">
+            At Cloudheard Consultancy, we bring 30+ years of combined cloud
+            experience and <br /> 3 years of proven delivery to help
+            organisations simplify, optimise, and scale with <br />
+            Oracle Cloud and beyond.
+          </p>
+
           <nav aria-label="breadcrumb" className="animated slideInDown">
             <ol className="breadcrumb mb-0">
               <li className="breadcrumb-item">
-                <a href="/">Home</a>
+                <a href="#">Home</a>
               </li>
               <li className="breadcrumb-item active" aria-current="page">
-                Version Control System
+                Version Control for Oracle Fusion 
               </li>
             </ol>
           </nav>
+        </div>
+      </div>
+      <div className="cointainer-fluid">
+        <div
+          className="text-center mx-auto wow fadeInUp"
+          data-wow-delay="0.1s"
+          style={{ maxWidth: "600px" }}
+        >
+          <h3 className="display-5 mb-2">Version Control for Oracle Fusion </h3>
+
+          <p className="mb-4">
+           Keep configurations clean, controlled, and auditable. 
+Cloudheard brings structure and governance to your Oracle environments. 
+          </p>
+        </div>
+        <div className="m-3 p-3 row rounded shadow-lg ">
+          <h3 className="text-center mt-2">Version Control for Oracle Fusion </h3>
+          <div className="mt-3 mb-2 col-xl-5  animated slideInRight">
+            <img
+              className="rounded mt-4"
+              src="/img/Expertise-OraclecloudHCM.jpg"
+              style={{ height: "350px", width: "600px" }}
+              alt="cloud-hcm"
+            />
+          </div>
+          <div className="col-xl-6 p-5 animated slideInLeft">
+            <ul>
+              <li>
+               Version control in Oracle Fusion tracks configuration changes across environments to maintain consistency and auditability. {" "}
+              </li>
+              <li>
+                It prevents errors caused by uncontrolled changes and simplifies environment management. {" "}
+              </li>
+              <li>
+                Cloudheard implements structured version control practices tailored for Oracle Cloud clients. {" "}
+              </li>
+              <li>
+                We use automated trackers, controlled migrations, and fit-gap analysis to reduce rework.
+              </li>
+              <li>
+               Our offshore delivery model provides efficiency, while our Architects ensure governance and security. {" "}
+              </li>
+              <li>
+               With Cloudheard, version control becomes a safeguard against costly errors and compliance risks. {" "}
+              </li>
+              <li>
+               Recommended Icon/Visuals: 🔄 Branching tree (like Git), document with refresh arrows, or stacked layers. {" "}
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div className="container-xxl py-5">

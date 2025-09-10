@@ -18,23 +18,86 @@ export default function Clouderp() {
     <>
       <div
         suppressHydrationWarning
-        className="container-fluid page-header mb-5 wow fadeIn"
+        className="container-fluid page-header mb-5 wow fadeIn shadow-sm"
         data-wow-delay="0.1s"
       >
-        <div className="container">
-          <h1 className="display-5 mb-4 animated slideInDown">
-            Oracle Cloud ERP
-          </h1>
+        <div className="container ">
+          <h1 className="display-5 mb-4 animated slideInDown">Our Expertise</h1>
+
+          <p className="mb-2">
+            At Cloudheard Consultancy, we bring 30+ years of combined cloud
+            experience and <br /> 3 years of proven delivery to help
+            organisations simplify, optimise, and scale with <br />
+            Oracle Cloud and beyond.
+          </p>
+
           <nav aria-label="breadcrumb" className="animated slideInDown">
             <ol className="breadcrumb mb-0">
               <li className="breadcrumb-item">
-                <a href="/">Home</a>
+                <a href="#">Home</a>
               </li>
               <li className="breadcrumb-item active" aria-current="page">
-                Oracle Cloud ERP
+                Oracle ERP Fusion
               </li>
             </ol>
           </nav>
+        </div>
+      </div>
+      <div className="cointainer-fluid">
+        <div
+          className="text-center mx-auto wow fadeInUp"
+          data-wow-delay="0.1s"
+          style={{ maxWidth: "600px" }}
+        >
+          <h3 className="display-5 mb-2">Oracle ERP Fusion</h3>
+
+          <p className="mb-4">
+            Finance, procurement, and operations in one Cloud suite. We
+            implement ERP Fusion with precision, reducing risks and costs.{" "}
+          </p>
+        </div>
+        <div className="m-3 p-3 row rounded shadow-lg ">
+          <h3 className="text-center mt-2">Oracle ERP Fusion</h3>
+          <div className="mt-3 mb-2 col-xl-5  animated slideInRight">
+            <img
+              className="rounded mt-4"
+              src="/img/Expertise-OraclecloudHCM.jpg"
+              style={{ height: "350px", width: "600px" }}
+              alt="cloud-hcm"
+            />
+          </div>
+          <div className="col-xl-6 p-5 animated slideInLeft">
+            <ul>
+              <li>
+                Oracle ERP Fusion provides a full suite of finance, procurement,
+                projects, and supply chain capabilities in the Cloud.{" "}
+              </li>
+              <li>
+                It streamlines financial reporting, automates procurement, and
+                enables real-time decision making.{" "}
+              </li>
+              <li>
+                Cloudheard helps organisations transition from legacy finance
+                systems to ERP Fusion with minimal disruption.{" "}
+              </li>
+              <li>
+                We emphasise proper scope definition and health checks to reduce
+                errors and downstream issues.
+              </li>
+              <li>
+                Our cost-effective model blends offshore execution with
+                expert-led governance, ensuring reliability and savings.{" "}
+              </li>
+              <li>
+                With Cloudheard, ERP implementations are faster, scalable, and
+                built to support long-term growth.{" "}
+              </li>
+              <li>
+                Recommended Icon/Visuals: 💰 Finance ledger/book, bar chart, or
+                coins with gear.{" "}
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div className="container-xxl py-5">

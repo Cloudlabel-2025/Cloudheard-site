@@ -18,10 +18,10 @@ export default function Cloudhcm() {
     <>
       <div
         suppressHydrationWarning
-        className="container-fluid page-header mb-5 wow fadeIn"
+        className="container-fluid page-header mb-5 wow fadeIn shadow-sm"
         data-wow-delay="0.1s"
       >
-        <div className="container">
+        <div className="container ">
           <h1 className="display-5 mb-4 animated slideInDown">Our Expertise</h1>
 
           <p className="mb-2">
@@ -37,7 +37,7 @@ export default function Cloudhcm() {
                 <a href="#">Home</a>
               </li>
               <li className="breadcrumb-item active" aria-current="page">
-                Oracle Cloud HCM
+                Oracle HCM Fusion
               </li>
             </ol>
           </nav>
@@ -49,20 +49,36 @@ export default function Cloudhcm() {
           data-wow-delay="0.1s"
           style={{ maxWidth: "600px" }}
         >
-          <h3 className="display-5 mb-2">Oracle HCM Cloud</h3>
+          <h3 className="display-5 mb-2">Oracle HCM Fusion</h3>
+          
+          <p className="mb-4">Transform HR into seamless, compliant experience.Cloudheard delivers HCM solutions that fit your business perfectly, cost effectively.</p>
+       
         </div>
-        <div className="m-1 row">
-          <div className="col-xl-9">
-            <img
+        <div className="m-3 p-3 row rounded shadow-lg ">
+          <h3 className="text-center mt-2">Oracle HCM Fusion</h3>
+          <div className="mt-3 mb-2 col-xl-5  animated slideInRight">
+            <img className="rounded mt-4"
               src="/img/Expertise-OraclecloudHCM.jpg"
-              style={{ height: "450px", width: "750px" }}
+              style={{ height: "350px", width: "600px" }}
               alt="cloud-hcm"
             />
-          </div>
+           </div>
+         <div className="col-xl-6 p-5 animated slideInLeft">
+          
+          <ul >
+            <li>Oracle HCM Fusion is a comprehensive cloud-based HR solution covering core HR, payroll, absence, talent, and workforce management. </li>
+            <li >It enables organisations to centralise HR processes, <br/>improve compliance, and deliver a unified employee experience.</li>
+            <li>Cloudheard has delivered HCM implementations across industries, ensuring accurate requirement gathering to avoid costly rework.  </li>
+            <li>Our team focuses on configuring HR processes that align with your organisation’s structure and local compliance needs.  </li>
+            <li>With our offshore model guided by senior Architects, you gain high-quality delivery at a fraction of typical costs. </li>
+            <li>We make Oracle HCM Fusion work as a perfect fit-gap solution tailored to your business. </li>
+            <li>Recommended Icon/Visuals: 👥 People / HR silhouette, employee profile card, or group of users. </li>
 
-          <div className="col-xl-3">
-            <h1>hello expertise</h1>
-          </div>
+          </ul>
+            
+           </div>
+            
+         
         </div>
       </div>
       <div className="container-xxl py-5">

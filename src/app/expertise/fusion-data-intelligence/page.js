@@ -15,26 +15,82 @@ export default function Fusiondata() {
   if (!isClient) return null;
 
   return (
-    <>
+     <>
       <div
         suppressHydrationWarning
-        className="container-fluid page-header mb-5 wow fadeIn"
+        className="container-fluid page-header mb-5 wow fadeIn shadow-sm"
         data-wow-delay="0.1s"
       >
-        <div className="container">
-          <h1 className="display-5 mb-4 animated slideInDown">
-            Fusion Data Intelligence
-          </h1>
+        <div className="container ">
+          <h1 className="display-5 mb-4 animated slideInDown">Our Expertise</h1>
+
+          <p className="mb-2">
+            At Cloudheard Consultancy, we bring 30+ years of combined cloud
+            experience and <br /> 3 years of proven delivery to help
+            organisations simplify, optimise, and scale with <br />
+            Oracle Cloud and beyond.
+          </p>
+
           <nav aria-label="breadcrumb" className="animated slideInDown">
             <ol className="breadcrumb mb-0">
               <li className="breadcrumb-item">
-                <a href="/">Home</a>
+                <a href="#">Home</a>
               </li>
               <li className="breadcrumb-item active" aria-current="page">
-                Fusion Data Intelligence
+               Fusion Data Intelligence
               </li>
             </ol>
           </nav>
+        </div>
+      </div>
+      <div className="cointainer-fluid">
+        <div
+          className="text-center mx-auto wow fadeInUp"
+          data-wow-delay="0.1s"
+          style={{ maxWidth: "600px" }}
+        >
+          <h3 className="display-5 mb-2">Fusion Data Intelligence</h3>
+
+          <p className="mb-4">
+            Turn data into decisions with clarity. 
+Cloudheard powers reporting, compliance, and analytics with FDI. 
+          </p>
+        </div>
+        <div className="m-3 p-3 row rounded shadow-lg ">
+          <h3 className="text-center mt-2">Fusion Data Intelligence</h3>
+          <div className="mt-3 mb-2 col-xl-5  animated slideInRight">
+            <img
+              className="rounded mt-4"
+              src="/img/Expertise-OraclecloudHCM.jpg"
+              style={{ height: "350px", width: "600px" }}
+              alt="cloud-hcm"
+            />
+          </div>
+          <div className="col-xl-6 p-5 animated slideInLeft">
+            <ul>
+              <li>
+                Oracle Fusion Data Intelligence provides a data warehouse layer and prebuilt analytics on HCM and ERP data. {" "}
+              </li>
+              <li>
+                It supports reporting, compliance, pay transparency, and advanced workforce and financial analytics. {" "}
+              </li>
+              <li>
+               Cloudheard enables clients to leverage FDI for accurate insights by ensuring proper data mapping and governance. {" "}
+              </li>
+              <li>
+               We bring expertise in harmonising job structures, hierarchies, and data models for meaningful analytics. 
+              </li>
+              <li>
+                Our approach reduces rework by clarifying scope upfront and validating data during implementation. {" "}
+              </li>
+              <li>
+                With Cloudheard, you turn Oracle data into actionable intelligence cost-effectively. {" "}
+              </li>
+              <li>
+                Recommended Icon/Visuals: 📊 Analytics dashboard, pie/bar chart, or magnifying glass over data. {" "}
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div className="container-xxl py-5">
