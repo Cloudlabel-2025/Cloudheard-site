@@ -553,15 +553,18 @@ h6,
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
-.custom-hover-card:hover h4,
-.custom-hover-card:hover p {
+/* Fix: Target correct tags used in JSX */
+.custom-hover-card:hover p,
+.custom-hover-card:hover i {
   color: #fff !important;
 }
 
-.custom-hover-card h4 {
-  font-size: 1.5rem !important;
+/* Optional: Style for h6 */
+.custom-hover-card h6 {
+  font-size: 1.25rem !important;
   transition: color 0.4s ease !important;
 }
+
 .custom-list {
   list-style-type: disc !important; /* normal bullet */
   padding-left: 1.5rem !important;  /* indent space for bullets */
