@@ -21,12 +21,12 @@ export default function Managed() {
         className="container-fluid page-header mb-5 wow fadeIn shadow-sm"
         data-wow-delay="0.1s"
       >
-        <div className="container ">
+        <div className="container">
           <h1 className="display-5 mb-4 animated slideInDown">Our Services</h1>
 
           <p className="mb-2">
             At Cloudheard Consultancy, we bring 30+ years of combined cloud
-            experience and <br /> 3 years of proven delivery to help
+            experience and <br /> multiple proven deliveries to help
             organisations simplify, optimise, and scale with <br />
             Oracle Cloud and beyond.
           </p>
@@ -43,13 +43,14 @@ export default function Managed() {
           </nav>
         </div>
       </div>
-      <div className="cointainer-fluid">
+
+      <div className="container-fluid">
         <div
           className="text-center mx-auto wow fadeInUp"
           data-wow-delay="0.1s"
           style={{ maxWidth: "600px" }}
         >
-          <h3 className="display-5 mb-2">Oracle Fusion Managed Services </h3>
+          <h3 className="display-5 mb-2">Oracle Fusion Managed Services</h3>
 
           <p className="mb-4">
             At Cloudheard, we provide comprehensive Oracle Fusion Managed
@@ -57,36 +58,37 @@ export default function Managed() {
             and continuously improving.
           </p>
         </div>
-        <div className="m-3 p-3 row rounded shadow-lg ">
-          <h3 className="text-center mt-2">Oracle Fusion Managed Services </h3>
-          <div className="mt-3 mb-2 col-xl-5  animated slideInRight">
+        <div className="m-3 p-3 row rounded shadow-lg">
+          <h3 className="text-center mt-2">Oracle Fusion Managed Services</h3>
+
+          <div className="mt-3 mb-2 col-12 col-xl-5 animated slideInRight">
             <Image
               className="rounded mt-4"
               src="/img/Expertise-OraclecloudHCM.jpg"
-              height={350}
-              width={600}
               alt="cloud-hcm"
+              width={600}
+              height={350}
+              style={{ width: "100%", height: "auto" }}
+              priority
             />
           </div>
-          <div className="col-xl-6 p-5 animated slideInLeft">
+
+          <div className="col-12 col-xl-6 p-5 animated slideInLeft">
             <ul>
               <ol>
-                <strong>
-                  {" "}
-                  Key components of our Managed Services include:{" "}
-                </strong>
+                <strong>Key components of our Managed Services include:</strong>
               </ol>
               <li>
                 Upgrades & Regression Testing → Ensuring business processes
-                remain intact with every Oracle quarterly release.{" "}
+                remain intact with every Oracle quarterly release.
               </li>
               <li>
                 Patch Deployment & Monitoring → Seamless patch application with
-                proactive validation and issue resolution.{" "}
+                proactive validation and issue resolution.
               </li>
               <li>
                 Technical Expertise → Support for customisations, extensions,
-                and integrations with ongoing optimisation.{" "}
+                and integrations with ongoing optimisation.
               </li>
               <li>
                 Continuous Improvements (ITIL-based) → Structured service
@@ -97,17 +99,18 @@ export default function Managed() {
                 Free 5-week Health Check of your configuration and Fusion
                 application. This helps us identify risks, gaps, and
                 opportunities before Managed Services officially start —
-                ensuring maximum value and minimal surprises for our clients.{" "}
+                ensuring maximum value and minimal surprises for our clients.
               </li>
               <li>
                 With Cloudheard, you get a partner who goes beyond support — we
                 deliver stability, cost savings, and continuous innovation in
-                your Oracle Cloud journey.{" "}
+                your Oracle Cloud journey.
               </li>
             </ul>
           </div>
         </div>
       </div>
+
       <div className="container-xxl py-5">
         <div className="container">
           <div
@@ -118,15 +121,13 @@ export default function Managed() {
             <p className="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">
               Our Projects
             </p>
-            <h1 className="display-5 mb-5">
-              We Have Completed Latest Projects
-            </h1>
+            <h1 className="display-5 mb-5">We Have Completed Latest Projects</h1>
           </div>
           <div
             className="owl-carousel project-carousel wow fadeInUp"
             data-wow-delay="0.3s"
           >
-            {/* Original 4 items */}
+            {/* Project 1 */}
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
                 <Image
@@ -135,6 +136,8 @@ export default function Managed() {
                   alt="Oracle HCM Fusion"
                   width={600}
                   height={350}
+                  style={{ width: "100%", height: "auto" }}
+                  priority
                 />
                 <a href="/expertise/cloud-hcm">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -144,6 +147,8 @@ export default function Managed() {
                 <h4 className="mb-0">Cloud Managed Services</h4>
               </div>
             </div>
+
+            {/* Project 2 */}
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
                 <Image
@@ -152,6 +157,7 @@ export default function Managed() {
                   alt="Oracle ERP Fusion"
                   width={600}
                   height={350}
+                  style={{ width: "100%", height: "auto" }}
                 />
                 <a href="/expertise/cloud-erp">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -161,6 +167,8 @@ export default function Managed() {
                 <h4 className="mb-0">Cloud Implementation Services</h4>
               </div>
             </div>
+
+            {/* Project 3 */}
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
                 <Image
@@ -169,6 +177,7 @@ export default function Managed() {
                   alt="On Premises to Cloud"
                   width={600}
                   height={350}
+                  style={{ width: "100%", height: "auto" }}
                 />
                 <a href="/expertise/on-prem-to-cloud">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -178,6 +187,8 @@ export default function Managed() {
                 <h4 className="mb-0">Cloud Integration Services</h4>
               </div>
             </div>
+
+            {/* Project 4 */}
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
                 <Image
@@ -186,6 +197,7 @@ export default function Managed() {
                   alt="Oracle Integration Cloud"
                   width={600}
                   height={350}
+                  style={{ width: "100%", height: "auto" }}
                 />
                 <a href="/expertise/oracle-integration-cloud">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -196,7 +208,7 @@ export default function Managed() {
               </div>
             </div>
 
-            {/* Additional 4 items */}
+            {/* Project 5 */}
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
                 <Image
@@ -205,6 +217,7 @@ export default function Managed() {
                   alt="Fusion Data Intelligence"
                   width={600}
                   height={350}
+                  style={{ width: "100%", height: "auto" }}
                 />
                 <a href="/expertise/fusion-data-intelligence">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -214,6 +227,8 @@ export default function Managed() {
                 <h4 className="mb-0">FDI - Healthcheck</h4>
               </div>
             </div>
+
+            {/* Project 6 */}
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
                 <Image
@@ -222,16 +237,14 @@ export default function Managed() {
                   alt="Automation Testing"
                   width={600}
                   height={350}
+                  style={{ width: "100%", height: "auto" }}
                 />
                 <a href="/expertise/automation-testing">
                   <i className="fa fa-link fa-3x text-primary"></i>
                 </a>
               </div>
               <div className="project-title">
-                <h4 className="mb-0">
-                  {" "}
-                  Department-Tree & Organisation Framework
-                </h4>
+                <h4 className="mb-0">Department-Tree & Organisation Framework</h4>
               </div>
             </div>
           </div>

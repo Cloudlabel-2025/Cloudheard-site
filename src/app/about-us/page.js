@@ -51,7 +51,7 @@ function Aboutus() {
         </div>
         <div className="row g-4">
           {/* Who We Are */}
-          <div className="col-md-6">
+          <div className="col-lg-6 col-md-12">
             <div className="card custom-hover-card h-100 p-4 border-0 shadow-sm">
               <h4 className="fw-bold mb-3">Who We Are</h4>
               <ul className="list-style-disc ps-3">
@@ -68,7 +68,7 @@ function Aboutus() {
           </div>
 
           {/* What We Do */}
-          <div className="col-md-6">
+          <div className="col-lg-6 col-md-12">
             <div className="card custom-hover-card h-100 p-4 border-0 shadow-sm">
               <h4 className="fw-bold mb-3">What We Do</h4>
               <ul className="list-style-disc ps-3">
@@ -99,16 +99,20 @@ function Aboutus() {
 
           <div className="row g-4">
             {/* Team Member 1 */}
-            <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-              <div className="team-item">
-                <Image
-                  className="img-fluid rounded"
-                  src="/img/team-1.jpg"
-                  alt="Kate Winslet"
-                  width={400}
-                  height={400}
-                />
-                <div className="team-text">
+            <div className="col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0.1s">
+              <div className="team-item h-100 d-flex flex-column">
+                <div className="position-relative">
+                  <Image
+                    src="/img/team-1.jpg"
+                    alt="Kate Winslet"
+                    width={400}
+                    height={400}
+                    layout="responsive"
+                    objectFit="cover"
+                    className="rounded"
+                  />
+                </div>
+                <div className="team-text mt-3">
                   <h4 className="mb-0">Kate Winslet</h4>
                   <div className="team-social d-flex">
                     <Link className="btn btn-square rounded-circle mx-1" href="#">
@@ -126,16 +130,20 @@ function Aboutus() {
             </div>
 
             {/* Team Member 2 */}
-            <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-              <div className="team-item">
-                <Image
-                  className="img-fluid rounded"
-                  src="/img/team-2.jpg"
-                  alt="Jac Jacson"
-                  width={400}
-                  height={400}
-                />
-                <div className="team-text">
+            <div className="col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
+              <div className="team-item h-100 d-flex flex-column">
+                <div className="position-relative">
+                  <Image
+                    src="/img/team-2.jpg"
+                    alt="Jac Jacson"
+                    width={400}
+                    height={400}
+                    layout="responsive"
+                    objectFit="cover"
+                    className="rounded"
+                  />
+                </div>
+                <div className="team-text mt-3">
                   <h4 className="mb-0">Jac Jacson</h4>
                   <div className="team-social d-flex">
                     <Link className="btn btn-square rounded-circle mx-1" href="#">
@@ -153,16 +161,20 @@ function Aboutus() {
             </div>
 
             {/* Team Member 3 */}
-            <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-              <div className="team-item">
-                <Image
-                  className="img-fluid rounded"
-                  src="/img/team-3.jpg"
-                  alt="Doris Jordan"
-                  width={400}
-                  height={400}
-                />
-                <div className="team-text">
+            <div className="col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0.5s">
+              <div className="team-item h-100 d-flex flex-column">
+                <div className="position-relative">
+                  <Image
+                    src="/img/team-3.jpg"
+                    alt="Doris Jordan"
+                    width={400}
+                    height={400}
+                    layout="responsive"
+                    objectFit="cover"
+                    className="rounded"
+                  />
+                </div>
+                <div className="team-text mt-3">
                   <h4 className="mb-0">Doris Jordan</h4>
                   <div className="team-social d-flex">
                     <Link className="btn btn-square rounded-circle mx-1" href="#">

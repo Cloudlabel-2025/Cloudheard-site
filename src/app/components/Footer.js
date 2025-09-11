@@ -1,19 +1,24 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 
 function Footer() {
+  const [isMounted, setIsMounted] = useState(false);
+
   useEffect(() => {
-    // Run only on client and if WOW.js is loaded via script
+    setIsMounted(true);
+
     if (typeof window !== "undefined" && window.WOW) {
       new window.WOW({ live: false }).init();
     }
   }, []);
 
+  // Prevent hydration mismatch
+  if (!isMounted) return null;
+
   return (
     <div
-      suppressHydrationWarning
       className="container-fluid text-light footer mt-5 py-5 wow fadeIn"
       data-wow-delay="0.1s"
     >
@@ -28,16 +33,16 @@ function Footer() {
               infrastructure.
             </p>
             <div className="d-flex pt-2">
-              <Link className="btn btn-square btn-outline-light rounded-circle me-2" href="#">
+              <Link href="#" className="btn btn-square btn-outline-light rounded-circle me-2">
                 <i className="fab fa-twitter"></i>
               </Link>
-              <Link className="btn btn-square btn-outline-light rounded-circle me-2" href="#">
+              <Link href="#" className="btn btn-square btn-outline-light rounded-circle me-2">
                 <i className="fab fa-facebook-f"></i>
               </Link>
-              <Link className="btn btn-square btn-outline-light rounded-circle me-2" href="#">
+              <Link href="#" className="btn btn-square btn-outline-light rounded-circle me-2">
                 <i className="fab fa-youtube"></i>
               </Link>
-              <Link className="btn btn-square btn-outline-light rounded-circle me-2" href="#">
+              <Link href="#" className="btn btn-square btn-outline-light rounded-circle me-2">
                 <i className="fab fa-linkedin-in"></i>
               </Link>
             </div>
@@ -63,18 +68,18 @@ function Footer() {
           {/* Quick Links */}
           <div className="col-lg-3 col-md-6">
             <h4 className="text-white mb-4">Quick Links</h4>
-            <Link className="btn btn-link" href="/">Home</Link>
-            <Link className="btn btn-link" href="/about-us">About Us</Link>
-            <Link className="btn btn-link" href="/services">Services</Link>
-            <Link className="btn btn-link" href="/careers">Career</Link>
-            <Link className="btn btn-link" href="/contact-us">Contact Us</Link>
+            <Link href="/" className="btn btn-link">Home</Link>
+            <Link href="/about-us" className="btn btn-link">About Us</Link>
+            <Link href="/services/department-tree" className="btn btn-link">Services</Link>
+            <Link href="/careers" className="btn btn-link">Career</Link>
+            <Link href="/contact-us" className="btn btn-link">Contact Us</Link>
           </div>
 
           {/* Other Links */}
           <div className="col-lg-3 col-md-6">
             <h4 className="text-white mb-4">Other Links</h4>
-            <Link className="btn btn-link" href="#">Privacy Policy</Link>
-            <Link className="btn btn-link" href="#">Terms & Conditions</Link>
+            <Link href="#" className="btn btn-link">Privacy Policy</Link>
+            <Link href="#" className="btn btn-link">Terms & Conditions</Link>
           </div>
         </div>
       </div>

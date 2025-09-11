@@ -1,4 +1,5 @@
 "use client";
+
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
@@ -16,17 +17,17 @@ export default function Department() {
 
   return (
     <>
+      {/* Header */}
       <div
         suppressHydrationWarning
         className="container-fluid page-header mb-5 wow fadeIn shadow-sm"
         data-wow-delay="0.1s"
       >
-        <div className="container ">
+        <div className="container">
           <h1 className="display-5 mb-4 animated slideInDown">Our Services</h1>
-
           <p className="mb-2">
             At Cloudheard Consultancy, we bring 30+ years of combined cloud
-            experience and <br /> 3 years of proven delivery to help
+            experience and <br /> multiple proven deliveries to help
             organisations simplify, optimise, and scale with <br />
             Oracle Cloud and beyond.
           </p>
@@ -43,17 +44,17 @@ export default function Department() {
           </nav>
         </div>
       </div>
-      <div className="cointainer-fluid">
+
+      {/* Description */}
+      <div className="container-fluid">
         <div
           className="text-center mx-auto wow fadeInUp"
           data-wow-delay="0.1s"
           style={{ maxWidth: "600px" }}
         >
           <h3 className="display-5 mb-2">
-            {" "}
             Department-Tree & Organisation Framework
           </h3>
-
           <p className="mb-4">
             A well-structured Department Tree and Organisation Framework is the
             backbone of any Oracle Fusion implementation. It determines how your
@@ -62,51 +63,62 @@ export default function Department() {
             and analytics.
           </p>
         </div>
-        <div className="m-3 p-3 row rounded shadow-lg ">
+
+        {/* Content Row */}
+        <div className="m-3 p-3 row rounded shadow-lg">
           <h3 className="text-center mt-2">
-            {" "}
             Department-Tree & Organisation Framework
           </h3>
-          <div className="mt-3 mb-2 col-xl-5  animated slideInRight">
+
+          {/* Image Column */}
+          <div className="col-12 col-xl-5 mt-3 mb-2 animated slideInRight d-flex justify-content-center">
             <Image
               className="rounded mt-4"
               src="/img/Expertise-OraclecloudHCM.jpg"
               height={350}
               width={600}
               alt="cloud-hcm"
+              style={{ width: "100%", height: "auto" }}
+              priority
             />
           </div>
-          <div className="col-xl-6 p-5 animated slideInLeft">
+
+          {/* Text Column */}
+          <div className="col-12 col-xl-6 p-5 animated slideInLeft">
             <ul>
               <ol>
-                <strong>Why it matters: </strong>
+                <strong>Why it matters:</strong>
               </ol>
               <li>
                 At Cloudheard, we are system agnostic — meaning we start with
                 your business realities and then tweak and align the framework
-                to fit seamlessly within Oracle Fusion HCM and ERP.{" "}
+                to fit seamlessly within Oracle Fusion HCM and ERP.
               </li>
-              <li>Ensures accurate approval workflows and security models. </li>
               <li>
-                Supports financial reporting alignment between HR and Finance.{" "}
+                Ensures accurate approval workflows and security models.
+              </li>
+              <li>
+                Supports financial reporting alignment between HR and Finance.
               </li>
               <li>
                 Enables meaningful headcount, cost, and performance insights.
               </li>
               <li>
-                Provides a scalable foundation for future growth and compliance.{" "}
+                Provides a scalable foundation for future growth and compliance.
               </li>
               <li>
                 Getting the Department Tree and Organisation Framework right is
                 critical not just for a successful implementation, but also to
                 derive full ROI on your Oracle Fusion investment. Cloudheard
                 brings both business analysis expertise and Fusion configuration
-                skills to make this possible.{" "}
+                skills to make this possible.
               </li>
             </ul>
           </div>
         </div>
       </div>
+
+      {/* Projects Section */}
       <div className="container-xxl py-5">
         <div className="container">
           <div
@@ -121,19 +133,22 @@ export default function Department() {
               We Have Completed Latest Projects
             </h1>
           </div>
+
+          {/* Project Carousel */}
           <div
             className="owl-carousel project-carousel wow fadeInUp"
             data-wow-delay="0.3s"
           >
-            {/* Original 4 items */}
+            {/* Project 1 */}
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
                 <Image
                   className="img-fluid rounded"
                   src="/img/service-1.jpg"
-                  alt="Oracle HCM Fusion"
+                  alt="Cloud Managed Services"
                   width={600}
                   height={350}
+                  style={{ width: "100%", height: "auto" }}
                 />
                 <a href="/expertise/cloud-hcm">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -143,14 +158,17 @@ export default function Department() {
                 <h4 className="mb-0">Cloud Managed Services</h4>
               </div>
             </div>
+
+            {/* Project 2 */}
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
                 <Image
                   className="img-fluid rounded"
                   src="/img/service-2.jpg"
-                  alt="Oracle ERP Fusion"
+                  alt="Cloud Implementation Services"
                   width={600}
                   height={350}
+                  style={{ width: "100%", height: "auto" }}
                 />
                 <a href="/expertise/cloud-erp">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -160,14 +178,17 @@ export default function Department() {
                 <h4 className="mb-0">Cloud Implementation Services</h4>
               </div>
             </div>
+
+            {/* Project 3 */}
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
                 <Image
                   className="img-fluid rounded"
                   src="/img/service-3.jpg"
-                  alt="On Premises to Cloud"
+                  alt="Cloud Integration Services"
                   width={600}
                   height={350}
+                  style={{ width: "100%", height: "auto" }}
                 />
                 <a href="/expertise/on-prem-to-cloud">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -177,14 +198,17 @@ export default function Department() {
                 <h4 className="mb-0">Cloud Integration Services</h4>
               </div>
             </div>
+
+            {/* Project 4 */}
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
                 <Image
                   className="img-fluid rounded"
                   src="/img/service-4.jpg"
-                  alt="Oracle Integration Cloud"
+                  alt="Healthcheck - Oracle Fusion"
                   width={600}
                   height={350}
+                  style={{ width: "100%", height: "auto" }}
                 />
                 <a href="/expertise/oracle-integration-cloud">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -195,15 +219,16 @@ export default function Department() {
               </div>
             </div>
 
-            {/* Additional 4 items */}
+            {/* Project 5 */}
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
                 <Image
                   className="img-fluid rounded"
                   src="/img/service-1.jpg"
-                  alt="Fusion Data Intelligence"
+                  alt="FDI - Healthcheck"
                   width={600}
                   height={350}
+                  style={{ width: "100%", height: "auto" }}
                 />
                 <a href="/expertise/fusion-data-intelligence">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -213,14 +238,17 @@ export default function Department() {
                 <h4 className="mb-0">FDI - Healthcheck</h4>
               </div>
             </div>
+
+            {/* Project 6 */}
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
                 <Image
                   className="img-fluid rounded"
                   src="/img/service-2.jpg"
-                  alt="Automation Testing"
+                  alt="Department-Tree Framework"
                   width={600}
                   height={350}
+                  style={{ width: "100%", height: "auto" }}
                 />
                 <a href="/expertise/automation-testing">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -228,7 +256,6 @@ export default function Department() {
               </div>
               <div className="project-title">
                 <h4 className="mb-0">
-                  {" "}
                   Department-Tree & Organisation Framework
                 </h4>
               </div>

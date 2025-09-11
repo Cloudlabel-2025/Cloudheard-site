@@ -42,6 +42,7 @@ export default function Career() {
           <h1 className="display-6 mb-4 animated slideInDown">
             Culture and Careers at Cloudheard
           </h1>
+
           <nav aria-label="breadcrumb" className="animated slideInDown">
             <ol className="breadcrumb mb-0">
               <li className="breadcrumb-item">
@@ -59,7 +60,7 @@ export default function Career() {
       <div className="container-xxl py-5">
         <div className="row mb-5 align-items-start">
           {/* Left: Text (7 columns) */}
-          <div className="col-lg-7">
+          <div className="col-lg-7 col-md-12 mb-4 mb-lg-0">
             <div
               className="text-center mx-auto wow fadeInUp"
               data-wow-delay="0.1s"
@@ -68,7 +69,10 @@ export default function Career() {
               <p className="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3 mb-3">
                 Join Our Family
               </p>
-              <h1 className="display-6 mb-4">Careers at Cloudheard</h1>
+              <h1 className="display-6 mb-1">Careers at Cloudheard</h1>
+              <p className="text-center fs-5 text-primary">
+                <strong>Stories over CVs, People over titles</strong>
+              </p>
             </div>
             <div
               className="wow fadeInUp justify"
@@ -116,49 +120,55 @@ export default function Career() {
             </div>
           </div>
 
-          {/* Right: Card (5 columns) */}
-          <div className="col-lg-5 d-flex flex-column justify-content-start">
-            {/* Card 1 */}
-            <div className="card custom-hover-card p-4 border-0 shadow-sm mb-3 text-center">
-              <div className="mb-2">
-                <i className="fa fa-users fa-lg text-primary"></i>
+          {/* Right: Cards (5 columns) */}
+          <div className="col-lg-5 col-md-12">
+            <div className="row">
+              <div className="col-12">
+                <div className="card custom-hover-card p-4 border-0 shadow-sm mb-3 text-center">
+                  <div className="mb-2">
+                    <i className="fa fa-users fa-lg text-primary"></i>
+                  </div>
+                  <h6 className="fw-bold">Why Join Cloudheard</h6>
+                  <p className="text-muted small">
+                    We believe in stories, not CVs. Your journey, values, and
+                    passion define your future with us.
+                  </p>
+                </div>
               </div>
-              <h6 className="fw-bold">Why Join Cloudheard</h6>
-              <p className="text-muted small">
-                We believe in stories, not CVs. Your journey, values, and
-                passion define your future with us.
-              </p>
-            </div>
 
-            {/* Card 2 */}
-            <div className="card custom-hover-card p-4 border-0 shadow-sm mb-3 text-center">
-              <div className="mb-2">
-                <i className="fa fa-briefcase fa-lg text-primary"></i>
+              <div className="col-12">
+                <div className="card custom-hover-card p-4 border-0 shadow-sm mb-3 text-center">
+                  <div className="mb-2">
+                    <i className="fa fa-briefcase fa-lg text-primary"></i>
+                  </div>
+                  <h6 className="fw-bold">Real Projects, Real Impact</h6>
+                  <p className="text-muted small">
+                    From day one, work on client-facing Oracle Cloud projects
+                    with mentorship and support.
+                  </p>
+                </div>
               </div>
-              <h6 className="fw-bold">Real Projects, Real Impact</h6>
-              <p className="text-muted small">
-                From day one, work on client-facing Oracle Cloud projects with
-                mentorship and support.
-              </p>
-            </div>
 
-            {/* Card 3 */}
-            <div className="card custom-hover-card p-4 border-0 shadow-sm text-center">
-              <div className="mb-2">
-                <i className="fa fa-heart fa-lg text-primary"></i>
+              <div className="col-12">
+                <div className="card custom-hover-card p-4 border-0 shadow-sm text-center">
+                  <div className="mb-2">
+                    <i className="fa fa-heart fa-lg text-primary"></i>
+                  </div>
+                  <h6 className="fw-bold">A Culture That Cares</h6>
+                  <p className="text-muted small">
+                    We are a close-knit team that balances career growth with
+                    social impact and compassion.
+                  </p>
+                </div>
               </div>
-              <h6 className="fw-bold">A Culture That Cares</h6>
-              <p className="text-muted small">
-                We are a close-knit team that balances career growth with social
-                impact and compassion.
-              </p>
             </div>
           </div>
         </div>
+
         <div className="row g-5 align-items-start">
-          {/* Left: Value Cards (5 columns) */}
-          <div className="col-lg-7">
-            <div className="card custom-hover-card h-50 p-4 border-0 shadow-sm">
+          {/* Left: Value Cards (7 columns) */}
+          <div className="col-lg-7 col-md-12 mb-4 mb-lg-0">
+            <div className="card custom-hover-card h-100 p-4 border-0 shadow-sm">
               <h4 className="fw-bold mb-3">Why Join Cloudheard?</h4>
               <ul className="list-style-disc ps-3">
                 <li>We don&apos;t want your CV. We want your story.</li>
@@ -168,15 +178,12 @@ export default function Career() {
                   This is not a job application. It&apos;s your chance to change
                   your life.
                 </li>
-                <li>
-                  Cloudheard Careers: Stories over CVs, People over titles.
-                </li>
               </ul>
             </div>
           </div>
 
-          {/* Right: Form (7 columns) */}
-          <div className="col-lg-5 d-flex flex-column justify-content-start">
+          {/* Right: Form (5 columns) */}
+          <div className="col-lg-5 col-md-12">
             <h4 className="mb-3">Share Your Story</h4>
             <p>
               Instead of uploading a traditional CV, tell us who you are and why
@@ -192,12 +199,11 @@ export default function Career() {
                 What motivates you — learning, impact, stability, or giving
                 back?
               </li>
-              <li>Where do you want to grow in 3 years?</li>
-              <li>Why is Cloudheard your chosen path?</li>
+              <li>Where do you want to be in 3 years?</li>
             </ol>
 
             <form onSubmit={handleSubmit}>
-              <div className="mb-4" style={{ maxWidth: "400px" }}>
+              <div className="mb-4" style={{ maxWidth: "100%" }}>
                 <label htmlFor="fileUpload" className="form-label fw-semibold">
                   Upload Your Story (Word, PDF, or short video):
                 </label>

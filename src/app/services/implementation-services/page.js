@@ -16,21 +16,20 @@ export default function Implementation() {
 
   return (
     <>
+      {/* Page Header */}
       <div
         suppressHydrationWarning
         className="container-fluid page-header mb-5 wow fadeIn shadow-sm"
         data-wow-delay="0.1s"
       >
-        <div className="container ">
+        <div className="container">
           <h1 className="display-5 mb-4 animated slideInDown">Our Services</h1>
-
           <p className="mb-2">
             At Cloudheard Consultancy, we bring 30+ years of combined cloud
-            experience and <br /> 3 years of proven delivery to help
+            experience and <br /> multiple proven deliveries to help
             organisations simplify, optimise, and scale with <br />
             Oracle Cloud and beyond.
           </p>
-
           <nav aria-label="breadcrumb" className="animated slideInDown">
             <ol className="breadcrumb mb-0">
               <li className="breadcrumb-item">
@@ -43,14 +42,15 @@ export default function Implementation() {
           </nav>
         </div>
       </div>
-      <div className="cointainer-fluid">
+
+      {/* Intro Section */}
+      <div className="container-fluid">
         <div
           className="text-center mx-auto wow fadeInUp"
           data-wow-delay="0.1s"
           style={{ maxWidth: "600px" }}
         >
           <h3 className="display-5 mb-2">Cloud Implementation Services</h3>
-
           <p className="mb-4">
             At Cloudheard, we deliver end-to-end Oracle Cloud Implementations
             using the Oracle Unified Methodology (OUM) and proven best
@@ -58,59 +58,68 @@ export default function Implementation() {
             efficiency from day one.
           </p>
         </div>
-        <div className="m-3 p-3 row rounded shadow-lg ">
+
+        {/* Framework Section */}
+        <div className="m-3 p-3 row rounded shadow-lg">
           <h3 className="text-center mt-2">Cloud Implementation Services</h3>
-          <div className="mt-3 mb-2 col-xl-5  animated slideInRight">
-            <Image
-              className="rounded mt-4"
-              src="/img/Expertise-OraclecloudHCM.jpg"
-              height={350}
-              width={600}
-              alt="cloud-hcm"
-            />
+
+          <div className="col-xl-5 col-lg-6 col-md-12 mt-3 mb-2 animated slideInRight">
+            <div className="w-100 position-relative" style={{ height: "auto", minHeight: "300px" }}>
+              <Image
+                className="rounded mt-4"
+                src="/img/Expertise-OraclecloudHCM.jpg"
+                alt="cloud-hcm"
+                layout="responsive"
+                width={600}
+                height={350}
+              />
+            </div>
           </div>
-          <div className="col-xl-6 p-5 animated slideInLeft">
+
+          <div className="col-xl-7 col-lg-6 col-md-12 p-5 animated slideInLeft">
             <ul>
               <ol>
                 <strong>Our Implementation Framework: </strong>
               </ol>
               <li>
                 Pre-Planning Phase → Aligning stakeholders, timelines, and
-                success metrics.{" "}
+                success metrics.
               </li>
               <li>
                 Requirements Gathering & Scope Alignment → Preventing rework
-                through accurate fit-gap analysis.{" "}
+                through accurate fit-gap analysis.
               </li>
               <li>
                 Pilot Demo → Early validation of solution design with business
-                teams.{" "}
+                teams.
               </li>
               <li>
                 Configuration → Agile, offshore-led build with expert oversight.
               </li>
               <li>
-                Second Pilot → Refined demo showcasing aligned functionality.{" "}
+                Second Pilot → Refined demo showcasing aligned functionality.
               </li>
               <li>
                 User Acceptance Testing (UAT) → Ensuring business readiness and
-                process integrity.{" "}
+                process integrity.
               </li>
-              <li>Go-Live → Smooth, structured transition into production. </li>
+              <li>Go-Live → Smooth, structured transition into production.</li>
               <li>
                 Our Commitment: Every implementation is backed by 2 months of
                 free Hypercare support (or 200 hours of assistance) — ensuring
-                stability, issue resolution, and user confidence post-go-live.{" "}
+                stability, issue resolution, and user confidence post-go-live.
               </li>
               <li>
                 With Cloudheard, implementation isn’t just about go-live — it’s
                 about delivering a stable, cost-effective, and business-aligned
-                Oracle Cloud solution from start to finish.{" "}
+                Oracle Cloud solution from start to finish.
               </li>
             </ul>
           </div>
         </div>
       </div>
+
+      {/* Projects Section */}
       <div className="container-xxl py-5">
         <div className="container">
           <div
@@ -125,20 +134,24 @@ export default function Implementation() {
               We Have Completed Latest Projects
             </h1>
           </div>
+
           <div
             className="owl-carousel project-carousel wow fadeInUp"
             data-wow-delay="0.3s"
           >
-            {/* Original 4 items */}
+            {/* Project 1 */}
             <div className="project-item pe-5 pb-5">
-              <div className="project-img mb-3">
-                <Image
-                  className="img-fluid rounded"
-                  src="/img/service-1.jpg"
-                  alt="Oracle HCM Fusion"
-                  width={600}
-                  height={350}
-                />
+              <div className="project-img mb-3 position-relative">
+                <div className="w-100 position-relative" style={{ height: "auto", minHeight: "300px" }}>
+                  <Image
+                    className="img-fluid rounded"
+                    src="/img/service-1.jpg"
+                    alt="Oracle HCM Fusion"
+                    layout="responsive"
+                    width={600}
+                    height={350}
+                  />
+                </div>
                 <a href="/expertise/cloud-hcm">
                   <i className="fa fa-link fa-3x text-primary"></i>
                 </a>
@@ -147,15 +160,20 @@ export default function Implementation() {
                 <h4 className="mb-0">Cloud Managed Services</h4>
               </div>
             </div>
+
+            {/* Project 2 */}
             <div className="project-item pe-5 pb-5">
-              <div className="project-img mb-3">
-                <Image
-                  className="img-fluid rounded"
-                  src="/img/service-2.jpg"
-                  alt="Oracle ERP Fusion"
-                  width={600}
-                  height={350}
-                />
+              <div className="project-img mb-3 position-relative">
+                <div className="w-100 position-relative" style={{ height: "auto", minHeight: "300px" }}>
+                  <Image
+                    className="img-fluid rounded"
+                    src="/img/service-2.jpg"
+                    alt="Oracle ERP Fusion"
+                    layout="responsive"
+                    width={600}
+                    height={350}
+                  />
+                </div>
                 <a href="/expertise/cloud-erp">
                   <i className="fa fa-link fa-3x text-primary"></i>
                 </a>
@@ -164,15 +182,20 @@ export default function Implementation() {
                 <h4 className="mb-0">Cloud Implementation Services</h4>
               </div>
             </div>
+
+            {/* Project 3 */}
             <div className="project-item pe-5 pb-5">
-              <div className="project-img mb-3">
-                <Image
-                  className="img-fluid rounded"
-                  src="/img/service-3.jpg"
-                  alt="On Premises to Cloud"
-                  width={600}
-                  height={350}
-                />
+              <div className="project-img mb-3 position-relative">
+                <div className="w-100 position-relative" style={{ height: "auto", minHeight: "300px" }}>
+                  <Image
+                    className="img-fluid rounded"
+                    src="/img/service-3.jpg"
+                    alt="On Premises to Cloud"
+                    layout="responsive"
+                    width={600}
+                    height={350}
+                  />
+                </div>
                 <a href="/expertise/on-prem-to-cloud">
                   <i className="fa fa-link fa-3x text-primary"></i>
                 </a>
@@ -181,15 +204,20 @@ export default function Implementation() {
                 <h4 className="mb-0">Cloud Integration Services</h4>
               </div>
             </div>
+
+            {/* Project 4 */}
             <div className="project-item pe-5 pb-5">
-              <div className="project-img mb-3">
-                <Image
-                  className="img-fluid rounded"
-                  src="/img/service-4.jpg"
-                  alt="Oracle Integration Cloud"
-                  width={600}
-                  height={350}
-                />
+              <div className="project-img mb-3 position-relative">
+                <div className="w-100 position-relative" style={{ height: "auto", minHeight: "300px" }}>
+                  <Image
+                    className="img-fluid rounded"
+                    src="/img/service-4.jpg"
+                    alt="Oracle Integration Cloud"
+                    layout="responsive"
+                    width={600}
+                    height={350}
+                  />
+                </div>
                 <a href="/expertise/oracle-integration-cloud">
                   <i className="fa fa-link fa-3x text-primary"></i>
                 </a>
@@ -199,16 +227,19 @@ export default function Implementation() {
               </div>
             </div>
 
-            {/* Additional 4 items */}
+            {/* Project 5 */}
             <div className="project-item pe-5 pb-5">
-              <div className="project-img mb-3">
-                <Image
-                  className="img-fluid rounded"
-                  src="/img/service-1.jpg"
-                  alt="Fusion Data Intelligence"
-                  width={600}
-                  height={350}
-                />
+              <div className="project-img mb-3 position-relative">
+                <div className="w-100 position-relative" style={{ height: "auto", minHeight: "300px" }}>
+                  <Image
+                    className="img-fluid rounded"
+                    src="/img/service-1.jpg"
+                    alt="Fusion Data Intelligence"
+                    layout="responsive"
+                    width={600}
+                    height={350}
+                  />
+                </div>
                 <a href="/expertise/fusion-data-intelligence">
                   <i className="fa fa-link fa-3x text-primary"></i>
                 </a>
@@ -217,22 +248,26 @@ export default function Implementation() {
                 <h4 className="mb-0">FDI - Healthcheck</h4>
               </div>
             </div>
+
+            {/* Project 6 */}
             <div className="project-item pe-5 pb-5">
-              <div className="project-img mb-3">
-                <Image
-                  className="img-fluid rounded"
-                  src="/img/service-2.jpg"
-                  alt="Automation Testing"
-                  width={600}
-                  height={350}
-                />
+              <div className="project-img mb-3 position-relative">
+                <div className="w-100 position-relative" style={{ height: "auto", minHeight: "300px" }}>
+                  <Image
+                    className="img-fluid rounded"
+                    src="/img/service-2.jpg"
+                    alt="Automation Testing"
+                    layout="responsive"
+                    width={600}
+                    height={350}
+                  />
+                </div>
                 <a href="/expertise/automation-testing">
                   <i className="fa fa-link fa-3x text-primary"></i>
                 </a>
               </div>
               <div className="project-title">
                 <h4 className="mb-0">
-                  {" "}
                   Department-Tree & Organisation Framework
                 </h4>
               </div>

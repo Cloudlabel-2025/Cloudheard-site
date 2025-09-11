@@ -26,7 +26,7 @@ export default function Healthoracle() {
 
           <p className="mb-2">
             At Cloudheard Consultancy, we bring 30+ years of combined cloud
-            experience and <br /> 3 years of proven delivery to help
+            experience and <br /> multiple proven deliveries to help
             organisations simplify, optimise, and scale with <br />
             Oracle Cloud and beyond.
           </p>
@@ -43,7 +43,7 @@ export default function Healthoracle() {
           </nav>
         </div>
       </div>
-      <div className="cointainer-fluid">
+      <div className="container-fluid">
         <div
           className="text-center mx-auto wow fadeInUp"
           data-wow-delay="0.1s"
@@ -58,22 +58,24 @@ export default function Healthoracle() {
             optimised, compliant, and future-ready.
           </p>
         </div>
-        <div className="m-3 p-3 row rounded shadow-lg ">
-          <h3 className="text-center mt-2">Health Check – Oracle Fusion </h3>
-          <div className="mt-3 mb-2 col-xl-5  animated slideInRight">
+        <div className="m-3 p-3 row rounded shadow-lg">
+          <h3 className="text-center mt-2 w-100">Health Check – Oracle Fusion </h3>
+          {/* Responsive columns */}
+          <div className="mt-3 mb-2 col-12 col-md-6 col-xl-5 animated slideInRight">
             <Image
               className="rounded mt-4"
               src="/img/Expertise-OraclecloudHCM.jpg"
               width={600}
               height={350}
               alt="cloud-hcm"
+              style={{ width: "100%", height: "auto" }}
             />
           </div>
-          <div className="col-xl-6 p-5 animated slideInLeft">
+          <div className="col-12 col-md-6 col-xl-6 p-5 animated slideInLeft">
             <ul>
-              <ol>
+              <li>
                 <strong>Areas covered in our Health Check include: </strong>
-              </ol>
+              </li>
               <li>
                 Configuration Review → Validation of current HCM and ERP setups.{" "}
               </li>
@@ -130,114 +132,64 @@ export default function Healthoracle() {
             className="owl-carousel project-carousel wow fadeInUp"
             data-wow-delay="0.3s"
           >
-            {/* Original 4 items */}
-            <div className="project-item pe-5 pb-5">
-              <div className="project-img mb-3">
-                <Image
-                  className="img-fluid rounded"
-                  src="/img/service-1.jpg"
-                  alt="Oracle HCM Fusion"
-                  width={600}
-                  height={350}
-                />
-                <a href="/expertise/cloud-hcm">
-                  <i className="fa fa-link fa-3x text-primary"></i>
-                </a>
+            {/* Projects */}
+            {[
+              {
+                src: "/img/service-1.jpg",
+                alt: "Oracle HCM Fusion",
+                href: "/expertise/cloud-hcm",
+                title: "Cloud Managed Services",
+              },
+              {
+                src: "/img/service-2.jpg",
+                alt: "Oracle ERP Fusion",
+                href: "/expertise/cloud-erp",
+                title: "Cloud Implementation Services",
+              },
+              {
+                src: "/img/service-3.jpg",
+                alt: "On Premises to Cloud",
+                href: "/expertise/on-prem-to-cloud",
+                title: "Cloud Integration Services",
+              },
+              {
+                src: "/img/service-4.jpg",
+                alt: "Oracle Integration Cloud",
+                href: "/expertise/oracle-integration-cloud",
+                title: "Healthcheck - Oracle Fusion",
+              },
+              {
+                src: "/img/service-1.jpg",
+                alt: "Fusion Data Intelligence",
+                href: "/expertise/fusion-data-intelligence",
+                title: "FDI - Healthcheck",
+              },
+              {
+                src: "/img/service-2.jpg",
+                alt: "Automation Testing",
+                href: "/expertise/automation-testing",
+                title: "Department-Tree & Organisation Framework",
+              },
+            ].map(({ src, alt, href, title }, idx) => (
+              <div key={idx} className="project-item pe-5 pb-5">
+                <div className="project-img mb-3">
+                  <Image
+                    className="img-fluid rounded"
+                    src={src}
+                    alt={alt}
+                    width={600}
+                    height={350}
+                    style={{ width: "100%", height: "auto" }}
+                  />
+                  <a href={href}>
+                    <i className="fa fa-link fa-3x text-primary"></i>
+                  </a>
+                </div>
+                <div className="project-title">
+                  <h4 className="mb-0">{title}</h4>
+                </div>
               </div>
-              <div className="project-title">
-                <h4 className="mb-0">Cloud Managed Services</h4>
-              </div>
-            </div>
-            <div className="project-item pe-5 pb-5">
-              <div className="project-img mb-3">
-                <Image
-                  className="img-fluid rounded"
-                  src="/img/service-2.jpg"
-                  alt="Oracle ERP Fusion"
-                  width={600}
-                  height={350}
-                />
-                <a href="/expertise/cloud-erp">
-                  <i className="fa fa-link fa-3x text-primary"></i>
-                </a>
-              </div>
-              <div className="project-title">
-                <h4 className="mb-0">Cloud Implementation Services</h4>
-              </div>
-            </div>
-            <div className="project-item pe-5 pb-5">
-              <div className="project-img mb-3">
-                <Image
-                  className="img-fluid rounded"
-                  src="/img/service-3.jpg"
-                  alt="On Premises to Cloud"
-                  width={600}
-                  height={350}
-                />
-                <a href="/expertise/on-prem-to-cloud">
-                  <i className="fa fa-link fa-3x text-primary"></i>
-                </a>
-              </div>
-              <div className="project-title">
-                <h4 className="mb-0">Cloud Integration Services</h4>
-              </div>
-            </div>
-            <div className="project-item pe-5 pb-5">
-              <div className="project-img mb-3">
-                <Image
-                  className="img-fluid rounded"
-                  src="/img/service-4.jpg"
-                  alt="Oracle Integration Cloud"
-                  width={600}
-                  height={350}
-                />
-                <a href="/expertise/oracle-integration-cloud">
-                  <i className="fa fa-link fa-3x text-primary"></i>
-                </a>
-              </div>
-              <div className="project-title">
-                <h4 className="mb-0">Healthcheck - Oracle Fusion</h4>
-              </div>
-            </div>
-
-            {/* Additional 4 items */}
-            <div className="project-item pe-5 pb-5">
-              <div className="project-img mb-3">
-                <Image
-                  className="img-fluid rounded"
-                  src="/img/service-1.jpg"
-                  alt="Fusion Data Intelligence"
-                  width={600}
-                  height={350}
-                />
-                <a href="/expertise/fusion-data-intelligence">
-                  <i className="fa fa-link fa-3x text-primary"></i>
-                </a>
-              </div>
-              <div className="project-title">
-                <h4 className="mb-0">FDI - Healthcheck</h4>
-              </div>
-            </div>
-            <div className="project-item pe-5 pb-5">
-              <div className="project-img mb-3">
-                <Image
-                  className="img-fluid rounded"
-                  src="/img/service-2.jpg"
-                  alt="Automation Testing"
-                  width={600}
-                  height={350}
-                />
-                <a href="/expertise/automation-testing">
-                  <i className="fa fa-link fa-3x text-primary"></i>
-                </a>
-              </div>
-              <div className="project-title">
-                <h4 className="mb-0">
-                  {" "}
-                  Department-Tree & Organisation Framework
-                </h4>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

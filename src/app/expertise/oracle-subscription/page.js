@@ -1,19 +1,14 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Image from "next/image";
 
-export default function Fusiondata() {
-  const [isClient, setIsClient] = useState(false);
-
+export default function Oraclesub() {
   useEffect(() => {
-    setIsClient(true);
     if (typeof window !== "undefined" && window.WOW) {
       new window.WOW({ live: false }).init();
     }
   }, []);
-
-  if (!isClient) return null;
 
   return (
     <>
@@ -22,23 +17,21 @@ export default function Fusiondata() {
         className="container-fluid page-header mb-5 wow fadeIn shadow-sm"
         data-wow-delay="0.1s"
       >
-        <div className="container ">
+        <div className="container">
           <h1 className="display-5 mb-4 animated slideInDown">Our Expertise</h1>
-
           <p className="mb-2">
             At Cloudheard Consultancy, we bring 30+ years of combined cloud
             experience and <br /> multiple proven deliveries to help
             organisations simplify, optimise, and scale with <br />
             Oracle Cloud and beyond.
           </p>
-
           <nav aria-label="breadcrumb" className="animated slideInDown">
             <ol className="breadcrumb mb-0">
               <li className="breadcrumb-item">
                 <a href="#">Home</a>
               </li>
               <li className="breadcrumb-item active" aria-current="page">
-                Fusion Data Intelligence
+                Oracle HCM Fusion
               </li>
             </ol>
           </nav>
@@ -51,60 +44,64 @@ export default function Fusiondata() {
           data-wow-delay="0.1s"
           style={{ maxWidth: "600px" }}
         >
-          <h3 className="display-5 mb-2">Fusion Data Intelligence</h3>
-
+          <h3 className="display-5 mb-2">Oracle HCM Fusion</h3>
           <p className="mb-4">
-            Turn data into decisions with clarity. Cloudheard powers reporting,
-            compliance, and analytics with FDI.
+            Transform HR into seamless, compliant experience. Cloudheard
+            delivers HCM solutions that fit your business perfectly, cost
+            effectively.
           </p>
         </div>
 
         <div className="m-3 p-3 row rounded shadow-lg">
-          <h3 className="text-center mt-2 w-100">Fusion Data Intelligence</h3>
+          <h3 className="text-center mt-2">Oracle HCM Fusion</h3>
 
-          {/* Image column */}
-          <div className="col-12 col-md-5 mt-3 mb-2 animated slideInRight d-flex justify-content-center">
-            {/* responsive img with width 100% */}
-            <img
+          {/* Responsive image column */}
+          <div className="mt-3 mb-2 col-12 col-xl-5 animated slideInRight d-flex justify-content-center">
+            <Image
               className="rounded mt-4"
               src="/img/Expertise-OraclecloudHCM.jpg"
-              style={{ maxHeight: "350px", width: "100%", height: "auto" }}
               alt="cloud-hcm"
+              width={600}
+              height={350}
+              style={{ maxWidth: "100%", height: "auto" }}
+              priority
             />
           </div>
 
-          {/* Text content column */}
-          <div className="col-12 col-md-6 p-5 animated slideInLeft">
+          {/* Responsive text column */}
+          <div className="col-12 col-xl-6 p-5 animated slideInLeft">
             <ul>
               <li>
-                Oracle Fusion Data Intelligence provides a data warehouse layer
-                and prebuilt analytics on HCM and ERP data.{" "}
+                Oracle HCM Fusion is a comprehensive cloud-based HR solution
+                covering core HR, payroll, absence, talent, and workforce
+                management.
               </li>
               <li>
-                It supports reporting, compliance, pay transparency, and
-                advanced workforce and financial analytics.{" "}
+                It enables organisations to centralise HR processes, <br />
+                improve compliance, and deliver a unified employee experience.
               </li>
               <li>
-                Cloudheard enables clients to leverage FDI for accurate insights
-                by ensuring proper data mapping and governance.{" "}
+                Cloudheard has delivered HCM implementations across industries,
+                ensuring accurate requirement gathering to avoid costly rework.
               </li>
               <li>
-                We bring expertise in harmonising job structures, hierarchies,
-                and data models for meaningful analytics.
+                Our team focuses on configuring HR processes that align with
+                your organisation’s structure and local compliance needs.
               </li>
               <li>
-                Our approach reduces rework by clarifying scope upfront and
-                validating data during implementation.{" "}
+                With our offshore model guided by senior Architects, you gain
+                high-quality delivery at a fraction of typical costs.
               </li>
               <li>
-                With Cloudheard, you turn Oracle data into actionable
-                intelligence cost-effectively.{" "}
+                We make Oracle HCM Fusion work as a perfect fit-gap solution
+                tailored to your business.
               </li>
             </ul>
           </div>
         </div>
       </div>
 
+      {/* Projects Section */}
       <div className="container-xxl py-5">
         <div className="container">
           <div
@@ -115,15 +112,14 @@ export default function Fusiondata() {
             <p className="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">
               Our Projects
             </p>
-            <h1 className="display-5 mb-5">
-              We Have Completed Latest Projects
-            </h1>
+            <h1 className="display-5 mb-5">We Have Completed Latest Projects</h1>
           </div>
+
           <div
             className="owl-carousel project-carousel wow fadeInUp"
             data-wow-delay="0.3s"
           >
-            {/* Project 1 */}
+            {/* 1 */}
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
                 <Image
@@ -143,7 +139,7 @@ export default function Fusiondata() {
               </div>
             </div>
 
-            {/* Project 2 */}
+            {/* 2 */}
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
                 <Image
@@ -163,7 +159,7 @@ export default function Fusiondata() {
               </div>
             </div>
 
-            {/* Project 3 */}
+            {/* 3 */}
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
                 <Image
@@ -183,7 +179,7 @@ export default function Fusiondata() {
               </div>
             </div>
 
-            {/* Project 4 */}
+            {/* 4 */}
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
                 <Image
@@ -199,11 +195,11 @@ export default function Fusiondata() {
                 </a>
               </div>
               <div className="project-title">
-                <h4 className="mb-0">Oracle Integration Cloud </h4>
+                <h4 className="mb-0">Oracle Integration Cloud</h4>
               </div>
             </div>
 
-            {/* Project 5 */}
+            {/* 5 */}
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
                 <Image
@@ -223,7 +219,7 @@ export default function Fusiondata() {
               </div>
             </div>
 
-            {/* Project 6 */}
+            {/* 6 */}
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
                 <Image
@@ -243,7 +239,7 @@ export default function Fusiondata() {
               </div>
             </div>
 
-            {/* Project 7 */}
+            {/* 7 */}
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
                 <Image
@@ -263,7 +259,7 @@ export default function Fusiondata() {
               </div>
             </div>
 
-            {/* Project 8 */}
+            {/* 8 */}
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
                 <Image
@@ -283,7 +279,7 @@ export default function Fusiondata() {
               </div>
             </div>
 
-            {/* Project 9 */}
+            {/* 9 */}
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
                 <Image

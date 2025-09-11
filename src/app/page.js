@@ -42,10 +42,10 @@ export default function Home() {
                       <p className="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown">
                         Your Oracle Cloud Implementation Experts
                       </p>
-                      <h1 className="display-3 mb-4 animated slideInDown text-dark">
-                       “Big-firm expertise. Boutique-firm attention. Offshore pricing.”
+                      <h1 className="display-5 mb-4 animated slideInDown text-dark">
+                        “Big-firm expertise. <span className="text-primary">Boutique-firm attention.</span> Offshore pricing.”
                       </h1>
-                      <a href="#" className="btn btn-primary py-3 px-5 animated slideInDown">
+                      <a href="/about-us" className="btn btn-primary py-3 px-5 animated slideInDown">
                         Explore More
                       </a>
                     </div>
@@ -54,7 +54,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="carousel-item actives">
+            <div className="carousel-item"> {/* Removed the “actives” typo and only one active slide */}
               <img
                 className="w-100"
                 src="/img/carousel-2.jpg"
@@ -113,7 +113,7 @@ export default function Home() {
               data-wow-delay="0.1s"
             >
               <p className="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">
-                Why Choosing Us!
+                Why Choose Us!
               </p>
               <h1 className="display-7 mb-4">
                 Your Trusted Partner in Oracle Cloud Transformation!
@@ -142,7 +142,7 @@ export default function Home() {
                         <p className="mb-3">
                           Simplifying enterprise processes with intelligent financials, procurement, and project management.
                         </p>
-                        <a className="fw-semi-bold" href="#">
+                        <a className="fw-semi-bold" href="/expertise/cloud-erp">
                           Read More <i className="fa fa-arrow-right ms-1"></i>
                         </a>
                       </div>
@@ -159,7 +159,7 @@ export default function Home() {
                         <p className="mb-3">
                           Streamlining human capital management, payroll, workforce planning, and talent strategies.
                         </p>
-                        <a className="fw-semi-bold" href="#">
+                        <a className="fw-semi-bold" href="/expertise/cloud-hcm">
                           Read More <i className="fa fa-arrow-right ms-1"></i>
                         </a>
                       </div>
@@ -174,7 +174,7 @@ export default function Home() {
                     <p className="mb-3">
                       Helping businesses modernise operations by moving from legacy systems to Oracle Cloud Infrastructure.
                     </p>
-                    <a className="fw-semi-bold" href="#">
+                    <a className="fw-semi-bold" href="/expertise/on-prem-to-cloud">
                       Read More <i className="fa fa-arrow-right ms-1"></i>
                     </a>
                   </div>
@@ -186,7 +186,7 @@ export default function Home() {
                       <p className="mb-3">
                         Unlocking revenue opportunities with advanced subscription lifecycle management.
                       </p>
-                      <a className="fw-semi-bold" href="#">
+                      <a className="fw-semi-bold" href="/expertise/oracle-subscription">
                         Read More <i className="fa fa-arrow-right ms-1"></i>
                       </a>
                     </div>
@@ -214,10 +214,9 @@ export default function Home() {
               Deliver comprehensive Oracle Cloud solutions that streamline operations, enhance workforce management, and simplify business processes.
             </h1>
           </div>
-          {/* Tabs */}
+          {/* Tabs */ }
           <div className="row g-4 wow fadeInUp" data-wow-delay="0.3s">
-            {/* Tab buttons & content converted like previous sections */}
-            {/* For brevity, I can provide the full tab content next if you want */}
+            {/* Tab buttons & content here */}
           </div>
         </div>
       </div>

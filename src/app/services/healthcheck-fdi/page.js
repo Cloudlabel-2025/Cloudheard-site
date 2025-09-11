@@ -21,12 +21,12 @@ export default function Healthfdi() {
         className="container-fluid page-header mb-5 wow fadeIn shadow-sm"
         data-wow-delay="0.1s"
       >
-        <div className="container ">
+        <div className="container">
           <h1 className="display-5 mb-4 animated slideInDown">Our Services</h1>
 
           <p className="mb-2">
             At Cloudheard Consultancy, we bring 30+ years of combined cloud
-            experience and <br /> 3 years of proven delivery to help
+            experience and <br /> multiple proven deliveries to help
             organisations simplify, optimise, and scale with <br />
             Oracle Cloud and beyond.
           </p>
@@ -43,7 +43,8 @@ export default function Healthfdi() {
           </nav>
         </div>
       </div>
-      <div className="cointainer-fluid">
+      {/* Fix typo container-fluid */}
+      <div className="container-fluid">
         <div
           className="text-center mx-auto wow fadeInUp"
           data-wow-delay="0.1s"
@@ -60,56 +61,59 @@ export default function Healthfdi() {
         </div>
         <div className="m-3 p-3 row rounded shadow-lg ">
           <h3 className="text-center mt-2">FDI - Healthcheck</h3>
-          <div className="mt-3 mb-2 col-xl-5  animated slideInRight">
+          {/* Add responsive col classes */}
+          <div className="mt-3 mb-2 col-12 col-md-6 col-xl-5 animated slideInRight">
             <Image
-              className="rounded mt-4"
+              className="rounded img-fluid mt-4"
               src="/img/Expertise-OraclecloudHCM.jpg"
               width={600}
               height={350}
               alt="cloud-hcm"
+              // Next Image requires sizes or layout for responsiveness,
+              // but since we want no style change, we'll keep width/height but add img-fluid class
             />
           </div>
-          <div className="col-xl-6 p-5 animated slideInLeft">
+          <div className="col-12 col-md-6 col-xl-6 p-5 animated slideInLeft">
             <ul>
-              <ol>
+              <li>
                 <strong>
-                  But many businesses go wrong when implementing FDI without a
-                  proper Health Check. Common pitfalls include:{" "}
+                  Many businesses go wrong when implementing FDI without a
+                  proper Health Check. Common pitfalls include:
                 </strong>
-              </ol>
+              </li>
               <li>
                 Misaligned job structures, hierarchies, or departments, leading
-                to inaccurate reporting.{" "}
+                to inaccurate reporting.
               </li>
               <li>
                 Poor data quality and mapping, resulting in inconsistent
-                analytics.{" "}
+                analytics.
               </li>
               <li>
                 Overlooking security and compliance checks, which can expose
-                sensitive information.{" "}
+                sensitive information.
               </li>
               <li>
                 Implementing without validating the scope and objectives,
                 causing rework and increased costs.
               </li>
-              <ol>
-                <strong>
-                  A Health Check before FDI Implementation ensures:{" "}
-                </strong>
-              </ol>
-              <li>Data models and structures are harmonised. </li>
-              <li>Security roles and reporting hierarchies are validated </li>
-              <li>Go-Live → Smooth, structured transition into production. </li>
-              <li>Fit-gap analysis is clear </li>
               <li>
-                The business is set up for a smooth, cost-effective FDI rollout.{" "}
+                <strong>
+                  A Health Check before FDI Implementation ensures:
+                </strong>
+              </li>
+              <li>Data models and structures are harmonised.</li>
+              <li>Security roles and reporting hierarchies are validated</li>
+              <li>Go-Live → Smooth, structured transition into production.</li>
+              <li>Fit-gap analysis is clear</li>
+              <li>
+                The business is set up for a smooth, cost-effective FDI rollout.
               </li>
               <li>
                 At Cloudheard, we make the FDI Health Check a precursor to
                 implementation, ensuring your organisation avoids costly
                 mistakes and gains reliable, actionable intelligence from day
-                one.{" "}
+                one.
               </li>
             </ul>
           </div>
@@ -133,7 +137,7 @@ export default function Healthfdi() {
             className="owl-carousel project-carousel wow fadeInUp"
             data-wow-delay="0.3s"
           >
-            {/* Original 4 items */}
+            {/* Project items: add responsive behavior to images */}
             <div className="project-item pe-5 pb-5">
               <div className="project-img mb-3">
                 <Image

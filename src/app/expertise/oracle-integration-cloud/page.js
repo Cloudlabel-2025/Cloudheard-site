@@ -27,7 +27,7 @@ export default function Integrationcloud() {
 
           <p className="mb-2">
             At Cloudheard Consultancy, we bring 30+ years of combined cloud
-            experience and <br /> 3 years of proven delivery to help
+            experience and <br /> multiple proven deliveries to help
             organisations simplify, optimise, and scale with <br />
             Oracle Cloud and beyond.
           </p>
@@ -44,7 +44,7 @@ export default function Integrationcloud() {
           </nav>
         </div>
       </div>
-      <div className="cointainer-fluid">
+      <div className="container-fluid">
         <div
           className="text-center mx-auto wow fadeInUp"
           data-wow-delay="0.1s"
@@ -60,11 +60,14 @@ export default function Integrationcloud() {
         <div className="m-3 p-3 row rounded shadow-lg ">
           <h3 className="text-center mt-2">Oracle Integration Cloud</h3>
           <div className="mt-3 mb-2 col-xl-5  animated slideInRight">
-            <img
+            <Image
               className="rounded mt-4"
               src="/img/Expertise-OraclecloudHCM.jpg"
-              style={{ height: "350px", width: "600px" }}
               alt="cloud-hcm"
+              width={600}
+              height={350}
+              layout="responsive"
+              priority={true}
             />
           </div>
           <div className="col-xl-6 p-5 animated slideInLeft">
@@ -93,10 +96,6 @@ export default function Integrationcloud() {
               <li>
                 With Cloudheard, OIC becomes a cost-effective enabler of
                 end-to-end business processes.{" "}
-              </li>
-              <li>
-                Recommended Icon/Visuals: Plug-in icon, arrows forming a
-                loop, or connected nodes. Fusion Data Intelligence (FDI){" "}
               </li>
             </ul>
           </div>
@@ -129,6 +128,7 @@ export default function Integrationcloud() {
                   alt="Oracle HCM Fusion"
                   width={600}
                   height={350}
+                  layout="responsive"
                 />
                 <a href="/expertise/cloud-hcm">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -146,6 +146,7 @@ export default function Integrationcloud() {
                   alt="Oracle ERP Fusion"
                   width={600}
                   height={350}
+                  layout="responsive"
                 />
                 <a href="/expertise/cloud-erp">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -163,6 +164,7 @@ export default function Integrationcloud() {
                   alt="On Premises to Cloud"
                   width={600}
                   height={350}
+                  layout="responsive"
                 />
                 <a href="/expertise/on-prem-to-cloud">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -180,6 +182,7 @@ export default function Integrationcloud() {
                   alt="Oracle Integration Cloud"
                   width={600}
                   height={350}
+                  layout="responsive"
                 />
                 <a href="/expertise/oracle-integration-cloud">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -199,6 +202,7 @@ export default function Integrationcloud() {
                   alt="Fusion Data Intelligence"
                   width={600}
                   height={350}
+                  layout="responsive"
                 />
                 <a href="/expertise/fusion-data-intelligence">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -216,6 +220,7 @@ export default function Integrationcloud() {
                   alt="Automation Testing"
                   width={600}
                   height={350}
+                  layout="responsive"
                 />
                 <a href="/expertise/automation-testing">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -233,6 +238,7 @@ export default function Integrationcloud() {
                   alt="Version Control System"
                   width={600}
                   height={350}
+                  layout="responsive"
                 />
                 <a href="/expertise/version-control-system">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -250,6 +256,7 @@ export default function Integrationcloud() {
                   alt="Application Development"
                   width={600}
                   height={350}
+                  layout="responsive"
                 />
                 <a href="/expertise/application-development">
                   <i className="fa fa-link fa-3x text-primary"></i>
@@ -257,6 +264,24 @@ export default function Integrationcloud() {
               </div>
               <div className="project-title">
                 <h4 className="mb-0">Application Development</h4>
+              </div>
+            </div>
+            <div className="project-item pe-5 pb-5">
+              <div className="project-img mb-3">
+                <Image
+                  className="img-fluid rounded"
+                  src="/img/service-4.jpg"
+                  alt="oracle-subscription"
+                  width={600}
+                  height={350}
+                  layout="responsive"
+                />
+                <a href="/expertise/oracle-subscription">
+                  <i className="fa fa-link fa-3x text-primary"></i>
+                </a>
+              </div>
+              <div className="project-title">
+                <h4 className="mb-0">Oracle Subscription Management</h4>
               </div>
             </div>
           </div>

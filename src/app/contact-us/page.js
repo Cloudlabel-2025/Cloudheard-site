@@ -7,42 +7,41 @@ export default function ContactUs() {
   const [isClient, setIsClient] = useState(false);
 
   const [form, setForm] = useState({
-    name:'',
-    mail: '',
-    subject:'',
-    message:'',
+    name: "",
+    mail: "",
+    subject: "",
+    message: "",
   });
 
   const [status, setStatus] = useState("");
 
   const handleChange = (e) => {
-    setForm({...form, [e.target.id]: e.target.value });
+    setForm({ ...form, [e.target.id]: e.target.value });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("Sending");
 
-    try{
-      const res = await fetch("/api/send-mail",{
+    try {
+      const res = await fetch("/api/send-mail", {
         method: "POST",
-        headers: {"content-Type": "application/json"},
-        body: JSON.stringify(form), 
+        headers: { "content-Type": "application/json" },
+        body: JSON.stringify(form),
       });
 
       const data = await res.json();
 
-      if (res.ok){
+      if (res.ok) {
         setStatus("Message sent successfully");
-        setForm({ name:"", mail:"", subject:"", message:""});
-      } else{ 
+        setForm({ name: "", mail: "", subject: "", message: "" });
+      } else {
         setStatus(data.message || "Failed to send message");
       }
-    } catch (error){
-      setStatus ("Something went wrong. Please try again later.");
+    } catch (error) {
+      setStatus("Something went wrong. Please try again later.");
     }
   };
-
 
   useEffect(() => {
     setIsClient(true);
@@ -55,6 +54,7 @@ export default function ContactUs() {
 
   return (
     <>
+      {/* Page Header */}
       <div
         className="container-fluid page-header mb-5 wow fadeIn"
         data-wow-delay="0.1s"
@@ -73,13 +73,15 @@ export default function ContactUs() {
           </nav>
         </div>
       </div>
+
+      {/* Contact Section */}
       <div className="container-xxl py-5">
         <div className="container">
           <div className="row g-5">
             {/* Contact Form */}
             <div
               suppressHydrationWarning
-              className="col-lg-6 wow fadeIn"
+              className="col-12 col-lg-6 wow fadeIn"
               data-wow-delay="0.1s"
             >
               <p className="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">
@@ -88,10 +90,10 @@ export default function ContactUs() {
               <h1 className="display-5 mb-4">
                 If You Have Any Query, Please Contact Us
               </h1>
-              <p className="mb-4"></p>
+
               <form onSubmit={handleSubmit}>
                 <div className="row g-3">
-                  <div className="col-md-6">
+                  <div className="col-12 col-md-6">
                     <div className="form-floating">
                       <input
                         type="text"
@@ -105,20 +107,22 @@ export default function ContactUs() {
                       <label htmlFor="name">Your Name</label>
                     </div>
                   </div>
-                  <div className="col-md-6">
+
+                  <div className="col-12 col-md-6">
                     <div className="form-floating">
                       <input
-                        type="text"
+                        type="email"
                         className="form-control"
                         id="mail"
-                        placeholder="email"
+                        placeholder="Your Email"
                         value={form.mail}
                         onChange={handleChange}
                         required
                       />
-                      <label htmlFor="email">Your Email</label>
+                      <label htmlFor="mail">Your Email</label>
                     </div>
                   </div>
+
                   <div className="col-12">
                     <div className="form-floating">
                       <input
@@ -133,6 +137,7 @@ export default function ContactUs() {
                       <label htmlFor="subject">Subject</label>
                     </div>
                   </div>
+
                   <div className="col-12">
                     <div className="form-floating">
                       <textarea
@@ -147,14 +152,18 @@ export default function ContactUs() {
                       <label htmlFor="message">Message</label>
                     </div>
                   </div>
+
                   <div className="col-12">
                     <button className="btn btn-primary py-3 px-5" type="submit">
                       Send Message
                     </button>
                   </div>
-                  <div className="col-12">
-                    <p>{status}</p> {/* Message status (success/failure) */}
-                  </div>
+
+                  {status && (
+                    <div className="col-12">
+                      <p className="mt-2 mb-0">{status}</p>
+                    </div>
+                  )}
                 </div>
               </form>
             </div>
@@ -162,7 +171,7 @@ export default function ContactUs() {
             {/* Google Map */}
             <div
               suppressHydrationWarning
-              className="col-lg-6 wow fadeIn"
+              className="col-12 col-lg-6 wow fadeIn"
               data-wow-delay="0.5s"
               style={{ minHeight: "450px" }}
             >
