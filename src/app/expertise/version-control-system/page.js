@@ -96,7 +96,7 @@ export default function Versioncontrol() {
                 costly errors and compliance risks.{" "}
               </li>
               <li>
-                Recommended Icon/Visuals: 🔄 Branching tree (like Git), document
+                Recommended Icon/Visuals: Branching tree (like Git), document
                 with refresh arrows, or stacked layers.{" "}
               </li>
             </ul>

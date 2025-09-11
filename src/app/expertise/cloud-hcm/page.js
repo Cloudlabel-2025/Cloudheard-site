@@ -95,7 +95,7 @@ export default function Cloudhcm() {
                 tailored to your business.{" "}
               </li>
               <li>
-                Recommended Icon/Visuals: 👥 People / HR silhouette, employee
+                Recommended Icon/Visuals: People / HR silhouette, employee
                 profile card, or group of users.{" "}
               </li>
             </ul>

@@ -95,7 +95,7 @@ export default function Integrationcloud() {
                 end-to-end business processes.{" "}
               </li>
               <li>
-                Recommended Icon/Visuals: 🔌 Plug-in icon, arrows forming a
+                Recommended Icon/Visuals: Plug-in icon, arrows forming a
                 loop, or connected nodes. Fusion Data Intelligence (FDI){" "}
               </li>
             </ul>

@@ -6,6 +6,44 @@ import Link from "next/link";
 export default function ContactUs() {
   const [isClient, setIsClient] = useState(false);
 
+  const [form, setForm] = useState({
+    name:'',
+    mail: '',
+    subject:'',
+    message:'',
+  });
+
+  const [status, setStatus] = useState("");
+
+  const handleChange = (e) => {
+    setForm({...form, [e.target.id]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("Sending");
+
+    try{
+      const res = await fetch("/api/send-mail",{
+        method: "POST",
+        headers: {"content-Type": "application/json"},
+        body: JSON.stringify(form), 
+      });
+
+      const data = await res.json();
+
+      if (res.ok){
+        setStatus("Message sent successfully");
+        setForm({ name:"", mail:"", subject:"", message:""});
+      } else{ 
+        setStatus(data.message || "Failed to send message");
+      }
+    } catch (error){
+      setStatus ("Something went wrong. Please try again later.");
+    }
+  };
+
+
   useEffect(() => {
     setIsClient(true);
     if (typeof window !== "undefined" && window.WOW) {
@@ -50,9 +88,8 @@ export default function ContactUs() {
               <h1 className="display-5 mb-4">
                 If You Have Any Query, Please Contact Us
               </h1>
-              <p className="mb-4">
-              </p>
-              <form>
+              <p className="mb-4"></p>
+              <form onSubmit={handleSubmit}>
                 <div className="row g-3">
                   <div className="col-md-6">
                     <div className="form-floating">
@@ -61,6 +98,9 @@ export default function ContactUs() {
                         className="form-control"
                         id="name"
                         placeholder="Your Name"
+                        value={form.name}
+                        onChange={handleChange}
+                        required
                       />
                       <label htmlFor="name">Your Name</label>
                     </div>
@@ -68,10 +108,13 @@ export default function ContactUs() {
                   <div className="col-md-6">
                     <div className="form-floating">
                       <input
-                        type="email"
+                        type="text"
                         className="form-control"
-                        id="email"
-                        placeholder="Your Email"
+                        id="mail"
+                        placeholder="email"
+                        value={form.mail}
+                        onChange={handleChange}
+                        required
                       />
                       <label htmlFor="email">Your Email</label>
                     </div>
@@ -83,6 +126,9 @@ export default function ContactUs() {
                         className="form-control"
                         id="subject"
                         placeholder="Subject"
+                        value={form.subject}
+                        onChange={handleChange}
+                        required
                       />
                       <label htmlFor="subject">Subject</label>
                     </div>
@@ -94,6 +140,9 @@ export default function ContactUs() {
                         placeholder="Leave a message here"
                         id="message"
                         style={{ height: "100px" }}
+                        value={form.message}
+                        onChange={handleChange}
+                        required
                       ></textarea>
                       <label htmlFor="message">Message</label>
                     </div>
@@ -102,6 +151,9 @@ export default function ContactUs() {
                     <button className="btn btn-primary py-3 px-5" type="submit">
                       Send Message
                     </button>
+                  </div>
+                  <div className="col-12">
+                    <p>{status}</p> {/* Message status (success/failure) */}
                   </div>
                 </div>
               </form>

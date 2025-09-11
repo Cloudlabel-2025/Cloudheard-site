@@ -54,7 +54,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="carousel-item">
+            <div className="carousel-item actives">
               <img
                 className="w-100"
                 src="/img/carousel-2.jpg"

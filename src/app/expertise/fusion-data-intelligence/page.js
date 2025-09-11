@@ -94,7 +94,7 @@ export default function Fusiondata() {
                 intelligence cost-effectively.{" "}
               </li>
               <li>
-                Recommended Icon/Visuals: 📊 Analytics dashboard, pie/bar chart,
+                Recommended Icon/Visuals: Analytics dashboard, pie/bar chart,
                 or magnifying glass over data.{" "}
               </li>
             </ul>

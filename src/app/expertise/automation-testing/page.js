@@ -95,7 +95,7 @@ export default function Automate() {
                 the overhead of endless manual testing.{" "}
               </li>
               <li>
-                Recommended Icon/Visuals: 🤖 Robot/checkmark, gear with a check,
+                Recommended Icon/Visuals: Robot/checkmark, gear with a check,
                 or automation progress bar.{" "}
               </li>
             </ul>

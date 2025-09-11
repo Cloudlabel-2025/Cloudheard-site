@@ -98,7 +98,7 @@ export default function Applicationdevelopment() {
                 business-specific app — Cloudheard delivers solutions that work.{" "}
               </li>
               <li>
-                Recommended Icon/Visuals: 📱 Mobile app screen, laptop with code
+                Recommended Icon/Visuals: Mobile app screen, laptop with code
                 brackets, or gear + app window combo.{" "}
               </li>
             </ul>

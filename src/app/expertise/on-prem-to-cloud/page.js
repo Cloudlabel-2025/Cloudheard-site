@@ -94,7 +94,7 @@ export default function Subscription() {
                 future-ready.{" "}
               </li>
               <li>
-                Recommended Icon/Visuals: ☁️ Cloud upload arrow, server → cloud
+                Recommended Icon/Visuals: Cloud upload arrow, server → cloud
                 transition, or cloud migration arrows.{" "}
               </li>
             </ul>

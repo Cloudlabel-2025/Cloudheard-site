@@ -95,7 +95,7 @@ export default function Clouderp() {
                 built to support long-term growth.{" "}
               </li>
               <li>
-                Recommended Icon/Visuals: 💰 Finance ledger/book, bar chart, or
+                Recommended Icon/Visuals: Finance ledger/book, bar chart, or
                 coins with gear.{" "}
               </li>
             </ul>
