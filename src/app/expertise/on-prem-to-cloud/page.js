@@ -62,10 +62,10 @@ export default function Subscription() {
           <div className="mt-3 mb-2 col-xl-5 col-md-12 animated slideInRight">
             <Image
               className="rounded mt-4"
-              src="/img/Expertise-OraclecloudHCM.jpg"
+              src="/img/on-prem-cloud.png"
               alt="cloud-hcm"
               width={600}
-              height={350}
+              height={250}
               layout="responsive"
               priority={true}
             />

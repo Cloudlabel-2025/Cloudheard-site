@@ -64,7 +64,7 @@ export default function Managed() {
           <div className="mt-3 mb-2 col-12 col-xl-5 animated slideInRight">
             <Image
               className="rounded mt-4"
-              src="/img/Expertise-OraclecloudHCM.jpg"
+              src="/img/cloud-managed.png"
               alt="cloud-hcm"
               width={600}
               height={350}

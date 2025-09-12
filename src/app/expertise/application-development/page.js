@@ -72,7 +72,7 @@ export default function Applicationdevelopment() {
               }}
             >
               <Image
-                src="/img/Expertise-OraclecloudHCM.jpg"
+                src="/img/application-development.png"
                 alt="cloud-hcm"
                 fill
                 style={{ objectFit: "cover", borderRadius: "0.25rem" }}
