@@ -7,6 +7,8 @@ export default function Career() {
   const [isClient, setIsClient] = useState(false);
   const [file, setFile] = useState(null);
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     setIsClient(true);
@@ -20,13 +22,38 @@ export default function Career() {
   const handleFileChange = (e) => {
     setFile(e.target.files[0]);
     setSubmitted(false);
+    setError(null);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (file) {
-      setSubmitted(true);
-      console.log("File ready to be sent:", file);
+    if (!file) return;
+
+    setLoading(true);
+    setSubmitted(false);
+    setError(null);
+
+    try {
+      const formData = new FormData();
+      formData.append("file", file);
+
+      const res = await fetch("/api/upload", {
+        method: "POST",
+        body: formData,
+      });
+
+      if (res.ok) {
+        setSubmitted(true);
+        setFile(null);
+        e.target.reset(); // clear input
+      } else {
+        const errData = await res.json();
+        setError(errData.message || "Upload failed. Try again.");
+      }
+    } catch (err) {
+      setError("Something went wrong. Please try again later.");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -42,7 +69,6 @@ export default function Career() {
           <h1 className="display-6 mb-4 animated slideInDown">
             Culture and Careers at Cloudheard
           </h1>
-
           <nav aria-label="breadcrumb" className="animated slideInDown">
             <ol className="breadcrumb mb-0">
               <li className="breadcrumb-item">
@@ -135,7 +161,6 @@ export default function Career() {
                   </p>
                 </div>
               </div>
-
               <div className="col-12">
                 <div className="card custom-hover-card p-4 border-0 shadow-sm mb-3 text-center">
                   <div className="mb-2">
@@ -148,7 +173,6 @@ export default function Career() {
                   </p>
                 </div>
               </div>
-
               <div className="col-12">
                 <div className="card custom-hover-card p-4 border-0 shadow-sm text-center">
                   <div className="mb-2">
@@ -165,8 +189,9 @@ export default function Career() {
           </div>
         </div>
 
+        {/* === Story Upload Section === */}
         <div className="row g-5 align-items-start">
-          {/* Left: Value Cards (7 columns) */}
+          {/* Left */}
           <div className="col-lg-7 col-md-12 mb-4 mb-lg-0">
             <div className="card custom-hover-card h-100 p-4 border-0 shadow-sm">
               <h4 className="fw-bold mb-3">Why Join Cloudheard?</h4>
@@ -182,7 +207,7 @@ export default function Career() {
             </div>
           </div>
 
-          {/* Right: Form (5 columns) */}
+          {/* Right: Upload Form */}
           <div className="col-lg-5 col-md-12">
             <h4 className="mb-3">Share Your Story</h4>
             <p>
@@ -202,7 +227,7 @@ export default function Career() {
               <li>Where do you want to be in 3 years?</li>
             </ol>
 
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} encType="multipart/form-data">
               <div className="mb-4" style={{ maxWidth: "100%" }}>
                 <label htmlFor="fileUpload" className="form-label fw-semibold">
                   Upload Your Story (Word, PDF, or short video):
@@ -216,14 +241,24 @@ export default function Career() {
                   required
                 />
               </div>
-              <button type="submit" className="btn btn-primary py-2 px-4">
-                Submit
+              <button
+                type="submit"
+                className="btn btn-primary py-2 px-4"
+                disabled={loading}
+              >
+                {loading ? "Submitting..." : "Submit"}
               </button>
             </form>
 
+            {/* Feedback messages */}
             {submitted && (
               <div className="alert alert-success mt-4" role="alert">
-                Thank you! Your story has been submitted successfully.
+                ✅ Thank you! Your story has been submitted successfully.
+              </div>
+            )}
+            {error && (
+              <div className="alert alert-danger mt-4" role="alert">
+                ❌ {error}
               </div>
             )}
           </div>
