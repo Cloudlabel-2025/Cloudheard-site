@@ -9,6 +9,7 @@ export default function ContactUs() {
   const [form, setForm] = useState({
     name: "",
     mail: "",
+    mobileNumber:"",
     subject: "",
     message: "",
   });
@@ -34,7 +35,7 @@ export default function ContactUs() {
 
       if (res.ok) {
         setStatus("Message sent successfully");
-        setForm({ name: "", mail: "", subject: "", message: "" });
+        setForm({ name: "", mail: "", mobileNumber:"", subject: "", message: "" });
       } else {
         setStatus(data.message || "Failed to send message");
       }
@@ -122,8 +123,22 @@ export default function ContactUs() {
                       <label htmlFor="mail">Your Email</label>
                     </div>
                   </div>
+                  <div className="col-12 col-md-6">
+                    <div className="form-floating">
+                      <input
+                        type="number"
+                        className="form-control"
+                        id="mobileNumber"
+                        placeholder="Your Mobile Number"
+                        value={form.mobileNumber}
+                        onChange={handleChange}
+                        required
+                      />
+                      <label htmlFor="mail">Your Mobile Number</label>
+                    </div>
+                  </div>
 
-                  <div className="col-12">
+                  <div className="col-12 col-md-6">
                     <div className="form-floating">
                       <input
                         type="text"

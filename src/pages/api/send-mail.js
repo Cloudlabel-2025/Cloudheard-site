@@ -4,7 +4,7 @@ export default async function handler(req,res){
     if(req.method !=='POST'){
    return res.status(405).json({message:'POST method only'});
     }
-    const { name, mail, subject, message } = req.body;
+    const { name, mail, mobileNumber, subject, message } = req.body;
     const transporter =nodemailer.createTransport({
         host:'smtp.gmail.com',
         port:587,
@@ -18,7 +18,7 @@ export default async function handler(req,res){
         from: 'cloudheard.org',
         to:'cloudlabel@cloudheard.org',
         subject:subject ||`New message from ${name}`,
-       text: `From: ${name} <${mail}>\n\n${message}`,
+       text: `From: ${name} <${mail}>\n${mobileNumber}\n${message}`,
         });
     res.status(200).json({message:'Sent Successfully'});
     }

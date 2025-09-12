@@ -5,6 +5,44 @@ import { useEffect, useState } from "react";
 export default function Home() {
   const [isClient, setIsClient] = useState(false);
 
+  const [form, setForm] = useState({
+    name: "",
+    mail: "",
+    mobileNumber:"",
+    subject: "",
+    message: "",
+  });
+
+  const [status, setStatus] = useState("");
+
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.id]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("Sending");
+
+    try {
+      const res = await fetch("/api/send-mail", {
+        method: "POST",
+        headers: { "content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+
+      const data = await res.json();
+
+      if (res.ok) {
+        setStatus("Message sent successfully");
+        setForm({ name: "", mail: "",mobileNumber:"", subject: "", message: "" });
+      } else {
+        setStatus(data.message || "Failed to send message");
+      }
+    } catch (error) {
+      setStatus("Something went wrong. Please try again later.");
+    }
+  };
+
   useEffect(() => {
     setIsClient(true);
 
@@ -241,43 +279,95 @@ export default function Home() {
                     Have a query in your mind? Connect with us by filling out the form below!
                   </p>
                 </div>
+                <form onSubmit={handleSubmit}>
                 <div className="row g-3">
-                  <div className="col-12">
+                  <div className="col-12 col-md-6">
                     <div className="form-floating">
-                      <input type="text" className="form-control" id="name" placeholder="Your Name" />
-                      <label htmlFor="name">Name</label>
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="name"
+                        placeholder="Your Name"
+                        value={form.name}
+                        onChange={handleChange}
+                        required
+                      />
+                      <label htmlFor="name">Your Name</label>
                     </div>
                   </div>
-                  <div className="col-12">
+
+                  <div className="col-12 col-md-6">
                     <div className="form-floating">
-                      <input type="email" className="form-control" id="mail" placeholder="Your Email" />
-                      <label htmlFor="mail">Email</label>
+                      <input
+                        type="email"
+                        className="form-control"
+                        id="mail"
+                        placeholder="Your Email"
+                        value={form.mail}
+                        onChange={handleChange}
+                        required
+                      />
+                      <label htmlFor="mail">Your Email</label>
                     </div>
                   </div>
-                  <div className="col-12">
+                  <div className="col-12 col-md-6">
                     <div className="form-floating">
-                      <input type="text" className="form-control" id="mobile" placeholder="Your Mobile" />
-                      <label htmlFor="mobile">Mobile</label>
+                      <input
+                        type="number"
+                        className="form-control"
+                        id="mobileNumber"
+                        placeholder="Your Mobile Number"
+                        value={form.mobileNumber}
+                        onChange={handleChange}
+                        required
+                      />
+                      <label htmlFor="mail">Your Mobile Number</label>
                     </div>
                   </div>
-                  <div className="col-12">
+
+                  <div className="col-12 col-md-6">
                     <div className="form-floating">
-                      <input type="text" className="form-control" id="subject" placeholder="Subject" />
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="subject"
+                        placeholder="Subject"
+                        value={form.subject}
+                        onChange={handleChange}
+                        required
+                      />
                       <label htmlFor="subject">Subject</label>
                     </div>
                   </div>
+
                   <div className="col-12">
                     <div className="form-floating">
-                      <textarea className="form-control" placeholder="Leave a message here" id="message" style={{ height: "100px" }}></textarea>
+                      <textarea
+                        className="form-control"
+                        placeholder="Leave a message here"
+                        id="message"
+                        style={{ height: "100px" }}
+                        value={form.message}
+                        onChange={handleChange}
+                        required
+                      ></textarea>
                       <label htmlFor="message">Message</label>
                     </div>
                   </div>
-                  <div className="col-12 text-center">
-                    <button className="btn btn-primary w-100 py-3" type="submit">
-                      Send it To Us
+
+                  <div className="col-12">
+                    <button className="btn btn-primary py-3 px-5" type="submit">
+                      Send Message
                     </button>
                   </div>
+
+                  {status && (
+                    <div className="col-12">
+                      <p className="mt-2 mb-0">{status}</p>
+                    </div>
+                  )}
                 </div>
+              </form>
               </div>
             </div>
           </div>
