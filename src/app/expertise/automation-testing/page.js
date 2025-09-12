@@ -62,7 +62,7 @@ export default function Automate() {
           <div className="mt-3 mb-2 col-xl-5 animated slideInRight">
             <Image
               className="rounded mt-4"
-              src="/img/Expertise-OraclecloudHCM.jpg"
+              src="/img/test-automation.jpeg"
               width={600}
               height={350}
               alt="cloud-hcm"

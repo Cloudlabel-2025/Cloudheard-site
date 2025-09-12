@@ -65,7 +65,7 @@ export default function Versioncontrol() {
           <div className="col-12 col-xl-5 mt-3 mb-2 animated slideInRight d-flex justify-content-center">
             <Image
               className="rounded mt-4"
-              src="/img/Expertise-OraclecloudHCM.jpg"
+              src="/img/version-control.png"
               alt="cloud-hcm"
               width={600}
               height={350}

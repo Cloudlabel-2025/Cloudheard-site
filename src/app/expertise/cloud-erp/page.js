@@ -63,7 +63,7 @@ export default function Clouderp() {
           <div className="mt-3 mb-2 col-xl-5  animated slideInRight">
             <Image
               className="rounded mt-4"
-              src="/img/Expertise-OraclecloudHCM.jpg"
+              src="/img/erp-image.jpg"
               width={600}
               height={350}
               alt="cloud-hcm"

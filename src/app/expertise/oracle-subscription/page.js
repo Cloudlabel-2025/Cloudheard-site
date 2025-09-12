@@ -59,7 +59,7 @@ export default function Oraclesub() {
           <div className="mt-3 mb-2 col-12 col-xl-5 animated slideInRight d-flex justify-content-center">
             <Image
               className="rounded mt-4"
-              src="/img/Expertise-OraclecloudHCM.jpg"
+              src="/img/sub-management.jpg"
               alt="cloud-hcm"
               width={600}
               height={350}

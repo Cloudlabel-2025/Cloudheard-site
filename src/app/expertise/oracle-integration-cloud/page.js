@@ -62,7 +62,7 @@ export default function Integrationcloud() {
           <div className="mt-3 mb-2 col-xl-5  animated slideInRight">
             <Image
               className="rounded mt-4"
-              src="/img/Expertise-OraclecloudHCM.jpg"
+              src="/img/integration-cloud.jpg"
               alt="cloud-hcm"
               width={600}
               height={350}
