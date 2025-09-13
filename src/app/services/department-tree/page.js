@@ -74,11 +74,11 @@ export default function Department() {
           <div className="col-12 col-xl-5 mt-3 mb-2 animated slideInRight d-flex justify-content-center">
             <Image
               className="rounded mt-4"
-              src="/img/Expertise-OraclecloudHCM.jpg"
+              src="/img/servicepage-8.jpg"
               height={350}
               width={600}
               alt="cloud-hcm"
-              style={{ width: "100%", height: "auto" }}
+              style={{ maxWidth: "100%", height: "auto" }}
               priority
             />
           </div>

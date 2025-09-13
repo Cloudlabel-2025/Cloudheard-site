@@ -63,18 +63,17 @@ export default function Implementation() {
         <div className="m-3 p-3 row rounded shadow-lg">
           <h3 className="text-center mt-2">Cloud Implementation Services</h3>
 
-          <div className="col-xl-5 col-lg-6 col-md-12 mt-3 mb-2 animated slideInRight">
-            <div className="w-100 position-relative" style={{ height: "auto", minHeight: "300px" }}>
-              <Image
-                className="rounded mt-4"
-                src="/img/Expertise-OraclecloudHCM.jpg"
-                alt="cloud-hcm"
-                layout="responsive"
-                width={600}
-                height={350}
-              />
-            </div>
-          </div>
+          <div className="mt-3 mb-2 col-12 col-xl-5 animated slideInRight">
+                      <Image
+                        className="rounded mt-4"
+                        src="/img/servicepage-2.jpg"
+                        alt="cloud-hcm"
+                        width={600}
+                        height={350}
+                        style={{ maxWidth: "100%", height: "auto"}}
+                        priority
+                      />
+                    </div>
 
           <div className="col-xl-7 col-lg-6 col-md-12 p-5 animated slideInLeft">
             <ul>

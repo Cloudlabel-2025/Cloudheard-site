@@ -63,15 +63,17 @@ export default function Fusiondata() {
           <h3 className="text-center mt-2 w-100">Fusion Data Intelligence</h3>
 
           {/* Image column */}
-          <div className="col-12 col-md-5 mt-3 mb-2 animated slideInRight d-flex justify-content-center">
-            {/* responsive img with width 100% */}
-            <img
-              className="rounded mt-4"
-              src="/img/Expertise-OraclecloudHCM.jpg"
-              style={{ maxHeight: "350px", width: "100%", height: "auto" }}
-              alt="cloud-hcm"
-            />
-          </div>
+           <div className="mt-3 mb-2 col-12 col-xl-5 animated slideInRight d-flex justify-content-center">
+                      <Image
+                        className="rounded mt-4"
+                        src="/img/Expertise-OraclecloudHCM.jpg"
+                        alt="cloud-hcm"
+                        width={600}
+                        height={350}
+                        style={{ maxWidth: "100%", height: "auto" }}
+                        priority
+                      />
+                    </div>
 
           {/* Text content column */}
           <div className="col-12 col-md-6 p-5 animated slideInLeft">

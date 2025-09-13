@@ -61,24 +61,17 @@ export default function Applicationdevelopment() {
         </div>
         <div className="m-3 p-3 row rounded shadow-lg ">
           <h3 className="text-center mt-2">Application Development </h3>
-          <div className="mt-3 mb-2 col-12 col-md-6 col-lg-5 animated slideInRight">
-            <div
-              className="rounded mt-4"
-              style={{
-                maxWidth: 600,
-                width: "100%",
-                aspectRatio: "16 / 9",
-                position: "relative",
-              }}
-            >
-              <Image
-                src="/img/application-development.png"
-                alt="cloud-hcm"
-                fill
-                style={{ objectFit: "cover", borderRadius: "0.25rem" }}
-              />
-            </div>
-          </div>
+           <div className="mt-3 mb-2 col-12 col-xl-5 animated slideInRight d-flex justify-content-center">
+                      <Image
+                        className="rounded mt-4"
+                        src="/img/application-development.jpg"
+                        alt="cloud-hcm"
+                        width={600}
+                        height={350}
+                        style={{ maxWidth: "100%", height: "auto" }}
+                        priority
+                      />
+                    </div>
           <div className="col-12 col-md-6 col-lg-6 p-5 animated slideInLeft">
             <ul>
               <li>
