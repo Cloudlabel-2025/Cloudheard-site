@@ -62,17 +62,17 @@ export default function Versioncontrol() {
           <h3 className="text-center mt-2">Version Control for Oracle Fusion</h3>
 
           {/* Image Column */}
-          <div className="col-12 col-xl-5 mt-3 mb-2 animated slideInRight d-flex justify-content-center">
-            <Image
-              className="rounded mt-4"
-              src="/img/version-control.png"
-              alt="cloud-hcm"
-              width={600}
-              height={350}
-              style={{ width: "100%", height: "auto" }}
-              priority
-            />
-          </div>
+           <div className="mt-3 mb-2 col-12 col-xl-5 animated slideInRight d-flex justify-content-center">
+                      <Image
+                        className="rounded mt-4"
+                        src="/img/version-control.jpg"
+                        alt="cloud-hcm"
+                        width={600}
+                        height={350}
+                        style={{ maxWidth: "100%", height: "auto" }}
+                        priority
+                      />
+                    </div>
 
           {/* Text Column */}
           <div className="col-12 col-xl-6 p-5 animated slideInLeft">

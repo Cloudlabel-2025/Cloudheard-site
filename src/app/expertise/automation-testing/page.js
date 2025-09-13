@@ -59,14 +59,15 @@ export default function Automate() {
         </div>
         <div className="m-3 p-3 row rounded shadow-lg ">
           <h3 className="text-center mt-2">Automated Testing </h3>
-          <div className="mt-3 mb-2 col-xl-5 animated slideInRight">
+          <div className="mt-3 mb-2 col-12 col-xl-5 animated slideInRight d-flex justify-content-center">
             <Image
               className="rounded mt-4"
               src="/img/test-automation.jpeg"
+              alt="cloud-hcm"
               width={600}
               height={350}
-              alt="cloud-hcm"
-              style={{ width: "100%", height: "auto" }}
+              style={{ maxWidth: "100%", height: "auto" }}
+              priority
             />
           </div>
           <div className="col-xl-6 p-5 animated slideInLeft">

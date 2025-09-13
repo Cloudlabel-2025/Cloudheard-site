@@ -64,15 +64,15 @@ export default function Managed() {
           <div className="mt-3 mb-2 col-12 col-xl-5 animated slideInRight">
             <Image
               className="rounded mt-4"
-              src="/img/cloud-managed.png"
+              src="/img/servicepage-1.jpg"
               alt="cloud-hcm"
               width={600}
               height={350}
-              style={{ width: "100%", height: "auto" }}
+              style={{ maxWidth: "100%", height: "auto"}}
               priority
             />
           </div>
-
+         
           <div className="col-12 col-xl-6 p-5 animated slideInLeft">
             <ul>
               <ol>

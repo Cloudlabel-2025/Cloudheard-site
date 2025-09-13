@@ -51,25 +51,30 @@ export default function Cloudhcm() {
           style={{ maxWidth: "600px" }}
         >
           <h3 className="display-5 mb-2">Oracle HCM Fusion</h3>
-
           <p className="mb-4">
-            Transform HR into seamless, compliant experience.Cloudheard delivers
+            Transform HR into seamless, compliant experience. Cloudheard delivers
             HCM solutions that fit your business perfectly, cost effectively.
           </p>
         </div>
-        <div className="m-3 p-3 row rounded shadow-lg ">
+
+        <div className="m-3 p-3 row rounded shadow-lg">
           <h3 className="text-center mt-2">Oracle HCM Fusion</h3>
-          <div className="mt-3 mb-2 col-xl-5  animated slideInRight">
+
+          {/* Image */}
+          <div className="mt-3 mb-2 col-12 col-xl-5 animated slideInRight d-flex justify-content-center">
             <Image
               className="rounded mt-4"
               src="/img/hcm-images.jpg"
               alt="cloud-hcm"
               width={600}
               height={350}
-              style={{ width: "100%", height: "auto" }}
+              style={{ maxWidth: "100%", height: "auto" }}
+              priority
             />
           </div>
-          <div className="col-xl-6 p-5 animated slideInLeft">
+
+          {/* Text */}
+          <div className="col-12 col-md-6 col-xl-6 p-5 animated slideInLeft">
             <ul>
               <li>
                 Oracle HCM Fusion is a comprehensive cloud-based HR solution
@@ -100,6 +105,7 @@ export default function Cloudhcm() {
           </div>
         </div>
       </div>
+
       <div className="container-xxl py-5">
         <div className="container">
           <div

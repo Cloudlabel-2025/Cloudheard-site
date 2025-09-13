@@ -61,16 +61,17 @@ export default function Healthoracle() {
         <div className="m-3 p-3 row rounded shadow-lg">
           <h3 className="text-center mt-2 w-100">Health Check – Oracle Fusion </h3>
           {/* Responsive columns */}
-          <div className="mt-3 mb-2 col-12 col-md-6 col-xl-5 animated slideInRight">
-            <Image
-              className="rounded mt-4"
-              src="/img/Expertise-OraclecloudHCM.jpg"
-              width={600}
-              height={350}
-              alt="cloud-hcm"
-              style={{ width: "100%", height: "auto" }}
-            />
-          </div>
+          <div className="mt-3 mb-2 col-12 col-xl-5 animated slideInRight">
+                      <Image
+                        className="rounded mt-4"
+                        src="/img/servicepage-9.jpg"
+                        alt="cloud-hcm"
+                        width={600}
+                        height={350}
+                        style={{ maxWidth: "100%", height: "auto" }}
+                        priority
+                      />
+                    </div>
           <div className="col-12 col-md-6 col-xl-6 p-5 animated slideInLeft">
             <ul>
               <li>
