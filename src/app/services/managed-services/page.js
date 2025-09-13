@@ -34,7 +34,7 @@ export default function Managed() {
           <nav aria-label="breadcrumb" className="animated slideInDown">
             <ol className="breadcrumb mb-0">
               <li className="breadcrumb-item">
-                <a href="#">Home</a>
+                <a href="/" className="text-decoration-none">Home</a>
               </li>
               <li className="breadcrumb-item active" aria-current="page">
                 Oracle Fusion Managed Services

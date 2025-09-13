@@ -65,7 +65,7 @@ export default function ContactUs() {
           <nav aria-label="breadcrumb" className="animated slideInDown">
             <ol className="breadcrumb mb-0">
               <li className="breadcrumb-item">
-                <Link href="/">Home</Link>
+                <Link href="/" className="text-decoration-none">Home</Link>
               </li>
               <li className="breadcrumb-item active" aria-current="page">
                 Contact Us
