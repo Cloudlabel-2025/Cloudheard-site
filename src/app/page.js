@@ -65,6 +65,7 @@ export default function Home() {
           id="header-carousel"
           className="carousel slide carousel-fade"
           data-bs-ride="carousel"
+          data-bs-interval="2000"
         >
           <div className="carousel-inner">
             <div className="carousel-item active">
