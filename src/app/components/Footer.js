@@ -78,8 +78,8 @@ function Footer() {
           {/* Other Links */}
           <div className="col-lg-3 col-md-6">
             <h4 className="text-white mb-4">Other Links</h4>
-            <Link href="#" className="btn btn-link">Privacy Policy</Link>
-            <Link href="#" className="btn btn-link">Terms & Conditions</Link>
+            <Link href="/privacy-policy" className="btn btn-link">Privacy Policy</Link>
+            <Link href="/terms&conditions" className="btn btn-link">Terms & Conditions</Link>
           </div>
         </div>
       </div>
