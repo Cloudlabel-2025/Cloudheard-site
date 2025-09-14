@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Subscription() {
   const [isClient, setIsClient] = useState(false);
@@ -35,7 +36,7 @@ export default function Subscription() {
           <nav aria-label="breadcrumb" className="animated slideInDown">
             <ol className="breadcrumb mb-0">
               <li className="breadcrumb-item">
-                <a href="/" className="text-decoration-none">Home</a>
+                <Link href="/" className="text-decoration-none">Home</Link>
               </li>
               <li className="breadcrumb-item active" aria-current="page">
                 On-Premise to Cloud
@@ -129,9 +130,9 @@ export default function Subscription() {
                   height={350}
                   style={{ width: "100%", height: "auto" }}
                 />
-                <a href="/expertise/cloud-hcm">
+                <Link href="/expertise/cloud-hcm">
                   <i className="fa fa-link fa-3x text-primary"></i>
-                </a>
+                </Link>
               </div>
               <div className="project-title">
                 <h4 className="mb-0">Oracle HCM Fusion</h4>
@@ -149,9 +150,9 @@ export default function Subscription() {
                   height={350}
                   style={{ width: "100%", height: "auto" }}
                 />
-                <a href="/expertise/cloud-erp">
+                <Link href="/expertise/cloud-erp">
                   <i className="fa fa-link fa-3x text-primary"></i>
-                </a>
+                </Link>
               </div>
               <div className="project-title">
                 <h4 className="mb-0">Oracle ERP Fusion</h4>
@@ -169,9 +170,9 @@ export default function Subscription() {
                   height={350}
                   style={{ width: "100%", height: "auto" }}
                 />
-                <a href="/expertise/on-prem-to-cloud">
+                <Link href="/expertise/on-prem-to-cloud">
                   <i className="fa fa-link fa-3x text-primary"></i>
-                </a>
+                </Link>
               </div>
               <div className="project-title">
                 <h4 className="mb-0">OnPremises to Cloud</h4>
@@ -189,9 +190,9 @@ export default function Subscription() {
                   height={350}
                   style={{ width: "100%", height: "auto" }}
                 />
-                <a href="/expertise/oracle-integration-cloud">
+                <Link href="/expertise/oracle-integration-cloud">
                   <i className="fa fa-link fa-3x text-primary"></i>
-                </a>
+                </Link>
               </div>
               <div className="project-title">
                 <h4 className="mb-0">Oracle Integration Cloud </h4>
@@ -209,9 +210,9 @@ export default function Subscription() {
                   height={350}
                   style={{ width: "100%", height: "auto" }}
                 />
-                <a href="/expertise/fusion-data-intelligence">
+                <Link href="/expertise/fusion-data-intelligence">
                   <i className="fa fa-link fa-3x text-primary"></i>
-                </a>
+                </Link>
               </div>
               <div className="project-title">
                 <h4 className="mb-0">Fusion Data Intelligence</h4>
@@ -229,9 +230,9 @@ export default function Subscription() {
                   height={350}
                   style={{ width: "100%", height: "auto" }}
                 />
-                <a href="/expertise/automation-testing">
+                <Link href="/expertise/automation-testing">
                   <i className="fa fa-link fa-3x text-primary"></i>
-                </a>
+                </Link>
               </div>
               <div className="project-title">
                 <h4 className="mb-0">Automation Testing</h4>
@@ -249,9 +250,9 @@ export default function Subscription() {
                   height={350}
                   style={{ width: "100%", height: "auto" }}
                 />
-                <a href="/expertise/version-control-system">
+                <Link href="/expertise/version-control-system">
                   <i className="fa fa-link fa-3x text-primary"></i>
-                </a>
+                </Link>
               </div>
               <div className="project-title">
                 <h4 className="mb-0">Version Control System</h4>
@@ -269,9 +270,9 @@ export default function Subscription() {
                   height={350}
                   style={{ width: "100%", height: "auto" }}
                 />
-                <a href="/expertise/application-development">
+                <Link href="/expertise/application-development">
                   <i className="fa fa-link fa-3x text-primary"></i>
-                </a>
+                </Link>
               </div>
               <div className="project-title">
                 <h4 className="mb-0">Application Development</h4>
@@ -289,9 +290,9 @@ export default function Subscription() {
                   height={350}
                   style={{ width: "100%", height: "auto" }}
                 />
-                <a href="/expertise/oracle-subscription">
+                <Link href="/expertise/oracle-subscription">
                   <i className="fa fa-link fa-3x text-primary"></i>
-                </a>
+                </Link>
               </div>
               <div className="project-title">
                 <h4 className="mb-0">Oracle Subscription Management</h4>
