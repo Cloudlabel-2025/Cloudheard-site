@@ -29,7 +29,7 @@ export default function Automate() {
     slidesToScroll: 1,
     arrows: true,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2500,
     responsive: [
       {
         breakpoint: 1200,
@@ -41,7 +41,7 @@ export default function Automate() {
       },
     ],
   };
-
+  
   return (
     <>
       {/* Header */}

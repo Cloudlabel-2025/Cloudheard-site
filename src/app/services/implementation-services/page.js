@@ -1,6 +1,11 @@
 "use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
+import Slider from "react-slick";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function Implementation() {
   const [isClient, setIsClient] = useState(false);
@@ -13,6 +18,28 @@ export default function Implementation() {
   }, []);
 
   if (!isClient) return null;
+
+  // Slider settings
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 800,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 2500,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: { slidesToShow: 2 },
+      },
+      {
+        breakpoint: 768,
+        settings: { slidesToShow: 1 },
+      },
+    ],
+  };
 
   return (
     <>
@@ -33,7 +60,7 @@ export default function Implementation() {
           <nav aria-label="breadcrumb" className="animated slideInDown">
             <ol className="breadcrumb mb-0">
               <li className="breadcrumb-item">
-                <a href="/" className="text-decoration-none">Home</a>
+                <Link href="/" className="text-decoration-none">Home</Link>
               </li>
               <li className="breadcrumb-item active" aria-current="page">
                 Cloud Implementation Services
@@ -64,16 +91,16 @@ export default function Implementation() {
           <h3 className="text-center mt-2">Cloud Implementation Services</h3>
 
           <div className="mt-3 mb-2 col-12 col-xl-5 animated slideInRight">
-                      <Image
-                        className="rounded mt-4"
-                        src="/img/servicepage-2.jpg"
-                        alt="cloud-hcm"
-                        width={600}
-                        height={350}
-                        style={{ maxWidth: "100%", height: "auto"}}
-                        priority
-                      />
-                    </div>
+            <Image
+              className="rounded mt-4"
+              src="/img/servicepage-2.jpg"
+              alt="cloud-hcm"
+              width={600}
+              height={350}
+              style={{ maxWidth: "100%", height: "auto" }}
+              priority
+            />
+          </div>
 
           <div className="col-xl-7 col-lg-6 col-md-12 p-5 animated slideInLeft">
             <ul>
@@ -134,26 +161,21 @@ export default function Implementation() {
             </h1>
           </div>
 
-          <div
-            className="owl-carousel project-carousel wow fadeInUp"
-            data-wow-delay="0.3s"
-          >
-            {/* Project 1 */}
-            <div className="project-item pe-5 pb-5">
-              <div className="project-img mb-3 position-relative">
-                <div className="w-100 position-relative" style={{ height: "auto", minHeight: "300px" }}>
-                  <Image
-                    className="img-fluid rounded"
-                    src="/img/service-1.jpg"
-                    alt="Oracle HCM Fusion"
-                    layout="responsive"
-                    width={600}
-                    height={350}
-                  />
-                </div>
-                <a href="/expertise/cloud-hcm">
+          {/* ✅ Replaced Owl with Slick */}
+          <Slider {...settings}>
+            <div className="project-item pe-5 pb-5 px-4">
+              <div className="project-img mb-3">
+                <Image
+                  className="img-fluid rounded"
+                  src="/img/service-1.jpg"
+                  alt="Cloud Managed Services"
+                  width={600}
+                  height={350}
+                  style={{ width: "100%", height: "auto" }}
+                />
+                <Link href="/expertise/cloud-hcm">
                   <i className="fa fa-link fa-3x text-primary"></i>
-                </a>
+                </Link>
               </div>
               <div className="project-title">
                 <h4 className="mb-0">Cloud Managed Services</h4>
@@ -161,21 +183,19 @@ export default function Implementation() {
             </div>
 
             {/* Project 2 */}
-            <div className="project-item pe-5 pb-5">
-              <div className="project-img mb-3 position-relative">
-                <div className="w-100 position-relative" style={{ height: "auto", minHeight: "300px" }}>
-                  <Image
-                    className="img-fluid rounded"
-                    src="/img/service-2.jpg"
-                    alt="Oracle ERP Fusion"
-                    layout="responsive"
-                    width={600}
-                    height={350}
-                  />
-                </div>
-                <a href="/expertise/cloud-erp">
+            <div className="project-item pe-5 pb-5 px-4">
+              <div className="project-img mb-3">
+                <Image
+                  className="img-fluid rounded"
+                  src="/img/service-2.jpg"
+                  alt="Cloud Implementation Services"
+                  width={600}
+                  height={350}
+                  style={{ width: "100%", height: "auto" }}
+                />
+                <Link href="/expertise/cloud-erp">
                   <i className="fa fa-link fa-3x text-primary"></i>
-                </a>
+                </Link>
               </div>
               <div className="project-title">
                 <h4 className="mb-0">Cloud Implementation Services</h4>
@@ -183,21 +203,19 @@ export default function Implementation() {
             </div>
 
             {/* Project 3 */}
-            <div className="project-item pe-5 pb-5">
-              <div className="project-img mb-3 position-relative">
-                <div className="w-100 position-relative" style={{ height: "auto", minHeight: "300px" }}>
-                  <Image
-                    className="img-fluid rounded"
-                    src="/img/service-3.jpg"
-                    alt="On Premises to Cloud"
-                    layout="responsive"
-                    width={600}
-                    height={350}
-                  />
-                </div>
-                <a href="/expertise/on-prem-to-cloud">
+            <div className="project-item pe-5 pb-5 px-4">
+              <div className="project-img mb-3">
+                <Image
+                  className="img-fluid rounded"
+                  src="/img/service-3.jpg"
+                  alt="Cloud Integration Services"
+                  width={600}
+                  height={350}
+                  style={{ width: "100%", height: "auto" }}
+                />
+                <Link href="/expertise/on-prem-to-cloud">
                   <i className="fa fa-link fa-3x text-primary"></i>
-                </a>
+                </Link>
               </div>
               <div className="project-title">
                 <h4 className="mb-0">Cloud Integration Services</h4>
@@ -205,21 +223,19 @@ export default function Implementation() {
             </div>
 
             {/* Project 4 */}
-            <div className="project-item pe-5 pb-5">
-              <div className="project-img mb-3 position-relative">
-                <div className="w-100 position-relative" style={{ height: "auto", minHeight: "300px" }}>
-                  <Image
-                    className="img-fluid rounded"
-                    src="/img/service-4.jpg"
-                    alt="Oracle Integration Cloud"
-                    layout="responsive"
-                    width={600}
-                    height={350}
-                  />
-                </div>
-                <a href="/expertise/oracle-integration-cloud">
+            <div className="project-item pe-5 pb-5 px-4">
+              <div className="project-img mb-3">
+                <Image
+                  className="img-fluid rounded"
+                  src="/img/service-4.jpg"
+                  alt="Healthcheck - Oracle Fusion"
+                  width={600}
+                  height={350}
+                  style={{ width: "100%", height: "auto" }}
+                />
+                <Link href="/expertise/oracle-integration-cloud">
                   <i className="fa fa-link fa-3x text-primary"></i>
-                </a>
+                </Link>
               </div>
               <div className="project-title">
                 <h4 className="mb-0">Healthcheck - Oracle Fusion</h4>
@@ -227,21 +243,19 @@ export default function Implementation() {
             </div>
 
             {/* Project 5 */}
-            <div className="project-item pe-5 pb-5">
-              <div className="project-img mb-3 position-relative">
-                <div className="w-100 position-relative" style={{ height: "auto", minHeight: "300px" }}>
-                  <Image
-                    className="img-fluid rounded"
-                    src="/img/service-1.jpg"
-                    alt="Fusion Data Intelligence"
-                    layout="responsive"
-                    width={600}
-                    height={350}
-                  />
-                </div>
-                <a href="/expertise/fusion-data-intelligence">
+            <div className="project-item pe-5 pb-5 px-4">
+              <div className="project-img mb-3">
+                <Image
+                  className="img-fluid rounded"
+                  src="/img/service-1.jpg"
+                  alt="FDI - Healthcheck"
+                  width={600}
+                  height={350}
+                  style={{ width: "100%", height: "auto" }}
+                />
+                <Link href="/expertise/fusion-data-intelligence">
                   <i className="fa fa-link fa-3x text-primary"></i>
-                </a>
+                </Link>
               </div>
               <div className="project-title">
                 <h4 className="mb-0">FDI - Healthcheck</h4>
@@ -249,21 +263,19 @@ export default function Implementation() {
             </div>
 
             {/* Project 6 */}
-            <div className="project-item pe-5 pb-5">
-              <div className="project-img mb-3 position-relative">
-                <div className="w-100 position-relative" style={{ height: "auto", minHeight: "300px" }}>
-                  <Image
-                    className="img-fluid rounded"
-                    src="/img/service-2.jpg"
-                    alt="Automation Testing"
-                    layout="responsive"
-                    width={600}
-                    height={350}
-                  />
-                </div>
-                <a href="/expertise/automation-testing">
+            <div className="project-item pe-5 pb-5 px-4">
+              <div className="project-img mb-3">
+                <Image
+                  className="img-fluid rounded"
+                  src="/img/service-2.jpg"
+                  alt="Department-Tree Framework"
+                  width={600}
+                  height={350}
+                  style={{ width: "100%", height: "auto" }}
+                />
+                <Link href="/expertise/automation-testing">
                   <i className="fa fa-link fa-3x text-primary"></i>
-                </a>
+                </Link>
               </div>
               <div className="project-title">
                 <h4 className="mb-0">
@@ -271,7 +283,7 @@ export default function Implementation() {
                 </h4>
               </div>
             </div>
-          </div>
+          </Slider>
         </div>
       </div>
     </>

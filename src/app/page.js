@@ -69,7 +69,7 @@ export default function Home() {
         >
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img
+              <Image
                 className="w-100"
                 src="/img/carousel-1.jpg"
                 alt="Image"
@@ -94,7 +94,7 @@ export default function Home() {
             </div>
 
             <div className="carousel-item"> {/* Removed the “actives” typo and only one active slide */}
-              <img
+              <Image
                 className="w-100"
                 src="/img/carousel-2.jpg"
                 alt="Image"

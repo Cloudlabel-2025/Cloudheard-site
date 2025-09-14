@@ -1,6 +1,11 @@
 "use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
+import Slider from "react-slick";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function Healthoracle() {
   const [isClient, setIsClient] = useState(false);
@@ -13,6 +18,28 @@ export default function Healthoracle() {
   }, []);
 
   if (!isClient) return null;
+
+  // Slider settings
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 800,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 2500,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: { slidesToShow: 2 },
+      },
+      {
+        breakpoint: 768,
+        settings: { slidesToShow: 1 },
+      },
+    ],
+  };
 
   return (
     <>
@@ -34,7 +61,7 @@ export default function Healthoracle() {
           <nav aria-label="breadcrumb" className="animated slideInDown">
             <ol className="breadcrumb mb-0">
               <li className="breadcrumb-item">
-                <a href="/" className="text-decoration-none">Home</a>
+                <Link href="/" className="text-decoration-none">Home</Link>
               </li>
               <li className="breadcrumb-item active" aria-current="page">
                 Health Check – Oracle Fusion
@@ -129,71 +156,133 @@ export default function Healthoracle() {
               We Have Completed Latest Projects
             </h1>
           </div>
-          <div
-            className="owl-carousel project-carousel wow fadeInUp"
-            data-wow-delay="0.3s"
-          >
-            {/* Projects */}
-            {[
-              {
-                src: "/img/service-1.jpg",
-                alt: "Oracle HCM Fusion",
-                href: "/expertise/cloud-hcm",
-                title: "Cloud Managed Services",
-              },
-              {
-                src: "/img/service-2.jpg",
-                alt: "Oracle ERP Fusion",
-                href: "/expertise/cloud-erp",
-                title: "Cloud Implementation Services",
-              },
-              {
-                src: "/img/service-3.jpg",
-                alt: "On Premises to Cloud",
-                href: "/expertise/on-prem-to-cloud",
-                title: "Cloud Integration Services",
-              },
-              {
-                src: "/img/service-4.jpg",
-                alt: "Oracle Integration Cloud",
-                href: "/expertise/oracle-integration-cloud",
-                title: "Healthcheck - Oracle Fusion",
-              },
-              {
-                src: "/img/service-1.jpg",
-                alt: "Fusion Data Intelligence",
-                href: "/expertise/fusion-data-intelligence",
-                title: "FDI - Healthcheck",
-              },
-              {
-                src: "/img/service-2.jpg",
-                alt: "Automation Testing",
-                href: "/expertise/automation-testing",
-                title: "Department-Tree & Organisation Framework",
-              },
-            ].map(({ src, alt, href, title }, idx) => (
-              <div key={idx} className="project-item pe-5 pb-5">
-                <div className="project-img mb-3">
-                  <Image
-                    className="img-fluid rounded"
-                    src={src}
-                    alt={alt}
-                    width={600}
-                    height={350}
-                    style={{ width: "100%", height: "auto" }}
-                  />
-                  <a href={href}>
-                    <i className="fa fa-link fa-3x text-primary"></i>
-                  </a>
-                </div>
-                <div className="project-title">
-                  <h4 className="mb-0">{title}</h4>
-                </div>
+         
+           {/* ✅ Replaced Owl with Slick */}
+             <Slider {...settings}>
+            <div className="project-item pe-5 pb-5 px-4">
+              <div className="project-img mb-3">
+                <Image
+                  className="img-fluid rounded"
+                  src="/img/service-1.jpg"
+                  alt="Cloud Managed Services"
+                  width={600}
+                  height={350}
+                  style={{ width: "100%", height: "auto" }}
+                />
+                <Link href="/expertise/cloud-hcm">
+                  <i className="fa fa-link fa-3x text-primary"></i>
+                </Link>
               </div>
-            ))}
+              <div className="project-title">
+                <h4 className="mb-0">Cloud Managed Services</h4>
+              </div>
+            </div>
+
+            {/* Project 2 */}
+            <div className="project-item pe-5 pb-5 px-4">
+              <div className="project-img mb-3">
+                <Image
+                  className="img-fluid rounded"
+                  src="/img/service-2.jpg"
+                  alt="Cloud Implementation Services"
+                  width={600}
+                  height={350}
+                  style={{ width: "100%", height: "auto" }}
+                />
+                <Link href="/expertise/cloud-erp">
+                  <i className="fa fa-link fa-3x text-primary"></i>
+                </Link>
+              </div>
+              <div className="project-title">
+                <h4 className="mb-0">Cloud Implementation Services</h4>
+              </div>
+            </div>
+
+            {/* Project 3 */}
+            <div className="project-item pe-5 pb-5 px-4">
+              <div className="project-img mb-3">
+                <Image
+                  className="img-fluid rounded"
+                  src="/img/service-3.jpg"
+                  alt="Cloud Integration Services"
+                  width={600}
+                  height={350}
+                  style={{ width: "100%", height: "auto" }}
+                />
+                <Link href="/expertise/on-prem-to-cloud">
+                  <i className="fa fa-link fa-3x text-primary"></i>
+                </Link>
+              </div>
+              <div className="project-title">
+                <h4 className="mb-0">Cloud Integration Services</h4>
+              </div>
+            </div>
+
+            {/* Project 4 */}
+            <div className="project-item pe-5 pb-5 px-4">
+              <div className="project-img mb-3">
+                <Image
+                  className="img-fluid rounded"
+                  src="/img/service-4.jpg"
+                  alt="Healthcheck - Oracle Fusion"
+                  width={600}
+                  height={350}
+                  style={{ width: "100%", height: "auto" }}
+                />
+                <Link href="/expertise/oracle-integration-cloud">
+                  <i className="fa fa-link fa-3x text-primary"></i>
+                </Link>
+              </div>
+              <div className="project-title">
+                <h4 className="mb-0">Healthcheck - Oracle Fusion</h4>
+              </div>
+            </div>
+
+            {/* Project 5 */}
+            <div className="project-item pe-5 pb-5 px-4">
+              <div className="project-img mb-3">
+                <Image
+                  className="img-fluid rounded"
+                  src="/img/service-1.jpg"
+                  alt="FDI - Healthcheck"
+                  width={600}
+                  height={350}
+                  style={{ width: "100%", height: "auto" }}
+                />
+                <Link href="/expertise/fusion-data-intelligence">
+                  <i className="fa fa-link fa-3x text-primary"></i>
+                </Link>
+              </div>
+              <div className="project-title">
+                <h4 className="mb-0">FDI - Healthcheck</h4>
+              </div>
+            </div>
+
+            {/* Project 6 */}
+            <div className="project-item pe-5 pb-5 px-4">
+              <div className="project-img mb-3">
+                <Image
+                  className="img-fluid rounded"
+                  src="/img/service-2.jpg"
+                  alt="Department-Tree Framework"
+                  width={600}
+                  height={350}
+                  style={{ width: "100%", height: "auto" }}
+                />
+                <Link href="/expertise/automation-testing">
+                  <i className="fa fa-link fa-3x text-primary"></i>
+                </Link>
+              </div>
+              <div className="project-title">
+                <h4 className="mb-0">
+                  Department-Tree & Organisation Framework
+                </h4>
+              </div>
+            </div>
+            </Slider>
           </div>
         </div>
-      </div>
+      
     </>
   );
 }
