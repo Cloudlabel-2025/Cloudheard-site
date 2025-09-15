@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "animate.css": "^4.1.1",
+    "bootstrap": "^5.3.8",
     "busboy": "^1.6.0",
     "formidable": "^3.5.4",
     "multer": "^2.0.2",
