@@ -62,7 +62,7 @@ export default function Oraclesub() {
                 <Link href="/" className="text-decoration-none">Home</Link>
               </li>
               <li className="breadcrumb-item active" aria-current="page">
-                Oracle HCM Fusion
+                Oracle Subscription Management
               </li>
             </ol>
           </nav>
@@ -75,16 +75,16 @@ export default function Oraclesub() {
           data-wow-delay="0.1s"
           style={{ maxWidth: "600px" }}
         >
-          <h3 className="display-5 mb-2">Oracle HCM Fusion</h3>
+          <h3 className="display-5 mb-2">Oracle Subscription Management</h3>
           <p className="mb-4">
-            Transform HR into seamless, compliant experience. Cloudheard
-            delivers HCM solutions that fit your business perfectly, cost
-            effectively.
+            Simplify subscription lifecycles and boost recurring revenue. 
+            Cloudheard helps you manage subscriptions seamlessly, improve billing accuracy, 
+            and enhance customer experiences cost-effectively.
           </p>
         </div>
 
         <div className="m-3 p-3 row rounded shadow-lg">
-          <h3 className="text-center mt-2">Oracle HCM Fusion</h3>
+          <h3 className="text-center mt-2">Oracle Subscription Management</h3>
 
           {/* Responsive image column */}
           <div className="mt-3 mb-2 col-12 col-xl-5 animated slideInRight d-flex justify-content-center">
@@ -103,29 +103,22 @@ export default function Oraclesub() {
           <div className="col-12 col-xl-6 p-5 animated slideInLeft">
             <ul>
               <li>
-                Oracle HCM Fusion is a comprehensive cloud-based HR solution
-                covering core HR, payroll, absence, talent, and workforce
-                management.
+                At Cloudheard Consultancy, we understand that Oracle Cloud investments must deliver maximum value, not just functionality.
               </li>
               <li>
-                It enables organisations to centralise HR processes, <br />
-                improve compliance, and deliver a unified employee experience.
+                Our dedicated Oracle Subscription Management Services are designed to ensure organizations make the most of every license purchased.
               </li>
               <li>
-                Cloudheard has delivered HCM implementations across industries,
-                ensuring accurate requirement gathering to avoid costly rework.
+                We analyze your current subscription usage to identify areas where licenses are under-utilized or deployed unnecessarily, thereby reducing waste and cutting costs.
               </li>
               <li>
-                Our team focuses on configuring HR processes that align with
-                your organisation’s structure and local compliance needs.
+                Our team reviews role allocations to eliminate mismatches that can artificially inflate license counts, ensuring compliance and accuracy.
               </li>
               <li>
-                With our offshore model guided by senior Architects, you gain
-                high-quality delivery at a fraction of typical costs.
+                we deliver subscription governance that is both sustainable and value-driven.
               </li>
               <li>
-                We make Oracle HCM Fusion work as a perfect fit-gap solution
-                tailored to your business.
+                Cloudheard becomes your trusted partner in ensuring every license, role, and instance works for your success.
               </li>
             </ul>
           </div>
