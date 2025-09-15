@@ -31,36 +31,35 @@ export default function Cloudhcm() {
     autoplay: true,
     autoplaySpeed: 2500,
     responsive: [
-      {
-        breakpoint: 1200,
-        settings: { slidesToShow: 2 },
-      },
-      {
-        breakpoint: 768,
-        settings: { slidesToShow: 1 },
-      },
+      { breakpoint: 1400, settings: { slidesToShow: 3 } },
+      { breakpoint: 992, settings: { slidesToShow: 2 } },
+      { breakpoint: 576, settings: { slidesToShow: 1 } },
     ],
   };
 
   return (
     <>
+      {/* Page Header */}
       <div
         suppressHydrationWarning
         className="container-fluid page-header mb-5 wow fadeIn shadow-sm"
         data-wow-delay="0.1s"
       >
-        <div className="container ">
-          <h1 className="display-5 mb-4 animated slideInDown">Our Expertise</h1>
+        <div className="container">
+          <h1 className="display-6 display-md-5 mb-4 animated slideInDown">
+            Our Expertise
+          </h1>
 
           <p className="mb-2">
             At Cloudheard Consultancy, we bring 30+ years of combined cloud
-            experience and <br /> multiple proven deliveries to help
-            organisations simplify, optimise, and scale with <br />
+            experience and <br className="d-none d-md-block" /> multiple proven
+            deliveries to help organisations simplify, optimise, and scale with{" "}
+            <br className="d-none d-md-block" />
             Oracle Cloud and beyond.
           </p>
 
           <nav aria-label="breadcrumb" className="animated slideInDown">
-            <ol className="breadcrumb mb-0">
+            <ol className="breadcrumb mb-0 flex-wrap">
               <li className="breadcrumb-item">
                 <Link href="/" className="text-decoration-none">
                   Home
@@ -73,13 +72,15 @@ export default function Cloudhcm() {
           </nav>
         </div>
       </div>
+
+      {/* Oracle HCM Fusion Section */}
       <div className="container-fluid">
         <div
           className="text-center mx-auto wow fadeInUp"
           data-wow-delay="0.1s"
           style={{ maxWidth: "600px" }}
         >
-          <h3 className="display-5 mb-2">Oracle HCM Fusion</h3>
+          <h3 className="display-6 mb-2">Oracle HCM Fusion</h3>
           <p className="mb-4">
             Transform HR into seamless, compliant experience. Cloudheard
             delivers HCM solutions that fit your business perfectly, cost
@@ -91,45 +92,45 @@ export default function Cloudhcm() {
           <h3 className="text-center mt-2">Oracle HCM Fusion</h3>
 
           {/* Image */}
-          <div className="mt-3 mb-2 col-12 col-xl-5 animated slideInRight d-flex justify-content-center">
+          <div className="mt-3 mb-2 col-12 col-md-6 col-xl-5 d-flex justify-content-center">
             <Image
-              className="rounded mt-4"
+              className="rounded mt-4 img-fluid"
               src="/img/hcm-images.jpg"
               alt="cloud-hcm"
               width={600}
               height={350}
-              style={{ maxWidth: "100%", height: "auto" }}
               priority
             />
           </div>
 
           {/* Text */}
-          <div className="col-12 col-md-6 col-xl-6 p-5 animated slideInLeft">
+          <div className="col-12 col-md-6 col-xl-6 p-3 p-md-5">
             <ul>
               <li>
                 Oracle HCM Fusion is a comprehensive cloud-based HR solution
                 covering core HR, payroll, absence, talent, and workforce
-                management.{" "}
+                management.
               </li>
               <li>
-                It enables organisations to centralise HR processes, <br />
-                improve compliance, and deliver a unified employee experience.
+                It enables organisations to centralise HR processes,
+                <br className="d-none d-md-block" /> improve compliance, and
+                deliver a unified employee experience.
               </li>
               <li>
                 Cloudheard has delivered HCM implementations across industries,
-                ensuring accurate requirement gathering to avoid costly rework.{" "}
+                ensuring accurate requirement gathering to avoid costly rework.
               </li>
               <li>
                 Our team focuses on configuring HR processes that align with
-                your organisation's structure and local compliance needs.{" "}
+                your organisation&apos;s structure and local compliance needs.
               </li>
               <li>
                 With our offshore model guided by senior Architects, you gain
-                high-quality delivery at a fraction of typical costs.{" "}
+                high-quality delivery at a fraction of typical costs.
               </li>
               <li>
                 We make Oracle HCM Fusion work as a perfect fit-gap solution
-                tailored to your business.{" "}
+                tailored to your business.
               </li>
             </ul>
           </div>
@@ -147,15 +148,15 @@ export default function Cloudhcm() {
             <p className="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">
               Our Projects
             </p>
-            <h1 className="display-5 mb-5">
+            <h1 className="display-6 display-md-5 mb-5">
               We Have Completed Latest Projects
             </h1>
           </div>
 
-          {/* ✅ Replaced Owl with Slick */}
+          {/* ✅ Slick Slider */}
           <Slider {...settings}>
             {/* Project 1 */}
-            <div className="project-item pe-5 pb-5 px-4">
+            <div className="project-item pe-3 pe-md-4 pb-4 px-4">
               <div className="project-img mb-3">
                 <Image
                   src="/img/service-1.jpg"
@@ -169,12 +170,12 @@ export default function Cloudhcm() {
                 </Link>
               </div>
               <div className="project-title">
-                <h4 className="mb-0">Oracle HCM Fusion</h4>
+                <h5 className="mb-0">Oracle HCM Fusion</h5>
               </div>
             </div>
 
             {/* Project 2 */}
-            <div className="project-item pe-5 pb-5 px-4">
+            <div className="project-item pe-3 pe-md-4 pb-4 px-4">
               <div className="project-img mb-3">
                 <Image
                   src="/img/service-2.jpg"
@@ -188,12 +189,12 @@ export default function Cloudhcm() {
                 </Link>
               </div>
               <div className="project-title">
-                <h4 className="mb-0">Oracle ERP Fusion</h4>
+                <h5 className="mb-0">Oracle ERP Fusion</h5>
               </div>
             </div>
 
             {/* Project 3 */}
-            <div className="project-item pe-5 pb-5 px-4">
+            <div className="project-item pe-3 pe-md-4 pb-4 px-4">
               <div className="project-img mb-3">
                 <Image
                   src="/img/service-3.jpg"
@@ -207,12 +208,12 @@ export default function Cloudhcm() {
                 </Link>
               </div>
               <div className="project-title">
-                <h4 className="mb-0">OnPremises to Cloud</h4>
+                <h5 className="mb-0">OnPremises to Cloud</h5>
               </div>
             </div>
 
             {/* Project 4 */}
-            <div className="project-item pe-5 pb-5 px-4">
+            <div className="project-item pe-3 pe-md-4 pb-4 px-4">
               <div className="project-img mb-3">
                 <Image
                   src="/img/service-4.jpg"
@@ -226,12 +227,12 @@ export default function Cloudhcm() {
                 </Link>
               </div>
               <div className="project-title">
-                <h4 className="mb-0">Oracle Integration Cloud</h4>
+                <h5 className="mb-0">Oracle Integration Cloud</h5>
               </div>
             </div>
 
             {/* Project 5 */}
-            <div className="project-item pe-5 pb-5 px-4">
+            <div className="project-item pe-3 pe-md-4 pb-4 px-4">
               <div className="project-img mb-3">
                 <Image
                   src="/img/service-1.jpg"
@@ -245,12 +246,12 @@ export default function Cloudhcm() {
                 </Link>
               </div>
               <div className="project-title">
-                <h4 className="mb-0">Fusion Data Intelligence</h4>
+                <h5 className="mb-0">Fusion Data Intelligence</h5>
               </div>
             </div>
 
             {/* Project 6 */}
-            <div className="project-item pe-5 pb-5 px-4">
+            <div className="project-item pe-3 pe-md-4 pb-4 px-4">
               <div className="project-img mb-3">
                 <Image
                   src="/img/service-2.jpg"
@@ -264,12 +265,12 @@ export default function Cloudhcm() {
                 </Link>
               </div>
               <div className="project-title">
-                <h4 className="mb-0">Automation Testing</h4>
+                <h5 className="mb-0">Automation Testing</h5>
               </div>
             </div>
 
             {/* Project 7 */}
-            <div className="project-item pe-5 pb-5 px-4">
+            <div className="project-item pe-3 pe-md-4 pb-4 px-4">
               <div className="project-img mb-3">
                 <Image
                   src="/img/service-3.jpg"
@@ -283,12 +284,12 @@ export default function Cloudhcm() {
                 </Link>
               </div>
               <div className="project-title">
-                <h4 className="mb-0">Version Control System</h4>
+                <h5 className="mb-0">Version Control System</h5>
               </div>
             </div>
 
             {/* Project 8 */}
-            <div className="project-item pe-5 pb-5">
+            <div className="project-item pe-3 pe-md-4 pb-4 px-4">
               <div className="project-img mb-3">
                 <Image
                   src="/img/service-4.jpg"
@@ -302,12 +303,12 @@ export default function Cloudhcm() {
                 </Link>
               </div>
               <div className="project-title">
-                <h4 className="mb-0">Application Development</h4>
+                <h5 className="mb-0">Application Development</h5>
               </div>
             </div>
 
             {/* Project 9 */}
-            <div className="project-item pe-5 pb-5">
+            <div className="project-item pe-3 pe-md-4 pb-4 px-4">
               <div className="project-img mb-3">
                 <Image
                   src="/img/service-4.jpg"
@@ -321,7 +322,7 @@ export default function Cloudhcm() {
                 </Link>
               </div>
               <div className="project-title">
-                <h4 className="mb-0">Oracle Subscription Management</h4>
+                <h5 className="mb-0">Oracle Subscription Management</h5>
               </div>
             </div>
           </Slider>
