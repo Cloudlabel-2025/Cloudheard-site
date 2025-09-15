@@ -121,7 +121,7 @@ export default function Cloudhcm() {
               </li>
               <li>
                 Our team focuses on configuring HR processes that align with
-                your organisation's structure and local compliance needs.{" "}
+                your organisation&apos;s structure and local compliance needs.{" "}
               </li>
               <li>
                 With our offshore model guided by senior Architects, you gain
