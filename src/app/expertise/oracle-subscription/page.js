@@ -4,6 +4,8 @@ import {useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import OracleCarousel from "../slider";
+import "bootstrap-icons/font/bootstrap-icons.css";
+
 
 export default function Oraclesub() {
   useEffect(() => {
@@ -73,23 +75,29 @@ export default function Oraclesub() {
 
           {/* Responsive text column */}
           <div className="col-12 col-xl-6 p-5 animated slideInLeft">
-            <ul>
+            <ul  className="list-unstyled ps-3">
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 At Cloudheard Consultancy, we understand that Oracle Cloud investments must deliver maximum value, not just functionality.
               </li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 Our dedicated Oracle Subscription Management Services are designed to ensure organizations make the most of every license purchased.
               </li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 We analyze your current subscription usage to identify areas where licenses are under-utilized or deployed unnecessarily, thereby reducing waste and cutting costs.
               </li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 Our team reviews role allocations to eliminate mismatches that can artificially inflate license counts, ensuring compliance and accuracy.
               </li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 we deliver subscription governance that is both sustainable and value-driven.
               </li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 Cloudheard becomes your trusted partner in ensuring every license, role, and instance works for your success.
               </li>
             </ul>

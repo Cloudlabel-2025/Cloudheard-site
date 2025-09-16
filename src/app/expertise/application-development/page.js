@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import OracleCarousel from "../slider";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 export default function Applicationdevelopment() {
   const [isClient, setIsClient] = useState(false);
@@ -75,31 +76,37 @@ export default function Applicationdevelopment() {
             />
           </div>
           <div className="col-12 col-md-6 col-lg-6 p-5 animated slideInLeft">
-            <ul>
+            <ul className="list-unstyled ps-3">
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 At Cloudheard, we go beyond Oracle to build custom applications
                 that solve everyday business challenges.{" "}
               </li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 Our team has developed apps such as a Hot Seat Booking app for
                 flexible workplaces, a Payroll solutions app for small
                 businesses, and an Admin panel app to automate routine tasks in
                 growing organisations.{" "}
               </li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 We specialise in designing lightweight, scalable, and
                 cost-effective apps tailored to your unique needs.{" "}
               </li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 With our offshore model, development is rapid and affordable,
                 without sacrificing quality.
               </li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 Every project is guided by senior architects to ensure robust
                 design, security, and ease of use.{" "}
               </li>
               <li>
-                Whether it’s a productivity tool, process automation, or a
+                <i className="bi bi-check text-dark me-2"></i>
+                Whether it&apos;s a productivity tool, process automation, or a
                 business-specific app — Cloudheard delivers solutions that work.{" "}
               </li>
             </ul>

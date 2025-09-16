@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import OracleCarousel from "../slider";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 export default function Cloudhcm() {
   const [isClient, setIsClient] = useState(false);
@@ -84,30 +85,36 @@ export default function Cloudhcm() {
 
           {/* Text */}
           <div className="col-12 col-md-6 col-xl-6 p-3 p-md-5">
-            <ul>
+            <ul className="list-unstyled ps-3">
               <li>
+                 <i className="bi bi-check text-dark me-2"></i>
                 Oracle HCM Fusion is a comprehensive cloud-based HR solution
                 covering core HR, payroll, absence, talent, and workforce
                 management.
               </li>
               <li>
+                 <i className="bi bi-check text-dark me-2"></i>
                 It enables organisations to centralise HR processes,
                 <br className="d-none d-md-block" /> improve compliance, and
                 deliver a unified employee experience.
               </li>
               <li>
+                 <i className="bi bi-check text-dark me-2"></i>
                 Cloudheard has delivered HCM implementations across industries,
                 ensuring accurate requirement gathering to avoid costly rework.
               </li>
               <li>
+                 <i className="bi bi-check text-dark me-2"></i>
                 Our team focuses on configuring HR processes that align with
                 your organisation&apos;s structure and local compliance needs.
               </li>
               <li>
+                 <i className="bi bi-check text-dark me-2"></i>
                 With our offshore model guided by senior Architects, you gain
                 high-quality delivery at a fraction of typical costs.
               </li>
               <li>
+                 <i className="bi bi-check text-dark me-2"></i>
                 We make Oracle HCM Fusion work as a perfect fit-gap solution
                 tailored to your business.
               </li>

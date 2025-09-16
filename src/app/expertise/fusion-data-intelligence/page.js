@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import OracleCarousel from "../slider";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 export default function Fusiondata() {
   const [isClient, setIsClient] = useState(false);
@@ -80,28 +81,34 @@ export default function Fusiondata() {
 
           {/* Text content column */}
           <div className="col-12 col-md-6 p-5 animated slideInLeft">
-            <ul>
+            <ul className="list-unstyled ps-3">
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 Oracle Fusion Data Intelligence provides a data warehouse layer
                 and prebuilt analytics on HCM and ERP data.{" "}
               </li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 It supports reporting, compliance, pay transparency, and
                 advanced workforce and financial analytics.{" "}
               </li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 Cloudheard enables clients to leverage FDI for accurate insights
                 by ensuring proper data mapping and governance.{" "}
               </li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 We bring expertise in harmonising job structures, hierarchies,
                 and data models for meaningful analytics.
               </li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 Our approach reduces rework by clarifying scope upfront and
                 validating data during implementation.{" "}
               </li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 With Cloudheard, you turn Oracle data into actionable
                 intelligence cost-effectively.{" "}
               </li>

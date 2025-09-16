@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import OracleCarousel from "../slider";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 export default function Integrationcloud() {
   const [isClient, setIsClient] = useState(false);
@@ -71,29 +72,35 @@ export default function Integrationcloud() {
             />
           </div>
           <div className="col-xl-6 p-5 animated slideInLeft">
-            <ul>
+            <ul className="list-unstyled ps-3">
               <li>
+                 <i className="bi bi-check text-dark me-2"></i>
                 Oracle Integration Cloud connects Oracle Fusion applications
                 with legacy systems, third-party apps, and industry-specific
                 solutions.{" "}
               </li>
               <li>
+                 <i className="bi bi-check text-dark me-2"></i>
                 It enables seamless data flows through prebuilt adapters, APIs,
                 and process automation.{" "}
               </li>
               <li>
+                 <i className="bi bi-check text-dark me-2"></i>
                 Cloudheard designs and implements OIC solutions to eliminate
                 silos and create a unified enterprise ecosystem.{" "}
               </li>
               <li>
+                 <i className="bi bi-check text-dark me-2"></i>
                 We focus on building integrations that are scalable, secure, and
                 easy to maintain.
               </li>
               <li>
+                 <i className="bi bi-check text-dark me-2"></i>
                 Our offshore development accelerates delivery while our experts
                 provide architectural oversight.{" "}
               </li>
               <li>
+                 <i className="bi bi-check text-dark me-2"></i>
                 With Cloudheard, OIC becomes a cost-effective enabler of
                 end-to-end business processes.{" "}
               </li>

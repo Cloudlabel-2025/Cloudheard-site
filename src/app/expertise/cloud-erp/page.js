@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import OracleCarousel from "../slider";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 export default function Clouderp() {
   const [isClient, setIsClient] = useState(false);
@@ -73,28 +74,34 @@ export default function Clouderp() {
             />
           </div>
           <div className="col-xl-6 p-5 animated slideInLeft">
-            <ul>
+            <ul className="list-unstyled ps-3">
               <li>
+                 <i className="bi bi-check text-dark me-2"></i>
                 Oracle ERP Fusion provides a full suite of finance, procurement,
                 projects, and supply chain capabilities in the Cloud.{" "}
               </li>
               <li>
+                 <i className="bi bi-check text-dark me-2"></i>
                 It streamlines financial reporting, automates procurement, and
                 enables real-time decision making.{" "}
               </li>
               <li>
+                 <i className="bi bi-check text-dark me-2"></i>
                 Cloudheard helps organisations transition from legacy finance
                 systems to ERP Fusion with minimal disruption.{" "}
               </li>
               <li>
+                 <i className="bi bi-check text-dark me-2"></i>
                 We emphasise proper scope definition and health checks to reduce
                 errors and downstream issues.
               </li>
               <li>
+                 <i className="bi bi-check text-dark me-2"></i>
                 Our cost-effective model blends offshore execution with
                 expert-led governance, ensuring reliability and savings.{" "}
               </li>
               <li>
+                 <i className="bi bi-check text-dark me-2"></i>
                 With Cloudheard, ERP implementations are faster, scalable, and
                 built to support long-term growth.{" "}
               </li>

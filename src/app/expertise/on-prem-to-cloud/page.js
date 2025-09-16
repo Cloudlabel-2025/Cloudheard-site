@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import OracleCarousel from "../slider";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 export default function Subscription() {
   const [isClient, setIsClient] = useState(false);
@@ -72,28 +73,34 @@ export default function Subscription() {
             />
           </div>
           <div className="col-xl-6 col-md-12 p-5 animated slideInLeft">
-            <ul>
+            <ul className="list-unstyled ps-3">
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 Migrating from on-premise applications to Oracle Cloud requires
                 careful planning to reduce risks and downtime.{" "}
               </li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 This includes mapping legacy data, redesigning processes, and
                 ensuring security and compliance.{" "}
               </li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 Cloudheard specialises in on-premise to Cloud migrations,
                 applying a proven methodology built over the last 3 years.{" "}
               </li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 We conduct health checks before migration to prevent hidden
                 challenges that inflate costs later.
               </li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 Our offshore teams execute efficiently while senior Architects
                 ensure alignment with business strategy.{" "}
               </li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 We make your move to Oracle Cloud smooth, cost-effective, and
                 future-ready.{" "}
               </li>

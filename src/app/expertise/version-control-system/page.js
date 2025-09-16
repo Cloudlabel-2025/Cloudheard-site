@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import OracleCarousel from "../slider";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 export default function Versioncontrol() {
   const [isClient, setIsClient] = useState(false);
@@ -77,28 +78,34 @@ export default function Versioncontrol() {
 
           {/* Text Column */}
           <div className="col-12 col-xl-6 p-5 animated slideInLeft">
-            <ul>
+            <ul className="list-unstyled ps-3">
               <li>
+                 <i className="bi bi-check text-dark me-2"></i>
                 Version control in Oracle Fusion tracks configuration changes
                 across environments to maintain consistency and auditability.
               </li>
               <li>
+                 <i className="bi bi-check text-dark me-2"></i>
                 It prevents errors caused by uncontrolled changes and simplifies
                 environment management.
               </li>
               <li>
+                 <i className="bi bi-check text-dark me-2"></i>
                 Cloudheard implements structured version control practices
                 tailored for Oracle Cloud clients.
               </li>
               <li>
+                 <i className="bi bi-check text-dark me-2"></i>
                 We use automated trackers, controlled migrations, and fit-gap
                 analysis to reduce rework.
               </li>
               <li>
+                 <i className="bi bi-check text-dark me-2"></i>
                 Our offshore delivery model provides efficiency, while our
                 Architects ensure governance and security.
               </li>
               <li>
+                 <i className="bi bi-check text-dark me-2"></i>
                 With Cloudheard, version control becomes a safeguard against
                 costly errors and compliance risks.
               </li>

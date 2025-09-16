@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import OracleCarousel from "../slider";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 export default function Automate() {
   const [isClient, setIsClient] = useState(false);
@@ -79,28 +80,34 @@ export default function Automate() {
             />
           </div>
           <div className="col-xl-6 p-5 animated slideInLeft">
-            <ul>
+            <ul className="list-unstyled ps-3">
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 Automated Testing in Oracle Cloud reduces manual effort during
                 upgrades, patching, and new implementations.
               </li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 It ensures that core processes like payroll, approvals, and
                 finance remain intact after system changes.
               </li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 Cloudheard builds automated test scripts to accelerate regression
                 testing and improve accuracy.
               </li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 We design frameworks that reduce testing cycles from weeks to
                 days, cutting project costs significantly.
               </li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 Our offshore teams deliver automation quickly while senior
                 consultants ensure test coverage is robust.
               </li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 With Cloudheard, you gain confidence in every upgrade — without
                 the overhead of endless manual testing.
               </li>
