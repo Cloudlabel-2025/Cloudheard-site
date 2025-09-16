@@ -123,7 +123,7 @@ export default function Implementation() {
               </li>
               <li>
                 <i className="bi bi-check text-dark me-2"></i>
-                With Cloudheard, implementation isn't just about go-live — it's
+                With Cloudheard, implementation isn&apos;t just about go-live — it&apos;s
                 about delivering a stable, cost-effective, and business-aligned
                 Oracle Cloud solution from start to finish.
               </li>
