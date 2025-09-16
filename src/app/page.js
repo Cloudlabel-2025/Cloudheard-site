@@ -123,8 +123,8 @@ export default function Home() {
                         Your Oracle Implementation Experts
                       </p>
                       <h1 className="display-5 mb-4 animated slideInDown text-dark">
-                        Empowering <span className="text-primary">Businesses</span>{" "}
-                        with scalable, secure and innovative solutions
+                        "Empowering <span className="text-primary">Businesses</span>{" "}
+                        with scalable, secure and innovative solutions"
                       </h1>
                       <a
                         href="#"
@@ -382,7 +382,7 @@ export default function Home() {
                         </div>
                       </div>
 
-                      <div className="col-12">
+                      <div className="col-12 text-center">
                         <button className="btn btn-primary py-3 px-5" type="submit">
                           Send Message
                         </button>

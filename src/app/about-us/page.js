@@ -1,8 +1,8 @@
 "use client";
-
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 function Aboutus() {
   const [isClient, setIsClient] = useState(false);
@@ -28,7 +28,9 @@ function Aboutus() {
           <nav aria-label="breadcrumb" className="animated slideInDown">
             <ol className="breadcrumb mb-0">
               <li className="breadcrumb-item">
-                <Link href="/" className="text-decoration-none">Home</Link>
+                <Link href="/" className="text-decoration-none">
+                  Home
+                </Link>
               </li>
               <li className="breadcrumb-item active" aria-current="page">
                 About Us
@@ -54,15 +56,44 @@ function Aboutus() {
           <div className="col-lg-6 col-md-12">
             <div className="card custom-hover-card h-100 p-4 border-0 shadow-sm">
               <h4 className="fw-bold mb-3">Who We Are</h4>
-              <ul className="list-style-disc ps-3">
-                <li>Cloudheard Consultancy is a boutique Oracle Cloud partner.</li>
-                <li>Founded by industry experts with 30+ years of combined cloud experience.</li>
-                <li>We bring offshore cost-efficiency guided by seasoned Architects and Delivery Managers.</li>
-                <li>Our focus is on quality, transparency, and long-term client success.</li>
-                <li>Experienced in delivering HCM, ERP, and Cloud projects across industries.</li>
-                <li>A small, agile team that works like an extension of your own.</li>
-                <li>Enterprise-grade expertise, without the enterprise-level price tag.</li>
-                <li>Your trusted advisors for every step of the Oracle Cloud journey.</li>
+              <ul className="list-unstyled ps-3">
+                <li>
+                  <i className="bi bi-check-circle text-dark me-2"></i>{" "}
+                  Cloudheard Consultancy is a boutique Oracle Cloud partner.
+                </li>
+                <li>
+                  <i className="bi bi-check-circle text-dark me-2"></i> Founded
+                  by industry experts with 30+ years of combined cloud
+                  experience.
+                </li>
+                <li>
+                  <i className="bi bi-check-circle text-dark me-2"></i> We bring
+                  offshore cost-efficiency guided by seasoned Architects and
+                  Delivery Managers.
+                </li>
+                <li>
+                  <i className="bi bi-check-circle text-dark me-2"></i> Our
+                  focus is on quality, transparency, and long-term client
+                  success.
+                </li>
+                <li>
+                  <i className="bi bi-check-circle text-dark me-2"></i>{" "}
+                  Experienced in delivering HCM, ERP, and Cloud projects across
+                  industries.
+                </li>
+                <li>
+                  <i className="bi bi-check-circle text-dark me-2"></i> A small,
+                  agile team that works like an extension of your own.
+                </li>
+                <li>
+                  <i className="bi bi-check-circle text-dark me-2"></i>{" "}
+                  Enterprise-grade expertise, without the enterprise-level price
+                  tag.
+                </li>
+                <li>
+                  <i className="bi bi-check-circle text-dark me-2"></i> Your
+                  trusted advisors for every step of the Oracle Cloud journey.
+                </li>
               </ul>
             </div>
           </div>
@@ -71,12 +102,31 @@ function Aboutus() {
           <div className="col-lg-6 col-md-12">
             <div className="card custom-hover-card h-100 p-4 border-0 shadow-sm">
               <h4 className="fw-bold mb-3">What We Do</h4>
-              <ul className="list-style-disc ps-3">
-                <li>We specialize in Oracle Fusion Cloud solutions that empower individuals and transform businesses.</li>
-                <li>From HCM and ERP to cloud migration and managed services, our approach is hands-on, human-first, and impact-driven.</li>
-                <li>We train and mentor future consultants from all walks of life and help them make a mark in the Oracle Cloud ecosystem.</li>
-                <li>Our mission is to create careers and uplift communities.</li>
-                <li>Whether you&apos;re a client or a candidate, we deliver more than service — we deliver transformation.</li>
+              <ul className="list-unstyled ps-3">
+                <li>
+                  <i className="bi bi-check-circle text-dark me-2"></i> We
+                  specialize in Oracle Fusion Cloud solutions that empower
+                  individuals and transform businesses.
+                </li>
+                <li>
+                  <i className="bi bi-check-circle text-dark me-2"></i> From HCM
+                  and ERP to cloud migration and managed services, our approach
+                  is hands-on, human-first, and impact-driven.
+                </li>
+                <li>
+                  <i className="bi bi-check-circle text-dark me-2"></i> We train
+                  and mentor future consultants from all walks of life and help
+                  them make a mark in the Oracle Cloud ecosystem.
+                </li>
+                <li>
+                  <i className="bi bi-check-circle text-dark me-2"></i> Our
+                  mission is to create careers and uplift communities.
+                </li>
+                <li>
+                  <i className="bi bi-check-circle text-dark me-2"></i> Whether
+                  you&apos;re a client or a candidate, we deliver more than
+                  service — we deliver transformation.
+                </li>
               </ul>
             </div>
           </div>
@@ -99,7 +149,10 @@ function Aboutus() {
 
           <div className="row g-4">
             {/* Team Member 1 */}
-            <div className="col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0.1s">
+            <div
+              className="col-lg-4 col-md-6 col-sm-12 wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
               <div className="team-item h-100 d-flex flex-column">
                 <div className="position-relative">
                   <Image
@@ -115,13 +168,22 @@ function Aboutus() {
                 <div className="team-text mt-3">
                   <h4 className="mb-0">Kate Winslet</h4>
                   <div className="team-social d-flex">
-                    <Link className="btn btn-square rounded-circle mx-1" href="#">
+                    <Link
+                      className="btn btn-square rounded-circle mx-1"
+                      href="#"
+                    >
                       <i className="fab fa-facebook-f"></i>
                     </Link>
-                    <Link className="btn btn-square rounded-circle mx-1" href="#">
+                    <Link
+                      className="btn btn-square rounded-circle mx-1"
+                      href="#"
+                    >
                       <i className="fab fa-twitter"></i>
                     </Link>
-                    <Link className="btn btn-square rounded-circle mx-1" href="#">
+                    <Link
+                      className="btn btn-square rounded-circle mx-1"
+                      href="#"
+                    >
                       <i className="fab fa-instagram"></i>
                     </Link>
                   </div>
@@ -130,7 +192,10 @@ function Aboutus() {
             </div>
 
             {/* Team Member 2 */}
-            <div className="col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
+            <div
+              className="col-lg-4 col-md-6 col-sm-12 wow fadeInUp"
+              data-wow-delay="0.3s"
+            >
               <div className="team-item h-100 d-flex flex-column">
                 <div className="position-relative">
                   <Image
@@ -146,13 +211,22 @@ function Aboutus() {
                 <div className="team-text mt-3">
                   <h4 className="mb-0">Jac Jacson</h4>
                   <div className="team-social d-flex">
-                    <Link className="btn btn-square rounded-circle mx-1" href="#">
+                    <Link
+                      className="btn btn-square rounded-circle mx-1"
+                      href="#"
+                    >
                       <i className="fab fa-facebook-f"></i>
                     </Link>
-                    <Link className="btn btn-square rounded-circle mx-1" href="#">
+                    <Link
+                      className="btn btn-square rounded-circle mx-1"
+                      href="#"
+                    >
                       <i className="fab fa-twitter"></i>
                     </Link>
-                    <Link className="btn btn-square rounded-circle mx-1" href="#">
+                    <Link
+                      className="btn btn-square rounded-circle mx-1"
+                      href="#"
+                    >
                       <i className="fab fa-instagram"></i>
                     </Link>
                   </div>
@@ -161,7 +235,10 @@ function Aboutus() {
             </div>
 
             {/* Team Member 3 */}
-            <div className="col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0.5s">
+            <div
+              className="col-lg-4 col-md-6 col-sm-12 wow fadeInUp"
+              data-wow-delay="0.5s"
+            >
               <div className="team-item h-100 d-flex flex-column">
                 <div className="position-relative">
                   <Image
@@ -177,13 +254,22 @@ function Aboutus() {
                 <div className="team-text mt-3">
                   <h4 className="mb-0">Doris Jordan</h4>
                   <div className="team-social d-flex">
-                    <Link className="btn btn-square rounded-circle mx-1" href="#">
+                    <Link
+                      className="btn btn-square rounded-circle mx-1"
+                      href="#"
+                    >
                       <i className="fab fa-facebook-f"></i>
                     </Link>
-                    <Link className="btn btn-square rounded-circle mx-1" href="#">
+                    <Link
+                      className="btn btn-square rounded-circle mx-1"
+                      href="#"
+                    >
                       <i className="fab fa-twitter"></i>
                     </Link>
-                    <Link className="btn btn-square rounded-circle mx-1" href="#">
+                    <Link
+                      className="btn btn-square rounded-circle mx-1"
+                      href="#"
+                    >
                       <i className="fab fa-instagram"></i>
                     </Link>
                   </div>

@@ -1,7 +1,7 @@
 "use client";
-
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 export default function Career() {
   const [isClient, setIsClient] = useState(false);
@@ -72,7 +72,9 @@ export default function Career() {
           <nav aria-label="breadcrumb" className="animated slideInDown">
             <ol className="breadcrumb mb-0">
               <li className="breadcrumb-item">
-                <Link href="/" className="text-decoration-none">Home</Link>
+                <Link href="/" className="text-decoration-none">
+                  Home
+                </Link>
               </li>
               <li className="breadcrumb-item active" aria-current="page">
                 Careers
@@ -191,22 +193,30 @@ export default function Career() {
 
         {/* === Story Upload Section === */}
         <div className="row g-5 align-items-start">
-          {/* Left */}
           <div className="col-lg-7 col-md-12 mb-4 mb-lg-0">
             <div className="card custom-hover-card h-100 p-4 border-0 shadow-sm">
               <h4 className="fw-bold mb-3">Why Join Cloudheard?</h4>
-              <ul className="list-style-disc ps-3">
-                <li>We don&apos;t want your CV. We want your story.</li>
-                <li>No degrees required. Just passion and persistence.</li>
-                <li>Your journey matters more than your resume.</li>
+              <ul className="list-unstyled ps-3">
                 <li>
-                  This is not a job application. It&apos;s your chance to change
-                  your life.
+                  <i className="bi bi-check-circle text-dark me-2"></i> We
+                  don&apos;t want your CV. We want your story.
+                </li>
+                <li>
+                  <i className="bi bi-check-circle text-dark me-2"></i> No
+                  degrees required. Just passion and persistence.
+                </li>
+                <li>
+                  <i className="bi bi-check-circle text-black me-2"></i> Your
+                  journey matters more than your resume.
+                </li>
+                <li>
+                  <i className="bi bi-check-circle text-black me-2"></i> This
+                  is not a job application. It&apos;s your chance to change your
+                  life.
                 </li>
               </ul>
             </div>
           </div>
-
           {/* Right: Upload Form */}
           <div className="col-lg-5 col-md-12">
             <h4 className="mb-3">Share Your Story</h4>

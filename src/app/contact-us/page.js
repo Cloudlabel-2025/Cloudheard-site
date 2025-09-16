@@ -168,7 +168,7 @@ export default function ContactUs() {
                     </div>
                   </div>
 
-                  <div className="col-12">
+                  <div className="col-12 text-center">
                     <button className="btn btn-primary py-3 px-5" type="submit">
                       Send Message
                     </button>
