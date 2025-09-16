@@ -3,9 +3,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Serviceslider from "../slider";
-
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 export default function Healthfdi() {
   const [isClient, setIsClient] = useState(false);
@@ -79,7 +77,7 @@ export default function Healthfdi() {
                       />
                     </div>
           <div className="col-12 col-md-6 col-xl-6 p-5 animated slideInLeft">
-            <ul>
+            <ul className="list-unstyled ps-3">
               <li>
                 <strong>
                   Many businesses go wrong when implementing FDI without a
@@ -87,18 +85,22 @@ export default function Healthfdi() {
                 </strong>
               </li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 Misaligned job structures, hierarchies, or departments, leading
                 to inaccurate reporting.
               </li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 Poor data quality and mapping, resulting in inconsistent
                 analytics.
               </li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 Overlooking security and compliance checks, which can expose
                 sensitive information.
               </li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 Implementing without validating the scope and objectives,
                 causing rework and increased costs.
               </li>
@@ -107,14 +109,28 @@ export default function Healthfdi() {
                   A Health Check before FDI Implementation ensures:
                 </strong>
               </li>
-              <li>Data models and structures are harmonised.</li>
-              <li>Security roles and reporting hierarchies are validated</li>
-              <li>Go-Live → Smooth, structured transition into production.</li>
-              <li>Fit-gap analysis is clear</li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
+                Data models and structures are harmonised.
+              </li>
+              <li>
+                <i className="bi bi-check text-dark me-2"></i>
+                Security roles and reporting hierarchies are validated
+                </li>
+              <li>
+                <i className="bi bi-check text-dark me-2"></i>
+                Go-Live → Smooth, structured transition into production.
+              </li>
+              <li>
+                <i className="bi bi-check text-dark me-2"></i>
+                Fit-gap analysis is clear
+                </li>
+              <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 The business is set up for a smooth, cost-effective FDI rollout.
               </li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 At Cloudheard, we make the FDI Health Check a precursor to
                 implementation, ensuring your organisation avoids costly
                 mistakes and gains reliable, actionable intelligence from day

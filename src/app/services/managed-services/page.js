@@ -3,9 +3,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Serviceslider from "../slider";
-
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 export default function Managed() {
   const [isClient, setIsClient] = useState(false);
@@ -78,27 +76,32 @@ export default function Managed() {
           </div>
          
           <div className="col-12 col-xl-6 p-5 animated slideInLeft">
-            <ul>
-              <ol>
-                <strong>Key components of our Managed Services include:</strong>
-              </ol>
+            <ul className="list-unstyled ps-3">
               <li>
+                <strong>Key components of our Managed Services include:</strong>
+              </li>
+              <li>
+                 <i className="bi bi-check text-dark me-2"></i>
                 Upgrades & Regression Testing → Ensuring business processes
                 remain intact with every Oracle quarterly release.
               </li>
               <li>
+                 <i className="bi bi-check text-dark me-2"></i>
                 Patch Deployment & Monitoring → Seamless patch application with
                 proactive validation and issue resolution.
               </li>
               <li>
+                 <i className="bi bi-check text-dark me-2"></i>
                 Technical Expertise → Support for customisations, extensions,
                 and integrations with ongoing optimisation.
               </li>
               <li>
+                 <i className="bi bi-check text-dark me-2"></i>
                 Continuous Improvements (ITIL-based) → Structured service
                 delivery using ITIL best practices for stability and efficiency.
               </li>
               <li>
+                 <i className="bi bi-check text-dark me-2"></i>
                 What sets Cloudheard apart? We begin every engagement with a
                 Free 5-week Health Check of your configuration and Fusion
                 application. This helps us identify risks, gaps, and
@@ -106,6 +109,7 @@ export default function Managed() {
                 ensuring maximum value and minimal surprises for our clients.
               </li>
               <li>
+                 <i className="bi bi-check text-dark me-2"></i>
                 With Cloudheard, you get a partner who goes beyond support — we
                 deliver stability, cost savings, and continuous innovation in
                 your Oracle Cloud journey.

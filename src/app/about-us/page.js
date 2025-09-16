@@ -58,40 +58,40 @@ function Aboutus() {
               <h4 className="fw-bold mb-3">Who We Are</h4>
               <ul className="list-unstyled ps-3">
                 <li>
-                  <i className="bi bi-check-circle text-dark me-2"></i>{" "}
+                  <i className="bi bi-check text-dark me-2"></i>{" "}
                   Cloudheard Consultancy is a boutique Oracle Cloud partner.
                 </li>
                 <li>
-                  <i className="bi bi-check-circle text-dark me-2"></i> Founded
+                  <i className="bi bi-check text-dark me-2"></i> Founded
                   by industry experts with 30+ years of combined cloud
                   experience.
                 </li>
                 <li>
-                  <i className="bi bi-check-circle text-dark me-2"></i> We bring
+                  <i className="bi bi-check text-dark me-2"></i> We bring
                   offshore cost-efficiency guided by seasoned Architects and
                   Delivery Managers.
                 </li>
                 <li>
-                  <i className="bi bi-check-circle text-dark me-2"></i> Our
+                  <i className="bi bi-check text-dark me-2"></i> Our
                   focus is on quality, transparency, and long-term client
                   success.
                 </li>
                 <li>
-                  <i className="bi bi-check-circle text-dark me-2"></i>{" "}
+                  <i className="bi bi-check text-dark me-2"></i>{" "}
                   Experienced in delivering HCM, ERP, and Cloud projects across
                   industries.
                 </li>
                 <li>
-                  <i className="bi bi-check-circle text-dark me-2"></i> A small,
+                  <i className="bi bi-check text-dark me-2"></i> A small,
                   agile team that works like an extension of your own.
                 </li>
                 <li>
-                  <i className="bi bi-check-circle text-dark me-2"></i>{" "}
+                  <i className="bi bi-check text-dark me-2"></i>{" "}
                   Enterprise-grade expertise, without the enterprise-level price
                   tag.
                 </li>
                 <li>
-                  <i className="bi bi-check-circle text-dark me-2"></i> Your
+                  <i className="bi bi-check text-dark me-2"></i> Your
                   trusted advisors for every step of the Oracle Cloud journey.
                 </li>
               </ul>
@@ -104,26 +104,26 @@ function Aboutus() {
               <h4 className="fw-bold mb-3">What We Do</h4>
               <ul className="list-unstyled ps-3">
                 <li>
-                  <i className="bi bi-check-circle text-dark me-2"></i> We
+                  <i className="bi bi-check text-dark me-2"></i> We
                   specialize in Oracle Fusion Cloud solutions that empower
                   individuals and transform businesses.
                 </li>
                 <li>
-                  <i className="bi bi-check-circle text-dark me-2"></i> From HCM
+                  <i className="bi bi-check text-dark me-2"></i> From HCM
                   and ERP to cloud migration and managed services, our approach
                   is hands-on, human-first, and impact-driven.
                 </li>
                 <li>
-                  <i className="bi bi-check-circle text-dark me-2"></i> We train
+                  <i className="bi bi-check text-dark me-2"></i> We train
                   and mentor future consultants from all walks of life and help
                   them make a mark in the Oracle Cloud ecosystem.
                 </li>
                 <li>
-                  <i className="bi bi-check-circle text-dark me-2"></i> Our
+                  <i className="bi bi-check text-dark me-2"></i> Our
                   mission is to create careers and uplift communities.
                 </li>
                 <li>
-                  <i className="bi bi-check-circle text-dark me-2"></i> Whether
+                  <i className="bi bi-check text-dark me-2"></i> Whether
                   you&apos;re a client or a candidate, we deliver more than
                   service — we deliver transformation.
                 </li>

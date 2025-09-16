@@ -3,9 +3,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Serviceslider from "../slider";
-
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 export default function Healthoracle() {
   const [isClient, setIsClient] = useState(false);
@@ -78,40 +76,51 @@ export default function Healthoracle() {
                       />
                     </div>
           <div className="col-12 col-md-6 col-xl-6 p-5 animated slideInLeft">
-            <ul>
+            <ul className="list-unstyled ps-3">
               <li>
-                <strong>Areas covered in our Health Check include: </strong>
+                <strong>Areas covered in our Health Check include:</strong>
               </li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 Configuration Review → Validation of current HCM and ERP setups.{" "}
               </li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 Security & Roles Analysis → Ensuring RBAC, data security, and
                 compliance frameworks are robust.{" "}
               </li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 Integrations & Extensions → Assessing performance, scalability,
                 and maintenance of OIC and custom solutions.{" "}
               </li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 Data Integrity & Reporting → Checking for accuracy, consistency,
                 and alignment with analytics requirements.
               </li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 Process Fit-Gap Review → Identifying inefficiencies,
                 redundancies, and opportunities for automation.{" "}
               </li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 Why it matters: Essential before introducing new modules,
                 critical prior to system transformations, and best practice
                 before handing over to a managed service provider.{" "}
               </li>
-              <li>Go-Live → Smooth, structured transition into production. </li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
+                Go-Live → Smooth, structured transition into production. 
+                </li>
+              <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 Timeline: Depending on the modules and number of Legal Entities,
                 the Health Check typically takes 5 to 10 weeks.{" "}
               </li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 With Cloudheard, you gain a clear roadmap to reduce risks,
                 eliminate unnecessary costs, and ensure your Oracle Fusion
                 environment is ready for the next stage of its journey.{" "}

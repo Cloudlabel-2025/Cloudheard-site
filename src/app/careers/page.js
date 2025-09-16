@@ -198,19 +198,19 @@ export default function Career() {
               <h4 className="fw-bold mb-3">Why Join Cloudheard?</h4>
               <ul className="list-unstyled ps-3">
                 <li>
-                  <i className="bi bi-check-circle text-dark me-2"></i> We
+                  <i className="bi bi-check text-dark me-2"></i> We
                   don&apos;t want your CV. We want your story.
                 </li>
                 <li>
-                  <i className="bi bi-check-circle text-dark me-2"></i> No
+                  <i className="bi bi-check text-dark me-2"></i> No
                   degrees required. Just passion and persistence.
                 </li>
                 <li>
-                  <i className="bi bi-check-circle text-black me-2"></i> Your
+                  <i className="bi bi-check text-black me-2"></i> Your
                   journey matters more than your resume.
                 </li>
                 <li>
-                  <i className="bi bi-check-circle text-black me-2"></i> This
+                  <i className="bi bi-check text-black me-2"></i> This
                   is not a job application. It&apos;s your chance to change your
                   life.
                 </li>

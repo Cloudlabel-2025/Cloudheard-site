@@ -3,9 +3,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Serviceslider from "../slider";
-
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 export default function Implementation() {
   const [isClient, setIsClient] = useState(false);
@@ -81,40 +79,51 @@ export default function Implementation() {
           </div>
 
           <div className="col-xl-7 col-lg-6 col-md-12 p-5 animated slideInLeft">
-            <ul>
-              <ol>
-                <strong>Our Implementation Framework: </strong>
-              </ol>
+            <ul className="list-unstyled ps-3">
               <li>
+                <strong>Our Implementation Framework: </strong>
+              </li>
+              <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 Pre-Planning Phase → Aligning stakeholders, timelines, and
                 success metrics.
               </li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 Requirements Gathering & Scope Alignment → Preventing rework
                 through accurate fit-gap analysis.
               </li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 Pilot Demo → Early validation of solution design with business
                 teams.
               </li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 Configuration → Agile, offshore-led build with expert oversight.
               </li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 Second Pilot → Refined demo showcasing aligned functionality.
               </li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 User Acceptance Testing (UAT) → Ensuring business readiness and
                 process integrity.
               </li>
-              <li>Go-Live → Smooth, structured transition into production.</li>
               <li>
+                <i className="bi bi-check text-dark me-2"></i>
+                Go-Live → Smooth, structured transition into production.
+                </li>
+              <li>
+                <i className="bi bi-check text-dark me-2"></i>
                 Our Commitment: Every implementation is backed by 2 months of
                 free Hypercare support (or 200 hours of assistance) — ensuring
                 stability, issue resolution, and user confidence post-go-live.
               </li>
               <li>
-                With Cloudheard, implementation isn’t just about go-live — it’s
+                <i className="bi bi-check text-dark me-2"></i>
+                With Cloudheard, implementation isn't just about go-live — it's
                 about delivering a stable, cost-effective, and business-aligned
                 Oracle Cloud solution from start to finish.
               </li>

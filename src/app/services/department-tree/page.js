@@ -1,12 +1,10 @@
 "use client";
-
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Serviceslider from "../slider";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 export default function Department() {
   const [isClient, setIsClient] = useState(false);
@@ -90,28 +88,34 @@ export default function Department() {
 
           {/* Text Column */}
           <div className="col-12 col-xl-6 p-5 animated slideInLeft">
-            <ul>
-              <ol>
-                <strong>Why it matters:</strong>
-              </ol>
+            <ul className="list-unstyled ps-3">
               <li>
+                <strong>Why it matters:</strong>
+              </li>
+              <li>
+                 <i className="bi bi-check text-dark me-2"></i>
                 At Cloudheard, we are system agnostic — meaning we start with
                 your business realities and then tweak and align the framework
                 to fit seamlessly within Oracle Fusion HCM and ERP.
               </li>
               <li>
+                 <i className="bi bi-check text-dark me-2"></i>
                 Ensures accurate approval workflows and security models.
               </li>
               <li>
+                 <i className="bi bi-check text-dark me-2"></i>
                 Supports financial reporting alignment between HR and Finance.
               </li>
               <li>
+                 <i className="bi bi-check text-dark me-2"></i>
                 Enables meaningful headcount, cost, and performance insights.
               </li>
               <li>
+                 <i className="bi bi-check text-dark me-2"></i>
                 Provides a scalable foundation for future growth and compliance.
               </li>
               <li>
+                 <i className="bi bi-check text-dark me-2"></i>
                 Getting the Department Tree and Organisation Framework right is
                 critical not just for a successful implementation, but also to
                 derive full ROI on your Oracle Fusion investment. Cloudheard
