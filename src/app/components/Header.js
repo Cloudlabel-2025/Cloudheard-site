@@ -20,14 +20,14 @@ function Header() {
 
   return (
     <div
-      className="container-fluid fixed-top px-0 wow fadeIn "
+      className="container-fluid fixed-top px-0 wow fadeIn mt-2"
       data-wow-delay="0.1s"
     >
       {/* Optional: Remove empty top bar if not used */}
       {/* <div className="top-bar row gx-0 align-items-center d-none d-lg-flex"></div> */}
 
       <nav
-        className="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn mt-4"
+        className="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn mt-2"
         data-wow-delay="0.1s"
       >
         <Link className="navbar-brand ms-4 ms-lg-0" href="/">
