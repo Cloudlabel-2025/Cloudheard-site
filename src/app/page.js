@@ -90,9 +90,9 @@ export default function Home() {
                 height={850}
               />
               <div className="carousel-caption">
-                <div className="container">
-                  <div className="row justify-content-start">
-                    <div className="col-lg-8">
+                <div className="container mt-5">
+                  <div className="row justify-content-start mt-5">
+                    <div className="col-lg-7 mt-5 pt-5">
                       <p className="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown">
                         Your Oracle Cloud Implementation Experts
                       </p>
@@ -124,11 +124,11 @@ export default function Home() {
                 height={850}
               />
               <div className="carousel-caption">
-                <div className="container">
-                  <div className="row justify-content-start">
-                    <div className="col-lg-7">
+                <div className="container mt-5">
+                  <div className="row justify-content-start mt-5">
+                    <div className="col-lg-7 mt-5 pt-5">
                       <p className="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown">
-                        Your Oracle Implementation Experts
+                        Your Oracle Cloud Implementation Experts
                       </p>
                       <h1 className="display-5 mb-4 animated slideInDown text-dark">
                         {'"Empowering '}
