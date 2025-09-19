@@ -133,8 +133,8 @@ function Aboutus() {
         </div>
       </div>
 
-      {/* Team Section */}
-      <div className="container-xxl py-5">
+      {/* Team Section 
+       <div className="container-xxl py-5">
         <div className="container">
           <div
             className="text-center mx-auto wow fadeInUp"
@@ -148,7 +148,7 @@ function Aboutus() {
           </div>
 
           <div className="row g-4">
-            {/* Team Member 1 */}
+            {/* Team Member 1 
             <div
               className="col-lg-4 col-md-6 col-sm-12 wow fadeInUp"
               data-wow-delay="0.1s"
@@ -191,7 +191,7 @@ function Aboutus() {
               </div>
             </div>
 
-            {/* Team Member 2 */}
+            {/* Team Member 2 
             <div
               className="col-lg-4 col-md-6 col-sm-12 wow fadeInUp"
               data-wow-delay="0.3s"
@@ -234,7 +234,7 @@ function Aboutus() {
               </div>
             </div>
 
-            {/* Team Member 3 */}
+            {/* Team Member 3 
             <div
               className="col-lg-4 col-md-6 col-sm-12 wow fadeInUp"
               data-wow-delay="0.5s"
@@ -278,7 +278,7 @@ function Aboutus() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
