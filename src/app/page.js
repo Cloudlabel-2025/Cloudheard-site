@@ -67,7 +67,6 @@ export default function Home() {
     <>
       {/* ✅ Mount BootstrapClient at the top so Bootstrap JS runs client-side */}
       <BootstrapClient />
-
       {/* Carousel Start */}
       <div
         suppressHydrationWarning
@@ -78,7 +77,7 @@ export default function Home() {
           id="header-carousel"
           className="carousel slide carousel-fade"
           data-bs-ride="carousel"
-          data-bs-interval="2000"
+          data-bs-interval="2500"
         >
           <div className="carousel-inner">
             <div className="carousel-item active">
@@ -147,7 +146,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-
           <button
             className="carousel-control-prev"
             type="button"
@@ -160,7 +158,6 @@ export default function Home() {
             ></span>
             <span className="visually-hidden">Previous</span>
           </button>
-
           <button
             className="carousel-control-next"
             type="button"
@@ -176,7 +173,6 @@ export default function Home() {
         </div>
       </div>
       {/* Carousel End */}
-
       {/* Features Start */}
       <div className="container-xxl feature py-5">
         <div className="container">
@@ -243,7 +239,6 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-
                 <div className="col-md-6 wow fadeIn" data-wow-delay="0.7s">
                   <div className="feature-box border rounded p-4">
                     <i className="fa fa-check fa-3x text-primary mb-3"></i>
@@ -259,7 +254,6 @@ export default function Home() {
                       Read More <i className="fa fa-arrow-right ms-1"></i>
                     </a>
                   </div>
-
                   <div className="col-12 mt-4 wow fadeIn" data-wow-delay="0.9s">
                     <div className="feature-box border rounded p-4">
                       <i className="fa fa-check fa-3x text-primary mb-3"></i>
@@ -283,7 +277,6 @@ export default function Home() {
         </div>
       </div>
       {/* Features End */}
-
       {/* Service Start */}
       <div className="container-xxl service py-5">
         <div className="container">
@@ -308,7 +301,6 @@ export default function Home() {
         </div>
       </div>
       {/* Service End */}
-
       {/* Callback / Contact Start */}
       <div className="container-fluid callback my-5 pt-5">
         <div className="container pt-5">
@@ -345,7 +337,6 @@ export default function Home() {
                         <label htmlFor="name">Your Name</label>
                       </div>
                     </div>
-
                     <div className="col-12 col-md-6">
                       <div className="form-floating">
                         <input
@@ -374,7 +365,6 @@ export default function Home() {
                         <label htmlFor="mail">Your Mobile Number</label>
                       </div>
                     </div>
-
                     <div className="col-12 col-md-6">
                       <div className="form-floating">
                         <input
@@ -389,7 +379,6 @@ export default function Home() {
                         <label htmlFor="subject">Subject</label>
                       </div>
                     </div>
-
                     <div className="col-12">
                       <div className="form-floating">
                         <textarea
@@ -404,7 +393,6 @@ export default function Home() {
                         <label htmlFor="message">Message</label>
                       </div>
                     </div>
-
                     <div className="col-12 text-center">
                       <button
                         className="btn btn-primary py-3 px-5"
@@ -413,7 +401,6 @@ export default function Home() {
                         Send Message
                       </button>
                     </div>
-
                     {status && (
                       <div className="col-12">
                         <p className="mt-2 mb-0">{status}</p>
