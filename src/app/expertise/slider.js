@@ -144,7 +144,7 @@ export default function ExpertiseSlider() {
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <div className="card custom-card">
             <Link
               href="/expertise/automation-testing"
@@ -191,7 +191,7 @@ export default function ExpertiseSlider() {
               </p>
             </div>
           </div>
-        </SwiperSlide>
+        </SwiperSlide> */}
         <SwiperSlide>
           <div className="card custom-card">
             <Link

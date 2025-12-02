@@ -138,7 +138,7 @@ export default function Header() {
                 >
                   Fusion Data Intelligence
                 </Link>
-                <Link
+                {/* <Link
                   href="/expertise/automation-testing"
                   className={`dropdown-item ${
                     pathname === "/expertise/automation-testing" ? "active-dropdown" : ""
@@ -146,8 +146,8 @@ export default function Header() {
                   onClick={closeNavbar}
                 >
                   Automation Testing
-                </Link>
-                <Link
+                </Link> */}
+                {/* <Link
                   href="/expertise/version-control-system"
                    className={`dropdown-item ${
                     pathname === "/expertise/version-control-system" ? "active-dropdown" : ""
@@ -155,7 +155,7 @@ export default function Header() {
                   onClick={closeNavbar}
                 >
                   Version Control System
-                </Link>
+                </Link> */}
                 <Link
                   href="/expertise/application-development"
                    className={`dropdown-item ${

@@ -121,7 +121,7 @@ export default function Clouderp() {
               Our Projects
             </p>
             <h1 className="display-5 mb-5">
-              We Have Completed Latest Projects
+             Our Latest Projects
             </h1>
           </div>
           <OracleCarousel/>

@@ -129,7 +129,7 @@ export default function Managed() {
             <p className="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">
               Our Projects
             </p>
-            <h1 className="display-5 mb-5">We Have Completed Latest Projects</h1>
+            <h1 className="display-5 mb-5">Our Latest Projects</h1>
           </div>
           <Serviceslider/>
         </div>

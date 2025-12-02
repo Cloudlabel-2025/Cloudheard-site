@@ -1,11 +1,10 @@
 "use client";
 
-import {useEffect } from "react";
+import { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import OracleCarousel from "../slider";
 import "bootstrap-icons/font/bootstrap-icons.css";
-
 
 export default function Oraclesub() {
   useEffect(() => {
@@ -13,7 +12,6 @@ export default function Oraclesub() {
       new window.WOW({ live: false }).init();
     }
   }, []);
-
 
   return (
     <>
@@ -33,7 +31,9 @@ export default function Oraclesub() {
           <nav aria-label="breadcrumb" className="animated slideInDown">
             <ol className="breadcrumb mb-0">
               <li className="breadcrumb-item">
-                <Link href="/" className="text-decoration-none">Home</Link>
+                <Link href="/" className="text-decoration-none">
+                  Home
+                </Link>
               </li>
               <li className="breadcrumb-item active" aria-current="page">
                 Oracle Subscription Management
@@ -51,9 +51,9 @@ export default function Oraclesub() {
         >
           <h3 className="display-5 mb-2">Oracle Subscription Management</h3>
           <p className="mb-4">
-            Simplify subscription lifecycles and boost recurring revenue. 
-            Cloudheard helps you manage subscriptions seamlessly, improve billing accuracy, 
-            and enhance customer experiences cost-effectively.
+            Simplify subscription lifecycles and boost recurring revenue.
+            Cloudheard helps you manage subscriptions seamlessly, improve
+            billing accuracy, and enhance customer experiences cost-effectively.
           </p>
         </div>
 
@@ -75,30 +75,39 @@ export default function Oraclesub() {
 
           {/* Responsive text column */}
           <div className="col-12 col-xl-6 p-5 animated slideInLeft">
-            <ul  className="list-unstyled ps-3">
+            <ul className="list-unstyled ps-3">
               <li>
                 <i className="bi bi-check text-dark me-2"></i>
-                At Cloudheard Consultancy, we understand that Oracle Cloud investments must deliver maximum value, not just functionality.
+                At Cloudheard Consultancy, we understand that Oracle Cloud
+                investments must deliver maximum value, not just functionality.
               </li>
               <li>
                 <i className="bi bi-check text-dark me-2"></i>
-                Our dedicated Oracle Subscription Management Services are designed to ensure organizations make the most of every license purchased.
+                Our dedicated Oracle Subscription Management Services are
+                designed to ensure organizations make the most of every license
+                purchased.
               </li>
               <li>
                 <i className="bi bi-check text-dark me-2"></i>
-                We analyze your current subscription usage to identify areas where licenses are under-utilized or deployed unnecessarily, thereby reducing waste and cutting costs.
+                We analyze your current subscription usage to identify areas
+                where licenses are under-utilized or deployed unnecessarily,
+                thereby reducing waste and cutting costs.
               </li>
               <li>
                 <i className="bi bi-check text-dark me-2"></i>
-                Our team reviews role allocations to eliminate mismatches that can artificially inflate license counts, ensuring compliance and accuracy.
+                Our team reviews role allocations to eliminate mismatches that
+                can artificially inflate license counts, ensuring compliance and
+                accuracy.
               </li>
               <li>
                 <i className="bi bi-check text-dark me-2"></i>
-                we deliver subscription governance that is both sustainable and value-driven.
+                we deliver subscription governance that is both sustainable and
+                value-driven.
               </li>
               <li>
                 <i className="bi bi-check text-dark me-2"></i>
-                Cloudheard becomes your trusted partner in ensuring every license, role, and instance works for your success.
+                Cloudheard becomes your trusted partner in ensuring every
+                license, role, and instance works for your success.
               </li>
             </ul>
           </div>
@@ -116,12 +125,11 @@ export default function Oraclesub() {
             <p className="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">
               Our Projects
             </p>
-            <h1 className="display-5 mb-5">We Have Completed Latest Projects</h1>
+            <h1 className="display-5 mb-5">Our Latest Projects</h1>
           </div>
-          <OracleCarousel/>
+          <OracleCarousel />
         </div>
       </div>
-
     </>
   );
 }

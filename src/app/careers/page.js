@@ -83,7 +83,6 @@ export default function Career() {
           </nav>
         </div>
       </div>
-
       {/* === Main Content === */}
       <div className="container-xxl py-5">
         <div className="row mb-5 align-items-start">
@@ -99,7 +98,7 @@ export default function Career() {
               </p>
               <h1 className="display-6 mb-1">Careers at Cloudheard</h1>
               <p className="text-center fs-5 text-primary">
-                <strong>Stories over CVs, People over titles</strong>
+                <strong>Where potential meets opportunity</strong>
               </p>
             </div>
             <div
@@ -108,16 +107,20 @@ export default function Career() {
               style={{ maxWidth: "900px", margin: "0 auto" }}
             >
               <p>
-                At Cloudheard, we believe talent is more than a resume. We
-                don&apos;t measure you by degrees or past job titles — we want
-                to know your story, your journey, and your drive.
+                At Cloudheard, we believe talent is everywhere — but not
+                everyone has access to the same resources to compete. Many
+                capable graduates lack exposure to English communication,
+                computer literacy, and real-world IT experience, making it
+                harder to enter the Cloud industry. 
               </p>
               <p>
-                If you come from an unprivileged background, if you&apos;re just
-                waiting for that one chance to step into the exciting world of
-                Oracle Fusion, we want to hear from you.
+                In India, skills and
+                curiosity often exist without infrastructure or guidance to
+                nurture them. Cloudheard bridges this gap by offering practical
+                training, mentorship, and live project exposure. Our mission is
+                to create a level playing field where dedication, not
+                background, defines your success.
               </p>
-
               <h5 className="mt-4">What makes us different?</h5>
               <ul className="list-unstyled ps-3">
                 <li>
@@ -134,7 +137,6 @@ export default function Career() {
                   purpose and impact.
                 </li>
               </ul>
-
               <p>
                 Your career at Cloudheard is not just about learning — it&apos;s
                 about transformation, growth, and giving back.
@@ -147,7 +149,6 @@ export default function Career() {
               </p>
             </div>
           </div>
-
           {/* Right: Cards (5 columns) */}
           <div className="col-lg-5 col-md-12">
             <div className="row">
@@ -190,7 +191,6 @@ export default function Career() {
             </div>
           </div>
         </div>
-
         {/* === Story Upload Section === */}
         <div className="row g-5 align-items-start">
           <div className="col-lg-7 col-md-12 mb-4 mb-lg-0">
@@ -198,21 +198,20 @@ export default function Career() {
               <h4 className="fw-bold mb-3">Why Join Cloudheard?</h4>
               <ul className="list-unstyled ps-3">
                 <li>
-                  <i className="bi bi-check text-dark me-2"></i> We
-                  don&apos;t want your CV. We want your story.
+                  <i className="bi bi-check text-dark me-2"></i> We don&apos;t
+                  want your CV. We want your story.
                 </li>
                 <li>
-                  <i className="bi bi-check text-dark me-2"></i> No
-                  degrees required. Just passion and persistence.
+                  <i className="bi bi-check text-dark me-2"></i> No degrees
+                  required. Just passion and persistence.
                 </li>
                 <li>
-                  <i className="bi bi-check text-black me-2"></i> Your
-                  journey matters more than your resume.
+                  <i className="bi bi-check text-black me-2"></i> Your journey
+                  matters more than your resume.
                 </li>
                 <li>
-                  <i className="bi bi-check text-black me-2"></i> This
-                  is not a job application. It&apos;s your chance to change your
-                  life.
+                  <i className="bi bi-check text-black me-2"></i> This is not a
+                  job application. It&apos;s your chance to change your life.
                 </li>
               </ul>
             </div>
@@ -226,7 +225,7 @@ export default function Career() {
             </p>
             <ol className="mb-4 small">
               <li>What&apos;s your personal story?</li>
-              <li>Why are you passionate about Oracle Fusion?</li>
+              <li>Why are you passionate about Technologies?</li>
               <li>
                 Have you overcome barriers (social, financial, educational)?
               </li>
@@ -236,7 +235,6 @@ export default function Career() {
               </li>
               <li>Where do you want to be in 3 years?</li>
             </ol>
-
             <form onSubmit={handleSubmit} encType="multipart/form-data">
               <div className="mb-4" style={{ maxWidth: "100%" }}>
                 <label htmlFor="fileUpload" className="form-label fw-semibold">
@@ -259,7 +257,6 @@ export default function Career() {
                 {loading ? "Submitting..." : "Submit"}
               </button>
             </form>
-
             {/* Feedback messages */}
             {submitted && (
               <div className="alert alert-success mt-4" role="alert">

@@ -104,6 +104,10 @@ export default function Subscription() {
                 We make your move to Oracle Cloud smooth, cost-effective, and
                 future-ready.{" "}
               </li>
+              <li>
+                <i className="bi bi-check text-dark me-2"></i>
+               Experience successfully migrating systems from PeopleSoft, ADP, Workday, and Oracle EBS.
+              </li>
             </ul>
           </div>
         </div>
