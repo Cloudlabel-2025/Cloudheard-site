@@ -9,7 +9,7 @@ export default function ContactUs() {
   const [form, setForm] = useState({
     name: "",
     mail: "",
-    mobileNumber:"",
+    mobileNumber: "",
     subject: "",
     message: "",
   });
@@ -35,7 +35,13 @@ export default function ContactUs() {
 
       if (res.ok) {
         setStatus("Message sent successfully");
-        setForm({ name: "", mail: "", mobileNumber:"", subject: "", message: "" });
+        setForm({
+          name: "",
+          mail: "",
+          mobileNumber: "",
+          subject: "",
+          message: "",
+        });
       } else {
         setStatus(data.message || "Failed to send message");
       }
@@ -65,7 +71,9 @@ export default function ContactUs() {
           <nav aria-label="breadcrumb" className="animated slideInDown">
             <ol className="breadcrumb mb-0">
               <li className="breadcrumb-item">
-                <Link href="/" className="text-decoration-none">Home</Link>
+                <Link href="/" className="text-decoration-none">
+                  Home
+                </Link>
               </li>
               <li className="breadcrumb-item active" aria-current="page">
                 Contact Us
@@ -74,24 +82,24 @@ export default function ContactUs() {
           </nav>
         </div>
       </div>
-
       {/* Contact Section */}
       <div className="container-xxl py-5">
         <div className="container">
           <div className="row g-5">
             {/* Contact Form */}
+            <div className="d-flex justify-content-center mt-5">
+              <p className="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">
+                Contact
+              </p>
+            </div>
             <div
               suppressHydrationWarning
               className="col-12 col-lg-6 wow fadeIn"
               data-wow-delay="0.1s"
             >
-              <p className="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">
-                Contact
-              </p>
               <h1 className="display-5 mb-4">
                 If You Have Any Query, Please Contact Us
               </h1>
-
               <form onSubmit={handleSubmit}>
                 <div className="row g-3">
                   <div className="col-12 col-md-6">
@@ -108,7 +116,6 @@ export default function ContactUs() {
                       <label htmlFor="name">Your Name</label>
                     </div>
                   </div>
-
                   <div className="col-12 col-md-6">
                     <div className="form-floating">
                       <input
@@ -137,7 +144,6 @@ export default function ContactUs() {
                       <label htmlFor="mail">Your Mobile Number</label>
                     </div>
                   </div>
-
                   <div className="col-12 col-md-6">
                     <div className="form-floating">
                       <input
@@ -152,7 +158,6 @@ export default function ContactUs() {
                       <label htmlFor="subject">Subject</label>
                     </div>
                   </div>
-
                   <div className="col-12">
                     <div className="form-floating">
                       <textarea
@@ -167,13 +172,11 @@ export default function ContactUs() {
                       <label htmlFor="message">Message</label>
                     </div>
                   </div>
-
                   <div className="col-12 text-center">
                     <button className="btn btn-primary py-3 px-5" type="submit">
                       Send Message
                     </button>
                   </div>
-
                   {status && (
                     <div className="col-12">
                       <p className="mt-2 mb-0">{status}</p>
@@ -182,7 +185,6 @@ export default function ContactUs() {
                 </div>
               </form>
             </div>
-
             {/* Google Map */}
             <div
               suppressHydrationWarning
